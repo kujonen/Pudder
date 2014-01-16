@@ -55,9 +55,9 @@
         <LayoutTemplate>
           <table id="Table1" cellpadding="2" border="1" runat="server" width="150">
             <tr id="Tr1" runat="server">
-              <th id="Th2" runat="server"><asp:Label runat="server" Text="Sted" CssClass="small"></asp:Label></th>
-              <th id="Th3" runat="server">Nedbør (cm)</th>
-                <th id="Th5" runat="server">Neste tre dager</th>
+              <th id="Th2" runat="server">Sted</th>
+              <th id="Th3" runat="server">10 Dager (cm)</th>
+                <th id="Th5" runat="server">3 Dager (cm)</th>
 <%--                <th id="Th4" runat="server">Avstand (km)</th>
                 <th id="Th6" runat="server"></th>
                 <th id="Th1" runat="server"></th>--%>
@@ -68,7 +68,7 @@
         <ItemTemplate>
           <tr id="Tr2" runat="server">
             <td>
-              <asp:LinkButton CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LocationLinkButton" runat="Server" Text='<%#Eval("Name") %>' CssClass="small" Width="100px"/>
+              <asp:LinkButton CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LocationLinkButton" runat="Server" Text='<%#Eval("Name") %>' CssClass="small" Width="60px"/>
             </td>
             <td>
               <asp:TextBox Enabled="False" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPrecipitation") %>' Width="50px" CssClass="bold" />

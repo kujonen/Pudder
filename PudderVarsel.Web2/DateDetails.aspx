@@ -3,7 +3,7 @@
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <hgroup class="title">
         <%--<h1><%: Title %>.</h1>--%>
-        <h2>Detaljert puddervarsel for <%= Location %></h2>
+        <h2><%= Location %> <%= Date %></h2>
     </hgroup>
     
       <asp:ListView runat="server" ID="dateDetailResult">

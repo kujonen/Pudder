@@ -44,12 +44,15 @@
 
     </asp:ListView>
     
+    <p style="font-weight: bold">Avstand fra din posisjon: <%= Distance %> km</p>
 <%--    
     <h3>Nedbør neste tre dager: <%= TreDager %> cm</h3>
     <h3>Totalt denne perioden: <%= Totalt %> cm</h3>
     --%>
-    <p>Oppdatert: <%= OppdatertDato %> </p>
-    <p>Neste oppdatering: <%= NesteOppdatering %> </p>
+    <p>Sist oppdatert: <%= OppdatertDato %> <br/>
+        Ny oppdatering: <%= NesteOppdatering %> 
+    </p>
+    <p></p>
     
 
 <%--    <asp:Chart ID="Chart1" runat="server" Height="200px" Width="600px">

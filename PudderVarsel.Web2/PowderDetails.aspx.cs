@@ -27,6 +27,7 @@ namespace PudderVarsel.Web
         public string TreDager { get; set; }
         public string OppdatertDato { get; set; }
         public string NesteOppdatering { get; set; }
+        public string Distance { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -40,6 +41,7 @@ namespace PudderVarsel.Web
             TreDager = powderData.ThreeDaysPrecipitation.ToString();
             OppdatertDato = powderData.OppdatertDato.ToString();
             NesteOppdatering = powderData.NesteOppdateringDato.ToString();
+            Distance = Math.Round(powderData.Distance,1).ToString();
 
             powderDetailResult.DataSource = powderData.DagligVarsel;
             powderDetailResult.DataBind();
@@ -60,7 +62,7 @@ namespace PudderVarsel.Web
         protected void Date_Click(object sender, CommandEventArgs e)
         {
             var date = Convert.ToDateTime(e.CommandArgument.ToString());
-            Response.Redirect("DateDetails.aspx?Day=" + date.Day+ "&Location=" + Location);
+            Response.Redirect("DateDetails.aspx?Day=" + date.Day + "&Location=" + Location + "&Date=" + date.ToString("dd/MM/yyyy"));
         }
     }
 }
