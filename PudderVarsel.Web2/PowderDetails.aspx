@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="Powder details" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PowderDetails.aspx.cs" Inherits="PudderVarsel.Web.PowderDetails" %>
+<%@ Import Namespace="System.Globalization" %>
 
 <%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
 
@@ -11,7 +12,7 @@
         <LayoutTemplate>
           <table cellpadding="2" border="1" runat="server" id="tblProducts">
             <tr id="Tr1" runat="server">
-              <th id="Th4" runat="server">Dag</th>
+              <%--<th id="Th4" runat="server">Dag</th>--%>
               <th id="Th2" runat="server">Dato</th>
               <th id="Th3" runat="server">Nedbør (cm)</th>
                 <th id="Th5" runat="server">Temperatur</th>
@@ -22,11 +23,12 @@
         </LayoutTemplate>
         <ItemTemplate>
           <tr id="Tr2" runat="server">
-            <td>
+<%--            <td>
                 <asp:TextBox ID="LinkButton1" Width="50px" runat="Server" Enabled="False" Text='<%#Convert.ToDateTime(Eval("From")).ToString("ddd") %>' />
-            </td>
+            </td>--%>
             <td>
-                <asp:LinkButton ID="Button" Width="50px" OnCommand="Date_Click" runat="Server" Text='<%#Convert.ToDateTime(Eval("From")).ToString("d") %>' CommandArgument='<%#Eval("From") %>' CssClass="bold" />
+                <asp:LinkButton ID="Button" OnCommand="Date_Click" runat="Server" Text='<%# Convert.ToDateTime(Eval("From")).ToString("ddd") + " " + 
+                Convert.ToDateTime(Eval("From")).ToString("dd/MM") %>' CommandArgument='<%#Eval("From") %>' CssClass="bold" />
             </td>
             <td>
               <asp:TextBox Enabled="False" Width="50px" ID="LastNameLabel" runat="Server" Text='<%#Eval("Precipitation") %>' />
