@@ -27,7 +27,12 @@
     </section>
 </asp:Content>
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <style type="text/css">.hide { display: none; }</style>
+    <style type="text/css">.hide { display: none; }
+
+ .Textbox { font-size: 10px;
+     font-weight: bold;
+ }
+    </style>
 
     <asp:DropDownList ID="DropDownListDistance" runat="server" CssClass="bold" AutoPostBack="True" OnSelectedIndexChanged="DropDownListDistance_SelectedIndexChanged">
         <asp:ListItem Selected="True">Velg søkeradius</asp:ListItem>
@@ -41,16 +46,16 @@
     </asp:DropDownList>
     
     <asp:Label runat="server" Text="eller"></asp:Label>
-    <asp:TextBox ID="TextBoxSearch" Text="Navn på alpinsenter" runat="server" CssClass="bold" AutoPostBack="True" OnTextChanged="TextBoxSearch_TextChanged" Width="170" OnClick="this.value=''"></asp:TextBox>
+    <asp:TextBox ID="TextBoxSearch" Text="Navn på alpinsenter" runat="server" CssClass="Textbox" AutoPostBack="True" OnTextChanged="TextBoxSearch_TextChanged" Width="110" OnClick="this.value=''"></asp:TextBox>
     <br/>
     <asp:Button ID="ButtonSearch" Text="Finn pudder" Enabled="False" runat="server" OnClick="ButtonSearch_Click" />
     
 
     <asp:ListView ID="ListViewLocations" runat="server">
         <LayoutTemplate>
-          <table id="Table1" cellpadding="2" border="1" runat="server">
+          <table id="Table1" cellpadding="2" border="1" runat="server" width="200">
             <tr id="Tr1" runat="server">
-              <th id="Th2" runat="server">Sted</th>
+              <th id="Th2" runat="server"><asp:Label runat="server" Text="Sted" CssClass="small"></asp:Label></th>
               <th id="Th3" runat="server">Nedbør (cm)</th>
                 <th id="Th5" runat="server">Neste tre dager</th>
                 <th id="Th4" runat="server">Avstand (km)</th>
@@ -64,16 +69,16 @@
           <tr id="Tr2" runat="server">
             <td>
               <%--<asp:LinkButton CommandArgument='<%#Eval("LocationUrl") %>' ID="LinkButton1" runat="Server" Text='<%#Eval("Name") %>' CssClass="bold" />--%>
-              <asp:LinkButton CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LocationLinkButton" runat="Server" Text='<%#Eval("Name") %>' CssClass="bold" />
+              <asp:LinkButton CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LocationLinkButton" runat="Server" Text='<%#Eval("Name") %>' CssClass="bold" Width="50px"/>
             </td>
             <td>
-              <asp:TextBox Enabled="False" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPrecipitation") %>' Width="100px" CssClass="bold" />
+              <asp:TextBox Enabled="False" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPrecipitation") %>' Width="50px" CssClass="bold" />
             </td>
             <td>
-              <asp:TextBox Enabled="False" ID="TextBox2" runat="Server" Text='<%#Eval("ThreeDaysPrecipitation") %>' Width="100px" CssClass="bold" />
+              <asp:TextBox Enabled="False" ID="TextBox2" runat="Server" Text='<%#Eval("ThreeDaysPrecipitation") %>' Width="50px" CssClass="bold" />
             </td>
               <td>
-              <asp:TextBox Enabled="False" ID="TextBox1" runat="Server" Text='<%#Eval("Distance", "{0:0.#}") %>' Width="100px" CssClass="bold" />
+              <asp:TextBox Enabled="False" ID="TextBox1" runat="Server" Text='<%#Eval("Distance", "{0:0.#}") %>' Width="50px" CssClass="bold" />
             </td>
             <td>
               <%--<asp:TextBox Enabled="False" ID="TextBox3" runat="Server" Text='<%#Eval("PrecipitationType") %>' Width="100px" CssClass="bold" />--%>
@@ -121,6 +126,8 @@
                 }
                 else {
                     alert("geolocation not supported");
+                    document.getElementById("DropDownListDistance").disabled = true;
+                    
                 }
             }
             else {

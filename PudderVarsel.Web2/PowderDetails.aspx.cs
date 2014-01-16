@@ -25,6 +25,8 @@ namespace PudderVarsel.Web
 
         public string Totalt { get; set; }
         public string TreDager { get; set; }
+        public string OppdatertDato { get; set; }
+        public string NesteOppdatering { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -36,6 +38,8 @@ namespace PudderVarsel.Web
 
             Totalt = powderData.TotalPrecipitation.ToString();
             TreDager = powderData.ThreeDaysPrecipitation.ToString();
+            OppdatertDato = powderData.OppdatertDato.ToString();
+            NesteOppdatering = powderData.NesteOppdateringDato.ToString();
 
             powderDetailResult.DataSource = powderData.DagligVarsel;
             powderDetailResult.DataBind();

@@ -4,7 +4,7 @@
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <hgroup class="title">
-        <h2>Detaljert puddervarsel for <%= Location %></h2>
+        <h3>Detaljert puddervarsel for <%= Location %></h3>
     </hgroup>
     
       <asp:ListView runat="server" ID="powderDetailResult">
@@ -23,16 +23,16 @@
         <ItemTemplate>
           <tr id="Tr2" runat="server">
             <td>
-                <asp:TextBox ID="LinkButton1" Width="150" runat="Server" Enabled="False" Text='<%#Convert.ToDateTime(Eval("From")).ToString("ddd") %>' />
+                <asp:TextBox ID="LinkButton1" Width="50px" runat="Server" Enabled="False" Text='<%#Convert.ToDateTime(Eval("From")).ToString("ddd") %>' />
             </td>
             <td>
-                <asp:LinkButton ID="Button" OnCommand="Date_Click" runat="Server" Text='<%#Convert.ToDateTime(Eval("From")).ToString("d") %>' CommandArgument='<%#Eval("From") %>' CssClass="bold" />
+                <asp:LinkButton ID="Button" Width="50px" OnCommand="Date_Click" runat="Server" Text='<%#Convert.ToDateTime(Eval("From")).ToString("d") %>' CommandArgument='<%#Eval("From") %>' CssClass="bold" />
             </td>
             <td>
-              <asp:TextBox Enabled="False" Width="150" ID="LastNameLabel" runat="Server" Text='<%#Eval("Precipitation") %>' />
+              <asp:TextBox Enabled="False" Width="50px" ID="LastNameLabel" runat="Server" Text='<%#Eval("Precipitation") %>' />
             </td>
             <td>
-              <asp:TextBox Enabled="False" Width="150" ID="TextBox1" runat="Server" Text='<%#Eval("Temperature") %>' />
+              <asp:TextBox Enabled="False" Width="50px" ID="TextBox1" runat="Server" Text='<%#Eval("Temperature") %>' />
             </td>
             <td>
                 <asp:Image runat="server" ImageUrl='<%#"~/images/" + Eval("ImageUrl") %>' />
@@ -42,10 +42,12 @@
 
     </asp:ListView>
     
-    <asp:Image ID="Image1" runat="server" />
-    
+<%--    
     <h3>Nedbør neste tre dager: <%= TreDager %> cm</h3>
     <h3>Totalt denne perioden: <%= Totalt %> cm</h3>
+    --%>
+    <p>Oppdatert: <%= OppdatertDato %> </p>
+    <p>Neste oppdatering: <%= NesteOppdatering %> </p>
     
 
 <%--    <asp:Chart ID="Chart1" runat="server" Height="200px" Width="600px">

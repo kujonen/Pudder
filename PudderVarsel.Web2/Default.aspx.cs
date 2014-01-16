@@ -125,11 +125,11 @@ namespace PudderVarsel.Web
 
         protected void DropDownListDistance_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DropDownListDistance.SelectedIndex != 0)
-            {
-                var distance = int.Parse(DropDownListDistance.SelectedValue);
-                LastPudderVarsel(string.Empty, distance);
-            }
+            //if (DropDownListDistance.SelectedIndex != 0)
+            //{
+            //    var distance = int.Parse(DropDownListDistance.SelectedValue);
+            //    LastPudderVarsel(string.Empty, distance);
+            //}
         }
 
 
@@ -152,7 +152,7 @@ namespace PudderVarsel.Web
 
         protected void ButtonSearch_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(TextBoxSearch.Text))
+            if (!string.IsNullOrEmpty(TextBoxSearch.Text) && TextBoxSearch.Text != "Navn på alpinsenter")
             {
                 LastPudderVarsel(TextBoxSearch.Text, 0);
             }
