@@ -86,7 +86,8 @@ namespace PudderVarsel.Data
 
             var value = XmlHelper.GetAttributeValue(attributeValue, element);
 
-            return DateTime.ParseExact(value, format, ciNo);
+            var date = DateTime.ParseExact(value, format, ciNo);
+            return new DateTime(date.Ticks, DateTimeKind.Local);
         }
 
         private static double ProsentAvNedborErSno(int dagerMedNedbor, int dagerMedSno)

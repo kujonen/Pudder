@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
 using System.Globalization;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.DataVisualization.Charting;
 using System.Web.UI.WebControls;
 using PudderVarsel.Data;
 
@@ -40,8 +35,8 @@ namespace PudderVarsel.Web
             Totalt = powderData.TotalPrecipitation.ToString();
             TreDager = powderData.ThreeDaysPrecipitation.ToString();
             OppdatertDato = powderData.OppdatertDato.ToString();
-            NesteOppdatering = powderData.NesteOppdateringDato.ToString();
-            Distance = Math.Round(powderData.Distance,1).ToString();
+            NesteOppdatering = powderData.NesteOppdateringDato.ToString(ciNo);
+            Distance = Math.Round(powderData.Distance,1).ToString(ciNo);
 
             powderDetailResult.DataSource = powderData.DagligVarsel;
             powderDetailResult.DataBind();
