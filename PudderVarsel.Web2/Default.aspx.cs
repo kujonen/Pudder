@@ -21,11 +21,11 @@ namespace PudderVarsel.Web
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            PudderVarsel = (IEnumerable<Lokasjon>)Session["PudderVarsel"];
+            PudderVarsel = (IEnumerable<Lokasjon>) Session["PudderVarsel"];
 
             var lon = Session["Longitude"];
             if (lon != null)
-                Longitude = (double)lon;
+                Longitude = (double) lon;
 
             var lat = Session["Latitude"];
             if (lat != null)
@@ -45,8 +45,8 @@ namespace PudderVarsel.Web
 
                 Session["Latitude"] = Latitude;
                 Session["Longitude"] = Longitude;
-                
-                TextBoxSearch.Enabled = true;
+
+                ButtonSearch.Enabled = true;
             }
         }
 
@@ -78,7 +78,7 @@ namespace PudderVarsel.Web
         {
             var data = new WeatherData();
             PudderVarsel = data.GetLocationForecast(Latitude, Longitude, FetchLocations(), distance, searchText);
-            
+
 
             foreach (var lokasjon in PudderVarsel)
             {
@@ -91,8 +91,10 @@ namespace PudderVarsel.Web
 
 
                 var weatherData = data.ProcessResponse(grunndata);
-                lokasjon.OppdatertDato = Utils.GetDate(grunndata.DescendantsAndSelf("model").FirstOrDefault(), "runended");
-                lokasjon.NesteOppdateringDato = Utils.GetDate(grunndata.DescendantsAndSelf("model").FirstOrDefault(), "nextrun");
+                lokasjon.OppdatertDato = Utils.GetDate(grunndata.DescendantsAndSelf("model").FirstOrDefault(),
+                                                       "runended");
+                lokasjon.NesteOppdateringDato = Utils.GetDate(grunndata.DescendantsAndSelf("model").FirstOrDefault(),
+                                                              "nextrun");
 
                 var filteredPowderData = Utils.GetRelevantPowderData(weatherData);
                 lokasjon.DetaljertVarsel = filteredPowderData;
@@ -118,7 +120,7 @@ namespace PudderVarsel.Web
             ListViewLocations.DataBind();
 
             Session["PudderVarsel"] = PudderVarsel;
-            time.Text = TimeSpent.ToString();
+            //time.Text = TimeSpent.ToString();
         }
 
         protected void DropDownListDistance_SelectedIndexChanged(object sender, EventArgs e)
@@ -130,25 +132,35 @@ namespace PudderVarsel.Web
             }
         }
 
-       
+
         protected void TextBoxSearch_TextChanged(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(TextBoxSearch.Text))
-            {
-                LastPudderVarsel(TextBoxSearch.Text, 0);
-            }
+
         }
 
-       
+
         protected void Details_Click(object sender, CommandEventArgs e)
         {
             //var powderList = (IEnumerable<Lokasjon>)Session["powderList"];
             var locationName = e.CommandArgument.ToString();
             var location = PudderVarsel.FirstOrDefault(p => p.Name == locationName);
-            
+
             Session["powderLocation"] = location;
 
             Response.Redirect("PowderDetails.aspx?Location=" + locationName);
+        }
+
+        protected void ButtonSearch_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(TextBoxSearch.Text))
+            {
+                LastPudderVarsel(TextBoxSearch.Text, 0);
+            }
+            if (DropDownListDistance.SelectedIndex != 0)
+            {
+                var distance = int.Parse(DropDownListDistance.SelectedValue);
+                LastPudderVarsel(string.Empty, distance);
+            }
         }
     }
 }

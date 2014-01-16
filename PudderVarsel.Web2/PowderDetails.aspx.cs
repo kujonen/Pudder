@@ -40,31 +40,23 @@ namespace PudderVarsel.Web
             powderDetailResult.DataSource = powderData.DagligVarsel;
             powderDetailResult.DataBind();
 
-            //Chart1.Series[0].YValueMembers = "Volume1";
-            //Chart1.Series[1].YValueMembers = "Volume2";
-            //Chart1.Series[0].XValueMember = "Date";
 
-            //Chart1.Titles.Add("Employees");
-            //Chart1.Series.Add(new Series("Peter", 2));
-            //Chart1.Series.Add(new Series("Jon", 5));
-            //Chart1.Series.Add(new Series("Pan", 3));
-
-            foreach (var dagligPuddervarsel in powderData.DagligVarsel)
-            {
-                var t = dagligPuddervarsel.From.ToString("ddd");
-                Chart1.Series["test1"].Points.AddXY(t, dagligPuddervarsel.Precipitation);
-            }
+            //foreach (var dagligPuddervarsel in powderData.DagligVarsel)
+            //{
+            //    var t = dagligPuddervarsel.From.ToString("ddd");
+            //    Chart1.Series["test1"].Points.AddXY(t, dagligPuddervarsel.Precipitation);
+            //}
 
 
-            Chart1.Series["test1"].ChartType = SeriesChartType.Line;
-            Chart1.Series["test1"].Color = Color.Blue;
+            //Chart1.Series["test1"].ChartType = SeriesChartType.Line;
+            //Chart1.Series["test1"].Color = Color.Blue;
             
         }
 
         protected void Date_Click(object sender, CommandEventArgs e)
         {
             var date = Convert.ToDateTime(e.CommandArgument.ToString());
-            Response.Redirect("DateDetails.aspx?Day=" + date.Day);
+            Response.Redirect("DateDetails.aspx?Day=" + date.Day+ "&Location=" + Location);
         }
     }
 }

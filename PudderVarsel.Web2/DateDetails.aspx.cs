@@ -15,6 +15,17 @@ namespace PudderVarsel.Web
             }
 
         }
+
+        public string Location
+        {
+            get
+            {
+                var location = Request.QueryString["Location"];
+                return location;
+            }
+
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             var powderData = (Lokasjon)Session["powderLocation"];

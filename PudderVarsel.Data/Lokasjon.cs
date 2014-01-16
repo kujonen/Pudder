@@ -39,6 +39,10 @@ namespace PudderVarsel.Data
         public DateTime NesteOppdateringDato { get; set; }
         public IEnumerable<DagligPuddervarsel> DagligVarsel { get; set; }
         public IEnumerable<DagligPuddervarsel> DetaljertVarsel { get; set; }
+        public string ImageUrl
+        {
+            get { return TotalPrecipitation > 0 ? "Snow.png" : "None.png"; }
+        }
 
         /*
                              var location = new Lokasjon();

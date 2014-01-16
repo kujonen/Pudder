@@ -48,7 +48,7 @@
     <h3>Totalt denne perioden: <%= Totalt %> cm</h3>
     
 
-    <asp:Chart ID="Chart1" runat="server" Height="200px" Width="600px">
+<%--    <asp:Chart ID="Chart1" runat="server" Height="200px" Width="600px">
         <Series>
            <asp:Series Name="test1" ChartType="Column" ChartArea="ChartArea1">
            </asp:Series>
@@ -71,7 +71,7 @@
            </asp:ChartArea>  
        </ChartAreas>
     </asp:Chart>
-    
+    --%>
 
 </asp:Content>
 
