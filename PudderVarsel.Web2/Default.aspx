@@ -53,14 +53,14 @@
 
     <asp:ListView ID="ListViewLocations" runat="server">
         <LayoutTemplate>
-          <table id="Table1" cellpadding="2" border="1" runat="server" width="200">
+          <table id="Table1" cellpadding="2" border="1" runat="server" width="150">
             <tr id="Tr1" runat="server">
               <th id="Th2" runat="server"><asp:Label runat="server" Text="Sted" CssClass="small"></asp:Label></th>
               <th id="Th3" runat="server">Nedbør (cm)</th>
                 <th id="Th5" runat="server">Neste tre dager</th>
-                <th id="Th4" runat="server">Avstand (km)</th>
+<%--                <th id="Th4" runat="server">Avstand (km)</th>
                 <th id="Th6" runat="server"></th>
-                <th id="Th1" runat="server"></th>
+                <th id="Th1" runat="server"></th>--%>
             </tr>
             <tr runat="server" id="itemPlaceholder" />
           </table>
@@ -68,8 +68,7 @@
         <ItemTemplate>
           <tr id="Tr2" runat="server">
             <td>
-              <%--<asp:LinkButton CommandArgument='<%#Eval("LocationUrl") %>' ID="LinkButton1" runat="Server" Text='<%#Eval("Name") %>' CssClass="bold" />--%>
-              <asp:LinkButton CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LocationLinkButton" runat="Server" Text='<%#Eval("Name") %>' CssClass="bold" Width="50px"/>
+              <asp:LinkButton CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LocationLinkButton" runat="Server" Text='<%#Eval("Name") %>' CssClass="small" Width="100px"/>
             </td>
             <td>
               <asp:TextBox Enabled="False" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPrecipitation") %>' Width="50px" CssClass="bold" />
@@ -77,15 +76,11 @@
             <td>
               <asp:TextBox Enabled="False" ID="TextBox2" runat="Server" Text='<%#Eval("ThreeDaysPrecipitation") %>' Width="50px" CssClass="bold" />
             </td>
-              <td>
+              <%--<td>
               <asp:TextBox Enabled="False" ID="TextBox1" runat="Server" Text='<%#Eval("Distance", "{0:0.#}") %>' Width="50px" CssClass="bold" />
             </td>
             <td>
-              <%--<asp:TextBox Enabled="False" ID="TextBox3" runat="Server" Text='<%#Eval("PrecipitationType") %>' Width="100px" CssClass="bold" />--%>
                 <asp:Image ID="Image1" runat="server" ImageUrl='<%#"~/images/" + Eval("ImageUrl") %>' />
-            </td>
-<%--            <td>
-              <asp:LinkButton ID="Button" runat="Server" Text="Details" OnCommand="Details_Click" CommandArgument='<%#Eval("Name") %>' CssClass="bold" />
             </td>--%>
           </tr>
         </ItemTemplate>

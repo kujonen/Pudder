@@ -50,6 +50,24 @@ namespace PudderVarsel.Web
             }
         }
 
+        void Page_PreInit(object sender, EventArgs e)
+        {
+            Page p = this.Context.Handler as Page;
+            if (p != null)
+            {
+                // set master page
+                if (Request.Browser.IsMobileDevice)
+                {
+                    p.MasterPageFile = "Site.Mobile.Master";
+                }
+                else
+                {
+                    p.MasterPageFile = "Site.Master";
+                }
+
+            }
+        } 
+
         private string FetchLocations()
         {
             var doc = new XmlDocument();

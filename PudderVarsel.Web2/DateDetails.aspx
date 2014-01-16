@@ -10,9 +10,9 @@
         <LayoutTemplate>
           <table cellpadding="2" border="1" runat="server" id="tblProducts">
             <tr id="Tr1" runat="server">
-              <th id="Th2" runat="server">From</th>
-                <th id="Th1" runat="server">To</th>
-              <th id="Th3" runat="server">Percipitation</th>
+              <th id="Th2" runat="server">Fra</th>
+                <th id="Th1" runat="server">Til</th>
+              <th id="Th3" runat="server">Nedbør</th>
             </tr>
             <tr runat="server" id="itemPlaceholder" />
           </table>
