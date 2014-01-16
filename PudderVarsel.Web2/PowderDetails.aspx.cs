@@ -34,7 +34,7 @@ namespace PudderVarsel.Web
 
             Totalt = powderData.TotalPrecipitation.ToString();
             TreDager = powderData.ThreeDaysPrecipitation.ToString();
-            OppdatertDato = powderData.OppdatertDato.ToString();
+            OppdatertDato = powderData.OppdatertDato.ToString(ciNo);
             NesteOppdatering = powderData.NesteOppdateringDato.ToString(ciNo);
             Distance = Math.Round(powderData.Distance,1).ToString(ciNo);
 
