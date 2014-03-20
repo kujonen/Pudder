@@ -42,7 +42,6 @@
         <asp:ListItem>200</asp:ListItem>
         <asp:ListItem>300</asp:ListItem>
         <asp:ListItem>500</asp:ListItem>
-        <asp:ListItem>Norway</asp:ListItem>
     </asp:DropDownList>
     
     <asp:Label runat="server" Text="eller"></asp:Label>
