@@ -71,4 +71,3 @@ C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\bin\Microsoft
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\obj\Debug\PudderVarsel.Web.csprojResolveAssemblyReference.cache
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\obj\Debug\PudderVarsel.Web.dll
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\obj\Debug\PudderVarsel.Web.pdb
-C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\bin\System.Xml.Linq.dll
