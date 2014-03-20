@@ -39,7 +39,7 @@ namespace PudderVarsel.Data
 
             var xElements = items as XElement[] ?? items.ToArray();
 
-            var locations = new Lokasjon[xElements.Count()+1];
+            var locations = new Lokasjon[xElements.Count()];
             var i = 0;
             foreach (var xElement in xElements)
             {
@@ -56,13 +56,6 @@ namespace PudderVarsel.Data
                 locations[i] = location;
                 i++;
             }
-
-            var currentLocation = new Lokasjon();
-            currentLocation.Name = "Din lokasjon";
-            currentLocation.Latitude = currentLat;
-            currentLocation.Longitude = currentLon;
-            currentLocation.Distance = 0;
-            locations[locations.Length-1] = currentLocation;
             return locations;
             
         }
