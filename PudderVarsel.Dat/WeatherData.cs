@@ -70,25 +70,17 @@ namespace PudderVarsel.Data
 
         public DagligPuddervarsel[] ProcessResponse(XElement forecastResponse)
         {
-
             var items = forecastResponse.DescendantsAndSelf("time");
 
             var xElements = items as XElement[] ?? items.ToArray();
             var powderForecastDays = new DagligPuddervarsel[42];
             var i = 0;
-            string temperature = string.Empty;
             foreach (var xElement in xElements)
             {
                 var from = XmlHelper.GetAttributeValue("from", xElement);
                 var to = XmlHelper.GetAttributeValue("to", xElement);
-                var precipitation = XmlHelper.GetElementValue("location", "precipitation", "value", xElement);
-                var temp = XmlHelper.GetElementValue("location", "temperature", "value", xElement);
 
-
-
-
-
-                string format = "yyyy-MM-ddTHH:mm:ssZ";
+                var format = "yyyy-MM-ddTHH:mm:ssZ";
                 var ciNo = new CultureInfo("nb-NO");
                 var fromDateTime = DateTime.ParseExact(from, format, ciNo);
                 var toDateTime = DateTime.ParseExact(to, format, ciNo);
@@ -96,42 +88,16 @@ namespace PudderVarsel.Data
                 {
                     var powderForecast = new DagligPuddervarsel();
 
-                    //var ciNo = new CultureInfo("nb-NO");
-                    powderForecast.Precipitation = Convert.ToDecimal((string)precipitation.Replace('.', ','), ciNo);
+                    var precipitation = XmlHelper.GetElementValue("location", "precipitation", "value", xElement);
+                    powderForecast.Precipitation = Convert.ToDecimal(precipitation.Replace('.', ','), ciNo);
                     powderForecast.From = DateTime.ParseExact(from, format, ciNo);
                     powderForecast.To = DateTime.ParseExact(to, format, ciNo);
 
                     powderForecast.Temperature = GetAverageTemp(fromDateTime, toDateTime, xElements);
 
-
-                    //    if (!string.IsNullOrEmpty(temperature))
-                    //        powderForecast.Temperature = Math.Round(Convert.ToDecimal((string)temperature.Replace('.', ','), ciNo),1);
-
                     powderForecastDays[i] = powderForecast;
                     i++;
                 }
-                
-
-
-                //if (!string.IsNullOrEmpty(temp))
-                //    temperature = temp;
-                //if (!string.IsNullOrEmpty(precipitation))
-                //{
-                //    const string format = "yyyy-MM-ddTHH:mm:ssZ";
-                //    var powderForecast = new DagligPuddervarsel();
-
-                //    var ciNo = new CultureInfo("nb-NO");
-                //    powderForecast.Precipitation = Convert.ToDecimal((string) precipitation.Replace('.', ','), ciNo);
-                //    powderForecast.From = DateTime.ParseExact(from, format, ciNo);
-                //    powderForecast.To = DateTime.ParseExact(to, format, ciNo);
-
-                    
-                //    if (!string.IsNullOrEmpty(temperature))
-                //        powderForecast.Temperature = Math.Round(Convert.ToDecimal((string)temperature.Replace('.', ','), ciNo),1);
-
-                //    powderForecastDays[i] = powderForecast;
-                //    i++;
-                //}
             }
             return powderForecastDays;
         }
@@ -144,7 +110,7 @@ namespace PudderVarsel.Data
             {
                 var from = XmlHelper.GetAttributeValue("from", xElement);
                 var to = XmlHelper.GetAttributeValue("to", xElement);
-                string format = "yyyy-MM-ddTHH:mm:ssZ";
+                const string format = "yyyy-MM-ddTHH:mm:ssZ";
                 var ciNo = new CultureInfo("nb-NO");
                 var f = DateTime.ParseExact(from, format, ciNo);
                 var t = DateTime.ParseExact(to, format, ciNo);

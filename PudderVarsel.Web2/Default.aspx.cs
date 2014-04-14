@@ -101,15 +101,15 @@ namespace PudderVarsel.Web
 
             foreach (var lokasjon in PudderVarsel)
             {
+
+                var grunndata = MetClient.GetForecast(lokasjon.Latitude, lokasjon.Longitude);
+                
                 var stopwatch = new Stopwatch();
                 stopwatch.Start();
-                var grunndata = MetClient.GetForecast(lokasjon.Latitude, lokasjon.Longitude);
+                var weatherData = data.ProcessResponse(grunndata).Where(p => p != null);
                 stopwatch.Stop();
                 var test = stopwatch.Elapsed;
-                TimeSpent += test.Milliseconds;
 
-
-                var weatherData = data.ProcessResponse(grunndata).Where(p => p != null);
                 lokasjon.OppdatertDato = Utils.GetDate(grunndata.DescendantsAndSelf("model").FirstOrDefault(),
                                                        "runended");
                 lokasjon.NesteOppdateringDato = Utils.GetDate(grunndata.DescendantsAndSelf("model").FirstOrDefault(),
