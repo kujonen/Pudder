@@ -54,11 +54,9 @@ C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\bin\Microsoft
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\bin\Microsoft.ScriptManager.MSAjax.dll
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\bin\Microsoft.ScriptManager.WebForms.dll
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\bin\PudderVarsel.Data.dll
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\bin\System.Web.Optimization.dll
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\bin\System.Web.Providers.dll
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\bin\WebGrease.dll
-C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\bin\PudderVarsel.Data.pdb
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\bin\EntityFramework.xml
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\bin\DotNetOpenAuth.Core.xml
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\bin\DotNetOpenAuth.OAuth.xml
@@ -72,3 +70,5 @@ C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\obj\Debug\Pud
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\obj\Debug\PudderVarsel.Web.dll
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\obj\Debug\PudderVarsel.Web.pdb
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\bin\System.Xml.Linq.dll
+C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\bin\PudderVarsel.Dat.dll
+C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web2\bin\PudderVarsel.Dat.pdb

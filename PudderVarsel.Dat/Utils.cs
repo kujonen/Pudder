@@ -4,7 +4,7 @@ using System.Globalization;
 using System.Linq;
 using System.Xml.Linq;
 
-namespace PudderVarsel.Data
+namespace PudderVarsel.Dat
 {
     public class Utils
     {

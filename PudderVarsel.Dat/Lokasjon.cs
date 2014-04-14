@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace PudderVarsel.Data
+namespace PudderVarsel.Dat
 {
     public class Lokasjon
     {

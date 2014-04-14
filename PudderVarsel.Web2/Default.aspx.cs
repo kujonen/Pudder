@@ -6,7 +6,8 @@ using System.Linq;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
-using PudderVarsel.Data;
+using PudderVarsel.Dat;
+
 
 namespace PudderVarsel.Web
 {

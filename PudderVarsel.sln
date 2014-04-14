@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PudderVarsel.Data", "Pudder
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PudderVarsel.Web", "PudderVarsel.Web2\PudderVarsel.Web.csproj", "{477BE0D0-5717-48F1-B22E-07F0665A1A89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PudderVarsel.Dat", "PudderVarsel.Dat\PudderVarsel.Dat.csproj", "{BD6B14A5-E29E-41C5-BAF2-F78EB8A15645}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,20 @@ Global
 		{477BE0D0-5717-48F1-B22E-07F0665A1A89}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{477BE0D0-5717-48F1-B22E-07F0665A1A89}.Release|x64.ActiveCfg = Release|Any CPU
 		{477BE0D0-5717-48F1-B22E-07F0665A1A89}.Release|x86.ActiveCfg = Release|Any CPU
+		{BD6B14A5-E29E-41C5-BAF2-F78EB8A15645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD6B14A5-E29E-41C5-BAF2-F78EB8A15645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD6B14A5-E29E-41C5-BAF2-F78EB8A15645}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{BD6B14A5-E29E-41C5-BAF2-F78EB8A15645}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{BD6B14A5-E29E-41C5-BAF2-F78EB8A15645}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{BD6B14A5-E29E-41C5-BAF2-F78EB8A15645}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BD6B14A5-E29E-41C5-BAF2-F78EB8A15645}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BD6B14A5-E29E-41C5-BAF2-F78EB8A15645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD6B14A5-E29E-41C5-BAF2-F78EB8A15645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD6B14A5-E29E-41C5-BAF2-F78EB8A15645}.Release|ARM.ActiveCfg = Release|Any CPU
+		{BD6B14A5-E29E-41C5-BAF2-F78EB8A15645}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{BD6B14A5-E29E-41C5-BAF2-F78EB8A15645}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{BD6B14A5-E29E-41C5-BAF2-F78EB8A15645}.Release|x64.ActiveCfg = Release|Any CPU
+		{BD6B14A5-E29E-41C5-BAF2-F78EB8A15645}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

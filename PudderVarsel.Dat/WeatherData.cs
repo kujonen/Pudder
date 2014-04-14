@@ -6,7 +6,7 @@ using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace PudderVarsel.Data
+namespace PudderVarsel.Dat
 {
     public class WeatherData
     {

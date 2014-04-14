@@ -308,9 +308,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PudderVarsel.Data\PudderVarsel.Data.csproj">
-      <Project>{e062c283-18bd-4ac1-b2c9-ed236d6bb861}</Project>
-      <Name>PudderVarsel.Data</Name>
+    <ProjectReference Include="..\PudderVarsel.Dat\PudderVarsel.Dat.csproj">
+      <Project>{bd6b14a5-e29e-41c5-baf2-f78eb8a15645}</Project>
+      <Name>PudderVarsel.Dat</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

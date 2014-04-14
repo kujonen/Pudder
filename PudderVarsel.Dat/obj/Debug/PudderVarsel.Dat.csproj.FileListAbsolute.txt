@@ -1,0 +1,5 @@
+C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Dat\obj\Debug\PudderVarsel.Dat.csprojResolveAssemblyReference.cache
+C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Dat\bin\Debug\PudderVarsel.Dat.dll
+C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Dat\bin\Debug\PudderVarsel.Dat.pdb
+C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Dat\obj\Debug\PudderVarsel.Dat.dll
+C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Dat\obj\Debug\PudderVarsel.Dat.pdb
