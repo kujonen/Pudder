@@ -18,6 +18,13 @@ namespace PudderVarsel.Data
             var longForecast = forecast.Where(p => p != null && p.From > longDate && ((p.From.Hour == 01 && p.To.Hour == 07) ||
                 (p.From.Hour == 07 && p.To.Hour == 13) || (p.From.Hour == 13 && p.To.Hour == 19) ||
                 (p.From.Hour == 19 && p.To.Hour == 01))).OrderBy(q => q.From);
+
+            if (!longForecast.Any()) 
+            {
+                longForecast = forecast.Where(p => p != null && p.From > longDate && ((p.From.Hour == 02 && p.To.Hour == 08) ||
+                (p.From.Hour == 08 && p.To.Hour == 14) || (p.From.Hour == 14 && p.To.Hour == 20) ||
+                (p.From.Hour == 20 && p.To.Hour == 02))).OrderBy(q => q.From);
+            }
             var totalForecast = filteredForecast.Concat(longForecast);
             return totalForecast;
         }
@@ -36,12 +43,19 @@ namespace PudderVarsel.Data
             {
                 var dayPowderData = filteredPowderData.Where(p => p.From < todayEnd && p.From > todayStart);
                 var totalPowder = dayPowderData.Sum(p => p.Precipitation);
-                var temp = dayPowderData.Average(t => t.Temperature);
-                
+
                 var puddervarsel = new DagligPuddervarsel();
+                if (dayPowderData.Count() > 0)
+                {
+                    var temp = dayPowderData.Average(t => t.Temperature);
+                    puddervarsel.Temperature = Math.Round(temp, 1);
+                    puddervarsel.MaxTemperature = dayPowderData.Max(t => t.Temperature);
+                }
+                
+                
                 puddervarsel.Precipitation = totalPowder;
-                puddervarsel.Temperature = Math.Round(temp,1);
-                puddervarsel.MaxTemperature = dayPowderData.Max(t => t.Temperature);
+                
+                
                 puddervarsel.From = today;
                 dailyPowderData[i - 1] = puddervarsel;
                 today = today.AddDays(1);
@@ -87,7 +101,8 @@ namespace PudderVarsel.Data
             var value = XmlHelper.GetAttributeValue(attributeValue, element);
 
             var date = DateTime.ParseExact(value, format, ciNo);
-            return new DateTime(date.Ticks, DateTimeKind.Local);
+            return date;
+            //return new DateTime(date.Ticks, DateTimeKind.Local);
         }
 
         private static double ProsentAvNedborErSno(int dagerMedNedbor, int dagerMedSno)

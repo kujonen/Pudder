@@ -15,7 +15,7 @@ namespace PudderVarsel.Data
 
         public string ImageUrl 
         { 
-            get { return Precipitation > 0 ? "Snow.png" : "None.png"; }
+            get { return Precipitation > 0 ? "None.png" : "None.png"; }
             set { }
         }
 
