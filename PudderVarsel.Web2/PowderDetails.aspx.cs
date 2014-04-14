@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using PudderVarsel.Dat;
+using PudderVarsel.Data;
 
 namespace PudderVarsel.Web
 {

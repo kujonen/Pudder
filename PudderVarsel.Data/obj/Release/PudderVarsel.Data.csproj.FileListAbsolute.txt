@@ -1,5 +1,0 @@
-C:\Users\jonsandv\Documents\Visual Studio 11\Projects\PudderVarsel\PudderVarsel.Data\bin\Release\PudderVarsel.Data.dll
-C:\Users\jonsandv\Documents\Visual Studio 11\Projects\PudderVarsel\PudderVarsel.Data\bin\Release\PudderVarsel.Data.pdb
-C:\Users\jonsandv\Documents\Visual Studio 11\Projects\PudderVarsel\PudderVarsel.Data\obj\Release\PudderVarsel.Data.csprojResolveAssemblyReference.cache
-C:\Users\jonsandv\Documents\Visual Studio 11\Projects\PudderVarsel\PudderVarsel.Data\obj\Release\PudderVarsel.Data.dll
-C:\Users\jonsandv\Documents\Visual Studio 11\Projects\PudderVarsel\PudderVarsel.Data\obj\Release\PudderVarsel.Data.pdb

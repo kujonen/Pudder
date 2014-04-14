@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using PudderVarsel.Dat;
+using PudderVarsel.Data;
 
 namespace PudderVarsel.Web
 {

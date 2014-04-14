@@ -1,6 +1,6 @@
 using System.Xml.Linq;
 
-namespace PudderVarsel.Dat
+namespace PudderVarsel.Data
 {
     public class XmlHelper
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace PudderVarsel.Dat
+namespace PudderVarsel.Data
 {
     public class DagligPuddervarsel
     {
