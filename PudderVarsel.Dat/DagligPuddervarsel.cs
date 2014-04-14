@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics.Tracing;
 
 namespace PudderVarsel.Data
 {
@@ -14,9 +15,17 @@ namespace PudderVarsel.Data
         public string Latitude { get; set; }
 
         public string ImageUrl 
-        { 
-            get { return Precipitation > 0 ? "None.png" : "None.png"; }
-            set { }
+        {
+            get
+            {
+                if (Precipitation == 0)
+                    return "None.png";
+                if (Temperature < 0)
+                    return "Snow.png";
+                if (Temperature > 0 && Temperature < 2)
+                    return "Sleet.png";
+                return "Rain.png";
+            }
         }
 
     }

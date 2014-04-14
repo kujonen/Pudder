@@ -109,15 +109,15 @@ namespace PudderVarsel.Web
                 TimeSpent += test.Milliseconds;
 
 
-                var weatherData = data.ProcessResponse(grunndata);
+                var weatherData = data.ProcessResponse(grunndata).Where(p => p != null);
                 lokasjon.OppdatertDato = Utils.GetDate(grunndata.DescendantsAndSelf("model").FirstOrDefault(),
                                                        "runended");
                 lokasjon.NesteOppdateringDato = Utils.GetDate(grunndata.DescendantsAndSelf("model").FirstOrDefault(),
                                                               "nextrun");
 
-                var filteredPowderData = Utils.GetRelevantPowderData(weatherData);
-                lokasjon.DetaljertVarsel = filteredPowderData;
-                var dayByDayPowderData = Utils.GetDailyPowderData(filteredPowderData);
+                //var filteredPowderData = Utils.GetRelevantPowderData(weatherData);
+                lokasjon.DetaljertVarsel = weatherData;
+                var dayByDayPowderData = Utils.GetDailyPowderData(weatherData);
 
                 var byDayPowderData = dayByDayPowderData as IList<DagligPuddervarsel> ?? dayByDayPowderData.ToList();
                 lokasjon.DagligVarsel = byDayPowderData;

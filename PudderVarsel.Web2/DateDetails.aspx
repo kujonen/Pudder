@@ -12,7 +12,8 @@
             <tr id="Tr1" runat="server">
               <th id="Th2" runat="server">Fra</th>
                 <th id="Th1" runat="server">Til</th>
-              <th id="Th3" runat="server">Nedbør</th>
+              <th id="Th3" runat="server">Perticipation</th>
+                <th id="Th4" runat="server">Temperature</th>
             </tr>
             <tr runat="server" id="itemPlaceholder" />
           </table>
@@ -20,14 +21,20 @@
         <ItemTemplate>
           <tr id="Tr2" runat="server">
             <td>
-              <asp:TextBox Enabled="False" ID="FirstNameLabel" runat="Server" Text='<%#Convert.ToDateTime(Eval("From")).ToString("HH:mm") %>' />
+              <asp:TextBox Enabled="False" Width="50px"  ID="LabelTo" runat="Server" Text='<%#Convert.ToDateTime(Eval("From")).ToString("HH:mm") %>' />
             </td>
             <td>
-              <asp:TextBox Enabled="False" ID="TextBox1" runat="Server" Text='<%#Convert.ToDateTime(Eval("To")).ToString("HH:mm") %>' />
+              <asp:TextBox Enabled="False" Width="50px"  ID="TextBox1" runat="Server" Text='<%#Convert.ToDateTime(Eval("To")).ToString("HH:mm") %>' />
             </td>
             <td>
-              <asp:TextBox Enabled="False" ID="LastNameLabel" runat="Server" Text='<%#Eval("Precipitation") %>' />
+              <asp:TextBox Enabled="False" Width="50px" ID="LabelFrom" runat="Server" Text='<%#Eval("Precipitation") %>' />
             </td>
+              <td>
+                  <asp:TextBox Enabled="False" Width="50px" ID="TextBox2" runat="Server" Text='<%#Eval("Temperature") %>' />
+              </td>
+              <td>
+                  <asp:Image runat="server" ImageUrl='<%#"~/images/" + Eval("ImageUrl") %>' />
+              </td>
           </tr>
         </ItemTemplate>
 

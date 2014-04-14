@@ -74,7 +74,7 @@ namespace PudderVarsel.Data
             var items = forecastResponse.DescendantsAndSelf("time");
 
             var xElements = items as XElement[] ?? items.ToArray();
-            var powderForecastDays = new DagligPuddervarsel[xElements.Count()];
+            var powderForecastDays = new DagligPuddervarsel[42];
             var i = 0;
             string temperature = string.Empty;
             foreach (var xElement in xElements)
@@ -83,30 +83,126 @@ namespace PudderVarsel.Data
                 var to = XmlHelper.GetAttributeValue("to", xElement);
                 var precipitation = XmlHelper.GetElementValue("location", "precipitation", "value", xElement);
                 var temp = XmlHelper.GetElementValue("location", "temperature", "value", xElement);
-                if (!string.IsNullOrEmpty(temp))
-                    temperature = temp;
-                if (!string.IsNullOrEmpty(precipitation))
+
+
+
+
+
+                string format = "yyyy-MM-ddTHH:mm:ssZ";
+                var ciNo = new CultureInfo("nb-NO");
+                var fromDateTime = DateTime.ParseExact(from, format, ciNo);
+                var toDateTime = DateTime.ParseExact(to, format, ciNo);
+                if (IsRelevant(fromDateTime, toDateTime))
                 {
-                    const string format = "yyyy-MM-ddTHH:mm:ssZ";
                     var powderForecast = new DagligPuddervarsel();
 
-                    var ciNo = new CultureInfo("nb-NO");
-                    powderForecast.Precipitation = Convert.ToDecimal((string) precipitation.Replace('.', ','), ciNo);
+                    //var ciNo = new CultureInfo("nb-NO");
+                    powderForecast.Precipitation = Convert.ToDecimal((string)precipitation.Replace('.', ','), ciNo);
                     powderForecast.From = DateTime.ParseExact(from, format, ciNo);
                     powderForecast.To = DateTime.ParseExact(to, format, ciNo);
 
-                    
-                    if (!string.IsNullOrEmpty(temperature))
-                        powderForecast.Temperature = Math.Round(Convert.ToDecimal((string)temperature.Replace('.', ','), ciNo),1);
+                    powderForecast.Temperature = GetAverageTemp(fromDateTime, toDateTime, xElements);
+
+
+                    //    if (!string.IsNullOrEmpty(temperature))
+                    //        powderForecast.Temperature = Math.Round(Convert.ToDecimal((string)temperature.Replace('.', ','), ciNo),1);
 
                     powderForecastDays[i] = powderForecast;
                     i++;
                 }
+                
+
+
+                //if (!string.IsNullOrEmpty(temp))
+                //    temperature = temp;
+                //if (!string.IsNullOrEmpty(precipitation))
+                //{
+                //    const string format = "yyyy-MM-ddTHH:mm:ssZ";
+                //    var powderForecast = new DagligPuddervarsel();
+
+                //    var ciNo = new CultureInfo("nb-NO");
+                //    powderForecast.Precipitation = Convert.ToDecimal((string) precipitation.Replace('.', ','), ciNo);
+                //    powderForecast.From = DateTime.ParseExact(from, format, ciNo);
+                //    powderForecast.To = DateTime.ParseExact(to, format, ciNo);
+
+                    
+                //    if (!string.IsNullOrEmpty(temperature))
+                //        powderForecast.Temperature = Math.Round(Convert.ToDecimal((string)temperature.Replace('.', ','), ciNo),1);
+
+                //    powderForecastDays[i] = powderForecast;
+                //    i++;
+                //}
             }
             return powderForecastDays;
         }
 
+        private decimal GetAverageTemp(DateTime fromDateTime, DateTime toDateTime, XElement[] forecast)
+        {
+            decimal temp = 0;
+            var hits = 0;
+            foreach (var xElement in forecast)
+            {
+                var from = XmlHelper.GetAttributeValue("from", xElement);
+                var to = XmlHelper.GetAttributeValue("to", xElement);
+                string format = "yyyy-MM-ddTHH:mm:ssZ";
+                var ciNo = new CultureInfo("nb-NO");
+                var f = DateTime.ParseExact(from, format, ciNo);
+                var t = DateTime.ParseExact(to, format, ciNo);
+                if (f >= fromDateTime && t <= toDateTime)
+                {
+                    var tem = XmlHelper.GetElementValue("location", "temperature", "value", xElement);
+                    if (!string.IsNullOrEmpty(tem))
+                    {
+                        temp += Convert.ToDecimal(tem.Replace('.', ','), ciNo);
+                        hits++;
+                    }
+                }
+            }
+            var average = temp/hits;
+            return Math.Round(average, 1);
 
+
+        }
+
+        private bool IsRelevant(DateTime from, DateTime to)
+        {
+            var longDate = DateTime.Now.AddDays(3).AddHours(-DateTime.Now.Hour);
+            if (from < longDate)
+            {
+                if (from.Hour == 12 && to.Hour == 18)
+                    return true;
+
+                if (from.Hour == 00 && to.Hour == 06)
+                    return true;
+
+                if (from.Hour == 06 && to.Hour == 12)
+                    return true;
+
+                if (from.Hour == 18 && to.Hour == 00)
+                    return true;
+            }
+
+            if (from > longDate)
+            {
+                if (from.Hour == 01 && to.Hour == 07)
+                    return true;
+                if (from.Hour == 07 && to.Hour == 13)
+                    return true;
+                if (from.Hour == 13 && to.Hour == 19)
+                    return true;
+                if (from.Hour == 19 && to.Hour == 01)
+                    return true;
+                if (from.Hour == 02 && to.Hour == 08)
+                    return true;
+                if (from.Hour == 08 && to.Hour == 14)
+                    return true;
+                if (from.Hour == 14 && to.Hour == 20)
+                    return true;
+                if (from.Hour == 20 && to.Hour == 02)
+                    return true;
+            }
+            return false;
+        }
         private double GetDistance(double currentLat, double currentLong, double locationLat, double locationLong)
         {
             //radians = degrees * PI / 180

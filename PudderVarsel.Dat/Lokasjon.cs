@@ -41,7 +41,16 @@ namespace PudderVarsel.Data
         public IEnumerable<DagligPuddervarsel> DetaljertVarsel { get; set; }
         public string ImageUrl
         {
-            get { return TotalPrecipitation > 0 ? "Snow.png" : "None.png"; }
+            get
+            {
+                if (TotalPrecipitation == 0)
+                    return "None.png";
+                if (Temperature < 0)
+                    return "Snow.png";
+                if (Temperature > 0 && Temperature < 2)
+                    return "Sleet.png";
+                return "Rain.png";
+            }
         }
 
         /*
