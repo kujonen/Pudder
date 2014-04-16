@@ -8,28 +8,6 @@ namespace PudderVarsel.Data
 {
     public class Utils
     {
-        public static IEnumerable<DagligPuddervarsel> GetRelevantPowderData(DagligPuddervarsel[] forecast)
-        {
-            var filteredForecast = forecast.Where(p => p != null && ((p.From.Hour == 12 && p.To.Hour == 18) ||
-                (p.From.Hour == 00 && p.To.Hour == 06) || (p.From.Hour == 06 && p.To.Hour == 12) ||
-                (p.From.Hour == 18 && p.To.Hour == 00))).OrderBy(q => q.From);
-
-            var longDate = DateTime.Now.AddDays(3).AddHours(-DateTime.Now.Hour);
-            var longForecast = forecast.Where(p => p != null && p.From > longDate && ((p.From.Hour == 01 && p.To.Hour == 07) ||
-                (p.From.Hour == 07 && p.To.Hour == 13) || (p.From.Hour == 13 && p.To.Hour == 19) ||
-                (p.From.Hour == 19 && p.To.Hour == 01))).OrderBy(q => q.From);
-
-            if (!longForecast.Any()) 
-            {
-                longForecast = forecast.Where(p => p != null && p.From > longDate && ((p.From.Hour == 02 && p.To.Hour == 08) ||
-                (p.From.Hour == 08 && p.To.Hour == 14) || (p.From.Hour == 14 && p.To.Hour == 20) ||
-                (p.From.Hour == 20 && p.To.Hour == 02))).OrderBy(q => q.From);
-            }
-            var totalForecast = filteredForecast.Concat(longForecast);
-            return totalForecast;
-        }
-
-
         public static IEnumerable<DagligPuddervarsel> GetDailyPowderData(IEnumerable<DagligPuddervarsel> filteredPowderData)
         {
             var today = DateTime.Now;

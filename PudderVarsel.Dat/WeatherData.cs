@@ -96,8 +96,8 @@ namespace PudderVarsel.Data
 
                     var precipitation = XmlHelper.GetElementValue("location", "precipitation", "value", xElement);
                     powderForecast.Precipitation = Convert.ToDecimal(precipitation.Replace('.', ','), ciNo);
-                    powderForecast.From = fromDateTime;
-                    powderForecast.To = toDateTime;
+                    powderForecast.From = fromDateTime.AddHours(-2);
+                    powderForecast.To = toDateTime.AddHours(-2);
 
                     powderForecast.Temperature = GetAverageTemp(temperatureList, ciNo);
                     temperatureList = new Dictionary<string, string>();
