@@ -107,6 +107,8 @@ namespace PudderVarsel.Web
                 var stopwatch = new Stopwatch();
                 stopwatch.Start();
                 var weatherData = data.ProcessResponse(grunndata).Where(p => p != null);
+
+                textArea1.Text = grunndata.ToString();
                 stopwatch.Stop();
                 var test = stopwatch.Elapsed;
 
