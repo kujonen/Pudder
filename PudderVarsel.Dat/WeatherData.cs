@@ -119,6 +119,16 @@ namespace PudderVarsel.Data
 
         private static bool IsRelevant(DateTime from, DateTime to)
         {
+            if (from.Hour == 14 && to.Hour == 20)
+                return true;
+            if (from.Hour == 2 && to.Hour == 8)
+                return true;
+            if (from.Hour == 8 && to.Hour == 14)
+                return true;
+            if (from.Hour == 20 && to.Hour == 2)
+                return true;
+            return false;
+
             var longDate = DateTime.Now.AddDays(3).AddHours(-DateTime.Now.Hour);
             if (from < longDate)
             {
