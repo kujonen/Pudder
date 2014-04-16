@@ -68,8 +68,10 @@ namespace PudderVarsel.Data
         }
 
 
-        public DagligPuddervarsel[] ProcessResponse(XElement forecastResponse)
+        //public DagligPuddervarsel[] ProcessResponse(XElement forecastResponse)
+        public string ProcessResponse(XElement forecastResponse)
         {
+            string testText = string.Empty;
             var items = forecastResponse.DescendantsAndSelf("time");
 
             var xElements = items as XElement[] ?? items.ToArray();
@@ -91,6 +93,7 @@ namespace PudderVarsel.Data
 
                 if (IsRelevant(fromDateTime, toDateTime))
                 {
+                    testText += "Fra: " + fromDateTime + " Til: " + toDateTime + Environment.NewLine;
                     var powderForecast = new DagligPuddervarsel();
 
                     var precipitation = XmlHelper.GetElementValue("location", "precipitation", "value", xElement);
@@ -104,7 +107,8 @@ namespace PudderVarsel.Data
                     i++;
                 }
             }
-            return powderForecastDays;
+            //return powderForecastDays;
+            return testText;
         }
 
         private decimal GetAverageTemp(DateTime fromDateTime, DateTime toDateTime, XElement[] forecast)
