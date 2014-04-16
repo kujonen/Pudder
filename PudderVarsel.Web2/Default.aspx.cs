@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
@@ -34,6 +35,14 @@ namespace PudderVarsel.Web
 
             if (Equals(Longitude, 0.0))
                 Page.ClientScript.RegisterStartupScript(GetType(), "Call my function", "requestPosition()", true);
+
+            //ReadOnlyCollection<TimeZoneInfo> zones = TimeZoneInfo.GetSystemTimeZones();
+            //Console.WriteLine("The local system has the following {0} time zones", zones.Count);
+            //foreach (TimeZoneInfo zone in zones)
+            //{
+            //    var test = zone.Id;
+            //}
+
         }
 
         public void RaisePostBackEvent(string eventArgument)
