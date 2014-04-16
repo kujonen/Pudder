@@ -49,15 +49,6 @@ namespace PudderVarsel.Web {
         protected global::System.Web.UI.WebControls.ListView ListViewLocations;
         
         /// <summary>
-        /// textArea1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textArea1;
-        
-        /// <summary>
         /// latitude control.
         /// </summary>
         /// <remarks>

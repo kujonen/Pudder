@@ -86,7 +86,7 @@
 
     </asp:ListView>
     
-    <asp:TextBox id="textArea1" TextMode="multiline" Rows="200" Columns="200" runat="server" />
+    <%--<asp:TextBox id="textArea1" TextMode="multiline" Rows="200" Columns="200" runat="server" />--%>
     
     <asp:TextBox id="latitude" runat="server" CssClass="hide" />
     <asp:TextBox runat="server" id="longitude" CssClass="hide" />

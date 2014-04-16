@@ -68,8 +68,8 @@ namespace PudderVarsel.Data
         }
 
 
-        //public DagligPuddervarsel[] ProcessResponse(XElement forecastResponse)
-        public string ProcessResponse(XElement forecastResponse)
+        public DagligPuddervarsel[] ProcessResponse(XElement forecastResponse)
+        //public string ProcessResponse(XElement forecastResponse)
         {
             string testText = string.Empty;
             var items = forecastResponse.DescendantsAndSelf("time");
@@ -91,9 +91,9 @@ namespace PudderVarsel.Data
                 var test1 = new DateTime(fromDateTime.Ticks, DateTimeKind.Unspecified);
                 var test2 = new DateTime(fromDateTime.Ticks, DateTimeKind.Utc);
 
-                var hours = (toDateTime - fromDateTime).TotalHours;
-                if (hours == 6)
-                    testText += "Fra: " + fromDateTime + " Til: " + toDateTime + Environment.NewLine;
+                //var hours = (toDateTime - fromDateTime).TotalHours;
+                //if (hours == 6)
+                //    testText += "Fra: " + fromDateTime + " Til: " + toDateTime + Environment.NewLine;
 
                 if (IsRelevant(fromDateTime, toDateTime))
                 {
@@ -111,8 +111,8 @@ namespace PudderVarsel.Data
                     i++;
                 }
             }
-            //return powderForecastDays;
-            return testText;
+            return powderForecastDays;
+            //return testText;
         }
 
         private decimal GetAverageTemp(DateTime fromDateTime, DateTime toDateTime, XElement[] forecast)
@@ -148,36 +148,52 @@ namespace PudderVarsel.Data
             var longDate = DateTime.Now.AddDays(3).AddHours(-DateTime.Now.Hour);
             if (from < longDate)
             {
-                if (from.Hour == 12 && to.Hour == 18)
-                    return true;
+                //Amrikansk
+                if (from.ToString().Contains("AM") || from.ToString().Contains("PM"))
+                {
+                    if (from.Hour == 10 && to.Hour == 4)
+                        return true;
+                    if (from.Hour == 4 && to.Hour == 10)
+                        return true;
+                }
+                else
+                {
+                    //Norsk
+                    if (from.Hour == 12 && to.Hour == 18)
+                        return true;
 
-                if (from.Hour == 0 && to.Hour == 6)
-                    return true;
+                    if (from.Hour == 0 && to.Hour == 6)
+                        return true;
 
-                if (from.Hour == 6 && to.Hour == 12)
-                    return true;
+                    if (from.Hour == 6 && to.Hour == 12)
+                        return true;
 
-                if (from.Hour == 18 && to.Hour == 0)
-                    return true;
+                    if (from.Hour == 18 && to.Hour == 0)
+                        return true;
+                }
             }
             else
             {
-                //if (from.Hour == 01 && to.Hour == 07)
-                //    return true;
-                //if (from.Hour == 07 && to.Hour == 13)
-                //    return true;
-                //if (from.Hour == 13 && to.Hour == 19)
-                //    return true;
-                //if (from.Hour == 19 && to.Hour == 01)
-                    //return true;
-                if (from.Hour == 2 && to.Hour == 8)
-                    return true;
-                if (from.Hour == 8 && to.Hour == 14)
-                    return true;
-                if (from.Hour == 14 && to.Hour == 20)
-                    return true;
-                if (from.Hour == 20 && to.Hour == 2)
-                    return true;
+                if (from.ToString().Contains("AM") || from.ToString().Contains("PM"))
+                {
+                    //Amrikansk
+                    if (from.Hour == 12 && to.Hour == 6)
+                        return true;
+                    if (from.Hour == 6 && to.Hour == 12)
+                        return true;
+                }
+                else
+                {
+                    //Norsk
+                    if (from.Hour == 2 && to.Hour == 8)
+                        return true;
+                    if (from.Hour == 8 && to.Hour == 14)
+                        return true;
+                    if (from.Hour == 14 && to.Hour == 20)
+                        return true;
+                    if (from.Hour == 20 && to.Hour == 2)
+                        return true;
+                }
             }
             return false;
         }

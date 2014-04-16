@@ -106,9 +106,9 @@ namespace PudderVarsel.Web
                 
                 var stopwatch = new Stopwatch();
                 stopwatch.Start();
-                //var weatherData = data.ProcessResponse(grunndata).Where(p => p != null);
+                var weatherData = data.ProcessResponse(grunndata).Where(p => p != null);
 
-                textArea1.Text = data.ProcessResponse(grunndata);
+                //textArea1.Text = data.ProcessResponse(grunndata);
                 stopwatch.Stop();
                 var test = stopwatch.Elapsed;
 
@@ -117,21 +117,21 @@ namespace PudderVarsel.Web
                 lokasjon.NesteOppdateringDato = Utils.GetDate(grunndata.DescendantsAndSelf("model").FirstOrDefault(),
                                                               "nextrun");
 
-                //lokasjon.DetaljertVarsel = weatherData;
-                //var dayByDayPowderData = Utils.GetDailyPowderData(weatherData);
+                lokasjon.DetaljertVarsel = weatherData;
+                var dayByDayPowderData = Utils.GetDailyPowderData(weatherData);
 
-                //var byDayPowderData = dayByDayPowderData as IList<DagligPuddervarsel> ?? dayByDayPowderData.ToList();
-                //lokasjon.DagligVarsel = byDayPowderData;
+                var byDayPowderData = dayByDayPowderData as IList<DagligPuddervarsel> ?? dayByDayPowderData.ToList();
+                lokasjon.DagligVarsel = byDayPowderData;
 
-                //var totalPrecipitation = byDayPowderData.Sum(p => p.Precipitation);
-                //var threeDays = byDayPowderData.Where(p => p.From < DateTime.Now.AddDays(2)).Sum(t => t.Precipitation);
-                //lokasjon.ThreeDaysPrecipitation = threeDays;
-                //lokasjon.TotalPrecipitation = totalPrecipitation;
+                var totalPrecipitation = byDayPowderData.Sum(p => p.Precipitation);
+                var threeDays = byDayPowderData.Where(p => p.From < DateTime.Now.AddDays(2)).Sum(t => t.Precipitation);
+                lokasjon.ThreeDaysPrecipitation = threeDays;
+                lokasjon.TotalPrecipitation = totalPrecipitation;
 
-                //lokasjon.PrecipitationType = Utils.CalculatePrecipitationType(byDayPowderData);
+                lokasjon.PrecipitationType = Utils.CalculatePrecipitationType(byDayPowderData);
 
-                ////location.LocationUrl = string.Format("http://maps.google.no/maps?q=N+{0}+E+{1}",
-                ////                                     location.Latitude.ToString(ciUs), location.Longitude.ToString(ciUs));
+                //location.LocationUrl = string.Format("http://maps.google.no/maps?q=N+{0}+E+{1}",
+                //                                     location.Latitude.ToString(ciUs), location.Longitude.ToString(ciUs));
             }
 
             var sortedPowder = PudderVarsel.Where(p => p != null).OrderByDescending(p => p.TotalPrecipitation);
