@@ -20,9 +20,9 @@ namespace PudderVarsel.Data
             {
                 if (Precipitation == 0)
                     return "None.png";
-                if (Temperature < 0)
+                if (Temperature < 0.1m)
                     return "Snow.png";
-                if (Temperature > 0 && Temperature < 2)
+                if (Temperature > 0.1m && Temperature < 2.1m)
                     return "Sleet.png";
                 return "Rain.png";
             }
