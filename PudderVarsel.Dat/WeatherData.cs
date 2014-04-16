@@ -91,9 +91,13 @@ namespace PudderVarsel.Data
                 var test1 = new DateTime(fromDateTime.Ticks, DateTimeKind.Unspecified);
                 var test2 = new DateTime(fromDateTime.Ticks, DateTimeKind.Utc);
 
+                var hours = (toDateTime - fromDateTime).TotalHours;
+                if (hours == 6)
+                    testText += "Fra: " + fromDateTime + " Til: " + toDateTime + Environment.NewLine;
+
                 if (IsRelevant(fromDateTime, toDateTime))
                 {
-                    testText += "Fra: " + fromDateTime + " Til: " + toDateTime + Environment.NewLine;
+                    
                     var powderForecast = new DagligPuddervarsel();
 
                     var precipitation = XmlHelper.GetElementValue("location", "precipitation", "value", xElement);
