@@ -122,24 +122,24 @@ namespace PudderVarsel.Data
             var longDate = DateTime.Now.AddDays(3).AddHours(-DateTime.Now.Hour);
             if (from < longDate)
             {
-                if (from.Hour == 12 && to.Hour == 18)
+                if (from.Hour == 14 && to.Hour == 20)
                     return true;
-                if (from.Hour == 0 && to.Hour == 6)
-                    return true;
-                if (from.Hour == 6 && to.Hour == 12)
-                    return true;
-                if (from.Hour == 18 && to.Hour == 0)
-                    return true;
-            }
-            else
-            {
                 if (from.Hour == 2 && to.Hour == 8)
                     return true;
                 if (from.Hour == 8 && to.Hour == 14)
                     return true;
-                if (from.Hour == 14 && to.Hour == 20)
-                    return true;
                 if (from.Hour == 20 && to.Hour == 2)
+                    return true;
+            }
+            else
+            {
+                if (from.Hour == 4 && to.Hour == 10)
+                    return true;
+                if (from.Hour == 10 && to.Hour == 16)
+                    return true;
+                if (from.Hour == 16 && to.Hour == 22)
+                    return true;
+                if (from.Hour == 22 && to.Hour == 4)
                     return true;
             }
             return false;
