@@ -84,18 +84,19 @@ namespace PudderVarsel.Data
 
                 var format = "yyyy-MM-ddTHH:mm:ssZ";
                 var ciNo = new CultureInfo("nb-NO");
-                var fromDateTime = DateTime.Parse(from);
+                var fromDateTime = DateTime.ParseExact(from, format, ciNo);
                 var toDateTime = DateTime.ParseExact(to, format, ciNo);
 
-                var test = new DateTime(fromDateTime.Ticks, DateTimeKind.Local);
-                var test1 = new DateTime(fromDateTime.Ticks, DateTimeKind.Unspecified);
-                var test2 = new DateTime(fromDateTime.Ticks, DateTimeKind.Utc);
+                var timeInfo = TimeZoneInfo.FindSystemTimeZoneById("W. Europe Standard Time");
+                var fra = TimeZoneInfo.ConvertTime(fromDateTime, TimeZoneInfo.Local, timeInfo).ToUniversalTime();
+                var til = TimeZoneInfo.ConvertTime(toDateTime, TimeZoneInfo.Local, timeInfo).ToUniversalTime();
+
 
                 //var hours = (toDateTime - fromDateTime).TotalHours;
                 //if (hours == 6)
                 //    testText += "Fra: " + fromDateTime + " Til: " + toDateTime + Environment.NewLine;
 
-                if (IsRelevant(fromDateTime, toDateTime))
+                if (IsRelevant(fra, til))
                 {
                     
                     var powderForecast = new DagligPuddervarsel();
@@ -148,16 +149,16 @@ namespace PudderVarsel.Data
             var longDate = DateTime.Now.AddDays(3).AddHours(-DateTime.Now.Hour);
             if (from < longDate)
             {
-                //Amrikansk
-                if (from.ToString().Contains("AM") || from.ToString().Contains("PM"))
-                {
-                    if (from.Hour == 10 && to.Hour == 4)
-                        return true;
-                    if (from.Hour == 4 && to.Hour == 10)
-                        return true;
-                }
-                else
-                {
+                ////Amrikansk
+                //if (from.ToString().Contains("AM") || from.ToString().Contains("PM"))
+                //{
+                //    if (from.Hour == 10 && to.Hour == 4)
+                //        return true;
+                //    if (from.Hour == 4 && to.Hour == 10)
+                //        return true;
+                //}
+                //else
+                //{
                     //Norsk
                     if (from.Hour == 12 && to.Hour == 18)
                         return true;
@@ -170,20 +171,20 @@ namespace PudderVarsel.Data
 
                     if (from.Hour == 18 && to.Hour == 0)
                         return true;
-                }
+                //}
             }
             else
             {
-                if (from.ToString().Contains("AM") || from.ToString().Contains("PM"))
-                {
-                    //Amrikansk
-                    if (from.Hour == 12 && to.Hour == 6)
-                        return true;
-                    if (from.Hour == 6 && to.Hour == 12)
-                        return true;
-                }
-                else
-                {
+                //if (from.ToString().Contains("AM") || from.ToString().Contains("PM"))
+                //{
+                //    //Amrikansk
+                //    if (from.Hour == 12 && to.Hour == 6)
+                //        return true;
+                //    if (from.Hour == 6 && to.Hour == 12)
+                //        return true;
+                //}
+                //else
+                //{
                     //Norsk
                     if (from.Hour == 2 && to.Hour == 8)
                         return true;
@@ -193,7 +194,7 @@ namespace PudderVarsel.Data
                         return true;
                     if (from.Hour == 20 && to.Hour == 2)
                         return true;
-                }
+                //}
             }
             return false;
         }

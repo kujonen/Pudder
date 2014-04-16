@@ -104,9 +104,9 @@ namespace PudderVarsel.Data
             //return date;
 
 
-            TimeZoneInfo timeInfo = TimeZoneInfo.FindSystemTimeZoneById("W. Europe Standard Time");
+            var timeInfo = TimeZoneInfo.FindSystemTimeZoneById("W. Europe Standard Time");
             var tid1 = TimeZoneInfo.ConvertTime(date, TimeZoneInfo.Local, timeInfo).ToUniversalTime();
-            var tid2 = TimeZoneInfo.ConvertTime(date, TimeZoneInfo.Local, timeInfo);
+            //var tid2 = TimeZoneInfo.ConvertTime(date, TimeZoneInfo.Local, timeInfo);
             return tid1;
             return new DateTime(date.Ticks, DateTimeKind.Local);
         }
