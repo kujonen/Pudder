@@ -6,13 +6,13 @@
 <head runat="server">
     <meta charset="utf-8" />
     <title><%: Page.Title %> - by Jon Sandvand</title>
-    <asp:PlaceHolder runat="server">     
+    <%--<asp:PlaceHolder runat="server">     
           <%: Scripts.Render("~/bundles/modernizr") %>
-    </asp:PlaceHolder>  
+    </asp:PlaceHolder>  --%>
     <webopt:BundleReference runat="server" Path="~/Content/css" /> 
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<%--    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
-    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />--%>
 </head>
 <body>
     <form runat="server">

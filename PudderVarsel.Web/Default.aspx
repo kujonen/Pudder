@@ -49,17 +49,55 @@
     <br/>
     <asp:Button ID="ButtonSearch" Text="Finn pudder" Enabled="False" runat="server" OnClick="ButtonSearch_Click" />
     
-
+    
     <asp:ListView ID="ListViewLocations" runat="server">
+        <LayoutTemplate>
+          <table id="Table1" cellpadding="2" border="1" runat="server" width="250">
+            <%--<tr id="Tr1" runat="server">
+              <th id="Th2" runat="server">Nedbør</th>
+              <th id="Th3" runat="server">Sted</th>
+                <th id="Th5" runat="server">3 Dager (cm)</th>
+<%--            <th id="Th4" runat="server">Avstand (km)</th>
+                <th id="Th6" runat="server"></th>
+                <th id="Th1" runat="server"></th>
+            </tr>--%> 
+            <tr runat="server" id="itemPlaceholder" />
+          </table>
+        </LayoutTemplate>
+        <ItemTemplate>
+            
+            <tr runat="server" style="background-color: #7ac0da;"  >
+              <td rowspan="2" >
+                  <asp:Label style="font-size:36px;" Enabled="False" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPrecipitation") %>' CssClass="big" />
+              </td>
+              <td colspan="2"><asp:LinkButton CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LocationLinkButton" runat="Server" Text='<%#Eval("Name") %>' CssClass="small"/></td>
+                
+            </tr>
+        <tr style="background-color: #7ac0da;" >
+            <td><asp:Label Enabled="False" ID="TextBox2" runat="Server" Text='<%#Eval("ThreeDaysPrecipitation") %>' CssClass="bold" /></td>
+            <td><asp:Label Enabled="False" ID="TextBox1" runat="Server" Text='<%#Eval("Distance", "{0:0.#}") %>' CssClass="bold" /></td>
+        </tr>
+            <tr><td> </td><td> </td><td> </td></tr>
+
+        </ItemTemplate>
+    </asp:ListView>
+    
+    
+    
+    
+    
+    
+
+    <%--<asp:ListView ID="ListViewLocations" runat="server">
         <LayoutTemplate>
           <table id="Table1" cellpadding="2" border="1" runat="server" width="150">
             <tr id="Tr1" runat="server">
               <th id="Th2" runat="server">Sted</th>
               <th id="Th3" runat="server">10 Dager (cm)</th>
                 <th id="Th5" runat="server">3 Dager (cm)</th>
-<%--                <th id="Th4" runat="server">Avstand (km)</th>
+<%--            <th id="Th4" runat="server">Avstand (km)</th>
                 <th id="Th6" runat="server"></th>
-                <th id="Th1" runat="server"></th>--%>
+                <th id="Th1" runat="server"></th>
             </tr>
             <tr runat="server" id="itemPlaceholder" />
           </table>
@@ -76,17 +114,15 @@
               <asp:TextBox Enabled="False" ID="TextBox2" runat="Server" Text='<%#Eval("ThreeDaysPrecipitation") %>' Width="50px" CssClass="bold" />
             </td>
               <%--<td>
-              <asp:TextBox Enabled="False" ID="TextBox1" runat="Server" Text='<%#Eval("Distance", "{0:0.#}") %>' Width="50px" CssClass="bold" />
+              
             </td>
             <td>
                 <asp:Image ID="Image1" runat="server" ImageUrl='<%#"~/images/" + Eval("ImageUrl") %>' />
-            </td>--%>
+            </td>
           </tr>
         </ItemTemplate>
-
     </asp:ListView>
-    
-    <%--<asp:TextBox id="textArea1" TextMode="multiline" Rows="200" Columns="200" runat="server" />--%>
+    --%>
     
     <asp:TextBox id="latitude" runat="server" CssClass="hide" />
     <asp:TextBox runat="server" id="longitude" CssClass="hide" />

@@ -739,6 +739,13 @@ tr.pager td {
             font-weight:bold;
         }
 
+     .big {
+            font-weight:bold;
+         font-size: 25px;
+         color: #7ac0da;
+            
+        }
+
      .small {
             font-size: 10px;
         }
