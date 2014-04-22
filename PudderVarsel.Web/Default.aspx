@@ -68,7 +68,7 @@
             
             <tr runat="server" style="background-color: #7ac0da;"  >
               <td rowspan="2" >
-                  <asp:Label style="font-size:36px;" Enabled="False" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPrecipitation") %>' CssClass="big" />
+                  <asp:Label style="font-size:16px;" Enabled="False" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPrecipitation") %>' CssClass="big" />
               </td>
               <td colspan="2"><asp:LinkButton CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LocationLinkButton" runat="Server" Text='<%#Eval("Name") %>' CssClass="small"/></td>
                 
