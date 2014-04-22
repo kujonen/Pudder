@@ -740,7 +740,8 @@ tr.pager td {
         }
 
      .big {
-            font-weight:bolder;
+            font-weight:bold;
+            font-size: 1.75em;
         }
 
      .small {
