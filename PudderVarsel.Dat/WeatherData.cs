@@ -75,14 +75,54 @@ namespace PudderVarsel.Data
             var items = forecastResponse.DescendantsAndSelf("time");
 
             var xElements = items as XElement[] ?? items.ToArray();
-            var powderForecastDays = new DagligPuddervarsel[42];
+            var powderForecastDays = new DagligPuddervarsel[12];
+            var detailedPowderList = new DetailedPowder[4];
+            var detailedTeller = 0;
             var i = 0;
-
+            var lastDay = DateTime.Now.Date;
             var temperatureList = new Dictionary<string, string>();
             foreach (var xElement in xElements)
             {
                 var fromDateTime = TimeZoneInfo.ConvertTime(DateTime.ParseExact(XmlHelper.GetAttributeValue("from", xElement), Format, ciNo), TimeZoneInfo.Local, timeInfo).ToUniversalTime();
                 var toDateTime = TimeZoneInfo.ConvertTime(DateTime.ParseExact(XmlHelper.GetAttributeValue("to", xElement), Format, ciNo), TimeZoneInfo.Local, timeInfo).ToUniversalTime();
+
+                if (IsRelevant(fromDateTime, toDateTime))
+                {
+                    //Ny DagligPuddervarsel
+                    if (fromDateTime.Date > lastDay)
+                    {
+                        powderForecastDays[i] = DagligPuddervarsel.Create(detailedPowderList.Where(p => p != null)); ;
+                        detailedPowderList = new DetailedPowder[4];
+                        i++;
+                        detailedTeller = 0;
+                        lastDay = lastDay.AddDays(1);
+                    }
+
+
+
+                    var detailedPowder = new DetailedPowder();
+
+                    var precipitation = XmlHelper.GetElementValue("location", "precipitation", "value", xElement);
+                    detailedPowder.Precipitation = Convert.ToDecimal(precipitation.Replace('.', ','), ciNo);
+
+                    if (!System.Diagnostics.Debugger.IsAttached)
+                    {
+                        detailedPowder.From = fromDateTime.AddHours(-2);
+                        detailedPowder.To = toDateTime.AddHours(-2);
+                    }
+                    else
+                    {
+                        detailedPowder.From = fromDateTime;
+                        detailedPowder.To = toDateTime;
+                    }
+                    detailedPowder.Temperature = GetAverageTemp(temperatureList, ciNo);
+                    temperatureList = new Dictionary<string, string>();
+                    detailedPowderList[detailedTeller] = detailedPowder;
+                    detailedTeller++;
+
+                }
+
+                //lastDay = fromDateTime.Day;
 
                 var temperature = XmlHelper.GetElementValue("location", "temperature", "value", xElement);
                 if (!string.IsNullOrEmpty(temperature))
@@ -90,20 +130,7 @@ namespace PudderVarsel.Data
                     temperatureList.Add(fromDateTime.ToString(), temperature);
                 }
 
-                if (IsRelevant(fromDateTime, toDateTime))
-                {
-                    var powderForecast = new DagligPuddervarsel();
-
-                    var precipitation = XmlHelper.GetElementValue("location", "precipitation", "value", xElement);
-                    powderForecast.Precipitation = Convert.ToDecimal(precipitation.Replace('.', ','), ciNo);
-                    powderForecast.From = fromDateTime.AddHours(-2);
-                    powderForecast.To = toDateTime.AddHours(-2);
-
-                    powderForecast.Temperature = GetAverageTemp(temperatureList, ciNo);
-                    temperatureList = new Dictionary<string, string>();
-                    powderForecastDays[i] = powderForecast;
-                    i++;
-                }
+                
             }
             return powderForecastDays;
             //return testText;
@@ -119,14 +146,29 @@ namespace PudderVarsel.Data
 
         private static bool IsRelevant(DateTime from, DateTime to)
         {
-            if (from.Hour == 14 && to.Hour == 20)
-                return true;
-            if (from.Hour == 2 && to.Hour == 8)
-                return true;
-            if (from.Hour == 8 && to.Hour == 14)
-                return true;
-            if (from.Hour == 20 && to.Hour == 2)
-                return true;
+            if (System.Diagnostics.Debugger.IsAttached)
+            {
+                if (from.Hour == 18 && to.Hour == 0)
+                    return true;
+                if (from.Hour == 0 && to.Hour == 6)
+                    return true;
+                if (from.Hour == 6 && to.Hour == 12)
+                    return true;
+                if (from.Hour == 12 && to.Hour == 18)
+                    return true;
+            }
+            else
+            {
+                if (from.Hour == 14 && to.Hour == 20)
+                    return true;
+                if (from.Hour == 2 && to.Hour == 8)
+                    return true;
+                if (from.Hour == 8 && to.Hour == 14)
+                    return true;
+                if (from.Hour == 20 && to.Hour == 2)
+                    return true;
+            }
+
             return false;
 
             var longDate = DateTime.Now.AddDays(3).AddHours(-DateTime.Now.Hour);

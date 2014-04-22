@@ -38,7 +38,6 @@ namespace PudderVarsel.Data
         public DateTime OppdatertDato { get; set; }
         public DateTime NesteOppdateringDato { get; set; }
         public IEnumerable<DagligPuddervarsel> DagligVarsel { get; set; }
-        public IEnumerable<DagligPuddervarsel> DetaljertVarsel { get; set; }
         public string ImageUrl
         {
             get

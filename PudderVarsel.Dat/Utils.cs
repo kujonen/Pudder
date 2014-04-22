@@ -8,68 +8,68 @@ namespace PudderVarsel.Data
 {
     public class Utils
     {
-        public static IEnumerable<DagligPuddervarsel> GetDailyPowderData(IEnumerable<DagligPuddervarsel> filteredPowderData)
-        {
-            var today = DateTime.Now;
-            var todayStart = DateTime.Now.AddHours(-(DateTime.Now.Hour + 1));
-            var todayEnd = DateTime.Now.AddDays(1).AddHours(-(DateTime.Now.Hour + 1));
+        //public static IEnumerable<DagligPuddervarsel> GetDailyPowderData(IEnumerable<DagligPuddervarsel> filteredPowderData)
+        //{
+        //    var today = DateTime.Now;
+        //    var todayStart = DateTime.Now.AddHours(-(DateTime.Now.Hour + 1));
+        //    var todayEnd = DateTime.Now.AddDays(1).AddHours(-(DateTime.Now.Hour + 1));
 
-            const int days = 11;
-            var dailyPowderData = new DagligPuddervarsel[days - 1];
+        //    const int days = 11;
+        //    var dailyPowderData = new DagligPuddervarsel[days - 1];
 
-            for (var i = 1; i < days; i++)
-            {
-                var dayPowderData = filteredPowderData.Where(p => p.From < todayEnd && p.From > todayStart);
-                var totalPowder = dayPowderData.Sum(p => p.Precipitation);
+        //    for (var i = 1; i < days; i++)
+        //    {
+        //        var dayPowderData = filteredPowderData.Where(p => p.From < todayEnd && p.From > todayStart);
+        //        var totalPowder = dayPowderData.Sum(p => p.Precipitation);
 
-                var puddervarsel = new DagligPuddervarsel();
-                if (dayPowderData.Count() > 0)
-                {
-                    var temp = dayPowderData.Average(t => t.Temperature);
-                    puddervarsel.Temperature = Math.Round(temp, 1);
-                    puddervarsel.MaxTemperature = dayPowderData.Max(t => t.Temperature);
-                }
+        //        var puddervarsel = new DagligPuddervarsel();
+        //        if (dayPowderData.Count() > 0)
+        //        {
+        //            var temp = dayPowderData.Average(t => t.Temperature);
+        //            puddervarsel.Temperature = Math.Round(temp, 1);
+        //            puddervarsel.MaxTemperature = dayPowderData.Max(t => t.Temperature);
+        //        }
                 
                 
-                puddervarsel.Precipitation = totalPowder;
+        //        puddervarsel.Precipitation = totalPowder;
                 
                 
-                puddervarsel.From = today;
-                dailyPowderData[i - 1] = puddervarsel;
-                today = today.AddDays(1);
-                todayStart = todayStart.AddDays(1);
-                todayEnd = todayEnd.AddDays(1);
-            }
-            return dailyPowderData;
-        }
+        //        puddervarsel.From = today;
+        //        dailyPowderData[i - 1] = puddervarsel;
+        //        today = today.AddDays(1);
+        //        todayStart = todayStart.AddDays(1);
+        //        todayEnd = todayEnd.AddDays(1);
+        //    }
+        //    return dailyPowderData;
+        //}
 
-        public static Lokasjon.PrecipitationTypeEnum CalculatePrecipitationType(IEnumerable<DagligPuddervarsel> data)
-        {
-            var dagerMedNedbor = data.Where(p => p.Precipitation > 0);
-            if (!dagerMedNedbor.Any())
-                return Lokasjon.PrecipitationTypeEnum.IkkeNedbør;
+        //public static Lokasjon.PrecipitationTypeEnum CalculatePrecipitationType(IEnumerable<DagligPuddervarsel> data)
+        //{
+        //    var dagerMedNedbor = data.Where(p => p.Precipitation > 0);
+        //    if (!dagerMedNedbor.Any())
+        //        return Lokasjon.PrecipitationTypeEnum.IkkeNedbør;
 
-            var dagerMedSno = dagerMedNedbor.Count(p => p.Temperature < 1);
+        //    var dagerMedSno = dagerMedNedbor.Count(p => p.Temperature < 1);
 
-            if (dagerMedSno == 0)
-                return Lokasjon.PrecipitationTypeEnum.Regn;
+        //    if (dagerMedSno == 0)
+        //        return Lokasjon.PrecipitationTypeEnum.Regn;
 
-            var prosentAndelSno = ProsentAvNedborErSno(dagerMedNedbor.Count(), dagerMedSno);
+        //    var prosentAndelSno = ProsentAvNedborErSno(dagerMedNedbor.Count(), dagerMedSno);
 
-            if (Equals(prosentAndelSno, 100.0))
-                return Lokasjon.PrecipitationTypeEnum.Snø;
+        //    if (Equals(prosentAndelSno, 100.0))
+        //        return Lokasjon.PrecipitationTypeEnum.Snø;
 
-            if (prosentAndelSno > 70)
-                return Lokasjon.PrecipitationTypeEnum.MestSnø;
+        //    if (prosentAndelSno > 70)
+        //        return Lokasjon.PrecipitationTypeEnum.MestSnø;
 
-            if (prosentAndelSno > 50)
-                return Lokasjon.PrecipitationTypeEnum.Sludd;
+        //    if (prosentAndelSno > 50)
+        //        return Lokasjon.PrecipitationTypeEnum.Sludd;
 
-            if (prosentAndelSno > 30)
-                return Lokasjon.PrecipitationTypeEnum.MestRegn;
+        //    if (prosentAndelSno > 30)
+        //        return Lokasjon.PrecipitationTypeEnum.MestRegn;
 
-            return Lokasjon.PrecipitationTypeEnum.Regn;
-        }
+        //    return Lokasjon.PrecipitationTypeEnum.Regn;
+        //}
 
         public static DateTime GetDate(XElement element, string attributeValue)
         {

@@ -126,18 +126,18 @@ namespace PudderVarsel.Web
                 lokasjon.NesteOppdateringDato = Utils.GetDate(grunndata.DescendantsAndSelf("model").FirstOrDefault(),
                                                               "nextrun");
 
-                lokasjon.DetaljertVarsel = weatherData;
-                var dayByDayPowderData = Utils.GetDailyPowderData(weatherData);
+                lokasjon.DagligVarsel = weatherData;
+                //var dayByDayPowderData = Utils.GetDailyPowderData(weatherData);
 
-                var byDayPowderData = dayByDayPowderData as IList<DagligPuddervarsel> ?? dayByDayPowderData.ToList();
-                lokasjon.DagligVarsel = byDayPowderData;
+                //var byDayPowderData = dayByDayPowderData as IList<DagligPuddervarsel> ?? dayByDayPowderData.ToList();
+                //lokasjon.DagligVarsel = byDayPowderData;
 
-                var totalPrecipitation = byDayPowderData.Sum(p => p.Precipitation);
-                var threeDays = byDayPowderData.Where(p => p.From < DateTime.Now.AddDays(2)).Sum(t => t.Precipitation);
+                var totalPrecipitation = weatherData.Sum(p => p.Precipitation);
+                var threeDays = weatherData.Where(p => p.Day < DateTime.Now.AddDays(2)).Sum(t => t.Precipitation);
                 lokasjon.ThreeDaysPrecipitation = threeDays;
                 lokasjon.TotalPrecipitation = totalPrecipitation;
 
-                lokasjon.PrecipitationType = Utils.CalculatePrecipitationType(byDayPowderData);
+                //lokasjon.PrecipitationType = Utils.CalculatePrecipitationType(weatherData);
 
                 //location.LocationUrl = string.Format("http://maps.google.no/maps?q=N+{0}+E+{1}",
                 //                                     location.Latitude.ToString(ciUs), location.Longitude.ToString(ciUs));

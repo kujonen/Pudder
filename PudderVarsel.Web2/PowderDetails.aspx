@@ -27,14 +27,14 @@
                 <asp:TextBox ID="LinkButton1" Width="50px" runat="Server" Enabled="False" Text='<%#Convert.ToDateTime(Eval("From")).ToString("ddd") %>' />
             </td>--%>
             <td>
-                <asp:LinkButton ID="Button" OnCommand="Date_Click" runat="Server" Text='<%# Convert.ToDateTime(Eval("From")).ToString("ddd") + " " + 
-                Convert.ToDateTime(Eval("From")).ToString("dd/MM") %>' CommandArgument='<%#Eval("From") %>' CssClass="bold" />
+                <asp:LinkButton ID="Button" OnCommand="Date_Click" runat="Server" Text='<%# Convert.ToDateTime(Eval("Day")).ToString("ddd") + " " + 
+                Convert.ToDateTime(Eval("Day")).ToString("dd/MM") %>' CommandArgument='<%#Eval("Day") %>' CssClass="bold" />
             </td>
             <td>
               <asp:TextBox Enabled="False" Width="50px" ID="LastNameLabel" runat="Server" Text='<%#Eval("Precipitation") %>' />
             </td>
             <td>
-              <asp:TextBox Enabled="False" Width="50px" ID="TextBox1" runat="Server" Text='<%#Eval("Temperature") %>' />
+              <asp:TextBox Enabled="False" Width="50px" ID="TextBox1" runat="Server" Text='<%#Eval("AverageTemperature") %>' />
             </td>
             <td>
                 <asp:Image runat="server" ImageUrl='<%#"~/images/" + Eval("ImageUrl") %>' />

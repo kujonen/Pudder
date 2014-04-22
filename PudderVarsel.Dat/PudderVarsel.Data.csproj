@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetailedPowder.cs" />
     <Compile Include="DagligPuddervarsel.cs" />
     <Compile Include="Lokasjon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

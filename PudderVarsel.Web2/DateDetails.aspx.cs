@@ -28,16 +28,16 @@ namespace PudderVarsel.Web
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            var powderData = (Lokasjon)Session["powderLocation"];
+            var location = (Lokasjon)Session["powderLocation"];
 
-            if (powderData == null)
+            if (location == null)
                 Response.Redirect("Default.aspx");
 
             var day = Int32.Parse(Request.QueryString["Day"]);
-            var detailedLocation = powderData.DetaljertVarsel;
-            var dateForecast = detailedLocation.Where(p => p.From.Day == day);
+            var detailedForecast = location.DagligVarsel.FirstOrDefault(p => p.Day.Day == day).DetailedPowderList; ;
+            //var dateForecast = detailedLocation.Where(p => p.From.Day == day);
 
-            dateDetailResult.DataSource = dateForecast;
+            dateDetailResult.DataSource = detailedForecast;
             dateDetailResult.DataBind();
         }
     }
