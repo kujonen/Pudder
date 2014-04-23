@@ -52,27 +52,34 @@
     
     <asp:ListView ID="ListViewLocations" runat="server">
         <LayoutTemplate>
-          <table id="Table1" cellpadding="2" border="1" runat="server" width="100%">
+            
+          <table id="Table1" cellpadding="2" border="1" runat="server">
             
             <tr runat="server" id="itemPlaceholder" />
           </table>
+                
         </LayoutTemplate>
         <ItemTemplate>
-            <div class="rounded-corners">
-
-            <tr runat="server" style="background-color: #7ac0da;"  >
+            
+            <div class="rounded-corners" 
+                style="background-color: #7ac0da; color: white; border-top-left-radius: 3em; border-top-right-radius: 3em; border-bottom-right-radius: 3em; border-bottom-left-radius: 3em; margin: 10px">
+                <table>
+            <tr>
               <td rowspan="2" >
                   <asp:LinkButton CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPrecipitation") +"cm" %>' CssClass="big" />
               </td>
               <td colspan="2">
-                  <asp:Label ID="LocationLabel" runat="Server" Text='<%#Eval("Name") %>' CssClass="small"/>
+                  <asp:Label ID="LocationLabel" runat="Server" Text='<%#Eval("Name") %>'/>
               </td>
             </tr>
-            <tr style="background-color: #7ac0da;" >
+            <tr>
                 <td><asp:Label Enabled="False" ID="TextBox2" runat="Server" Text='<%#Eval("ThreeDaysPrecipitation") %>' /></td>
                 <td><asp:Label Enabled="False" ID="TextBox1" runat="Server" Text='<%#Eval("Distance", "{0:0.#}") %>' /></td>
         </tr>
-            <tr><td> </td><td> </td><td> </td></tr>
+            <tr>
+                <td> </td><td> </td><td> </td>
+            </tr>
+                    </table>
                 </div>
         </ItemTemplate>
     </asp:ListView>

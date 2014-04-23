@@ -749,11 +749,13 @@ tr.pager td {
             font-size: 10px;
         }
      .rounded-corners {
-          border: 1px solid black;
-          -webkit-border-radius: 8px;
-          -moz-border-radius: 8px;
-          border-radius: 8px;
-          overflow: hidden;
+          background-color: #7ac0da; 
+          color: white; 
+          border-top-left-radius: 3em; 
+          border-top-right-radius: 3em; 
+          border-bottom-right-radius: 3em; 
+          border-bottom-left-radius: 3em; 
+          margin: 10px
 }
 }
 /* END: Mobile Styles */

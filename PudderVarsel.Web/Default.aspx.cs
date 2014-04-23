@@ -120,7 +120,7 @@ namespace PudderVarsel.Web
                 //                                     location.Latitude.ToString(ciUs), location.Longitude.ToString(ciUs));
             }
 
-            var sortedPowder = PudderVarsel.Where(p => p != null).OrderByDescending(p => p.TotalPrecipitation);
+            var sortedPowder = PudderVarsel.Where(p => p != null).OrderBy(p => p.TotalPrecipitation);
 
             ListViewLocations.DataSource = sortedPowder;
             ListViewLocations.DataBind();
