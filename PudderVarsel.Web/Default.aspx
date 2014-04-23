@@ -14,7 +14,7 @@
     <section class="featured">
         <div class="content-wrapper">
             <hgroup class="title">
-                <h1><%: Title %></h1>
+                <h2><%: Title %></h2>
                 <%--<h2>Modify this template to jump-start your ASP.NET application.</h2>--%>
             </hgroup>
             <%--<p>
@@ -61,7 +61,7 @@
                 <table>
             <tr>
               <td rowspan="2" >
-                  <asp:LinkButton ForeColor="White"  CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPrecipitation") +"cm" %>' CssClass="big" />
+                  <asp:LinkButton ForeColor="White"  CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPrecipitation") +"cm" %>' />
               </td>
               <td colspan="2">
                   <asp:Label ID="LocationLabel" runat="Server" Text='<%#Eval("Name") %>'/>

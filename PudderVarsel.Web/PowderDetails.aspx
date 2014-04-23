@@ -10,7 +10,7 @@
     
       <asp:ListView runat="server" ID="powderDetailResult">
         <LayoutTemplate>
-          <table cellpadding="2" border="1" runat="server" id="tblProducts">
+          <table cellpadding="2" border="0" runat="server" id="tblProducts">
             <tr id="Tr1" runat="server">
               <%--<th id="Th4" runat="server">Dag</th>--%>
               <th id="Th2" runat="server">Dato</th>
