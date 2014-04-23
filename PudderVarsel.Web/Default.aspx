@@ -61,7 +61,7 @@
                 <table>
             <tr>
               <td rowspan="2" >
-                  <asp:LinkButton ForeColor="White"  CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPrecipitation") +"cm" %>' />
+                  <asp:LinkButton ForeColor="White" CssClass="big"  CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPrecipitation") +"cm" %>' />
               </td>
               <td colspan="2">
                   <asp:Label ID="LocationLabel" runat="Server" Text='<%#Eval("Name") %>'/>
