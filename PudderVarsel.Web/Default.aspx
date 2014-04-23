@@ -65,17 +65,17 @@
           </table>
         </LayoutTemplate>
         <ItemTemplate>
-            
             <tr runat="server" style="background-color: #7ac0da;"  >
               <td rowspan="2" >
                   <asp:Label Enabled="False" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPrecipitation") %>' CssClass="big" />cm
               </td>
-              <td colspan="2"><asp:LinkButton CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LocationLinkButton" runat="Server" Text='<%#Eval("Name") %>' CssClass="small"/></td>
-                
+              <td colspan="2">
+                  <asp:LinkButton CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LocationLinkButton" runat="Server" Text='<%#Eval("Name") %>' CssClass="small"/>
+              </td>
             </tr>
-        <tr style="background-color: #7ac0da;" >
-            <td><asp:Label Enabled="False" ID="TextBox2" runat="Server" Text='<%#Eval("ThreeDaysPrecipitation") %>' /></td>
-            <td><asp:Label Enabled="False" ID="TextBox1" runat="Server" Text='<%#Eval("Distance", "{0:0.#}") %>' /></td>
+            <tr style="background-color: #7ac0da;" >
+                <td><asp:Label Enabled="False" ID="TextBox2" runat="Server" Text='<%#Eval("ThreeDaysPrecipitation") %>' /></td>
+                <td><asp:Label Enabled="False" ID="TextBox1" runat="Server" Text='<%#Eval("Distance", "{0:0.#}") %>' /></td>
         </tr>
             <tr><td> </td><td> </td><td> </td></tr>
 
