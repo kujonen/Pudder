@@ -742,7 +742,7 @@ tr.pager td {
      .big {
             font-weight:bold;
             font-size: 2em;
-         color: white;
+            color: white;
         }
 
      .small {
@@ -751,10 +751,10 @@ tr.pager td {
      .rounded-corners {
           background-color: #7ac0da; 
           color: white; 
-          border-top-left-radius: 3em; 
-          border-top-right-radius: 3em; 
-          border-bottom-right-radius: 3em; 
-          border-bottom-left-radius: 3em; 
+          border-top-left-radius: 2em; 
+          border-top-right-radius: 2em; 
+          border-bottom-right-radius: 2em; 
+          border-bottom-left-radius: 2em; 
           margin: 10px
 }
 }

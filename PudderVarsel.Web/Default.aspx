@@ -51,18 +51,14 @@
     
     
     <asp:ListView ID="ListViewLocations" runat="server">
+        
         <LayoutTemplate>
-            
-          <table id="Table1" cellpadding="2" border="1" runat="server">
-            
-            <tr runat="server" id="itemPlaceholder" />
-          </table>
-                
+            <p runat="server" id="itemPlaceholder"></p>
         </LayoutTemplate>
         <ItemTemplate>
             
             <div class="rounded-corners" 
-                style="background-color: #7ac0da; color: white; border-top-left-radius: 3em; border-top-right-radius: 3em; border-bottom-right-radius: 3em; border-bottom-left-radius: 3em; margin: 10px">
+                style="background-color: #7ac0da; color: white; border-top-left-radius: 2em; border-top-right-radius: 2em; border-bottom-right-radius: 2em; border-bottom-left-radius: 2em; margin: 10px">
                 <table>
             <tr>
               <td rowspan="2" >
@@ -86,6 +82,7 @@
     
     <asp:TextBox id="latitude" runat="server" CssClass="hide" />
     <asp:TextBox runat="server" id="longitude" CssClass="hide" />
+
 
     <script type="text/javascript">
 
@@ -141,5 +138,5 @@
 
         }
     </script>
-</asp:Content>
 
+</asp:Content>
