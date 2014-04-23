@@ -741,21 +741,21 @@ tr.pager td {
 
      .big {
             font-weight:bold;
-            font-size: 2em;
-            color: white;
+            font-size: 1.7em;
         }
 
      .small {
             font-size: 10px;
         }
      .rounded-corners {
-          background-color: #7ac0da; 
+          background-color: #1181A4; 
           color: white; 
           border-top-left-radius: 2em; 
           border-top-right-radius: 2em; 
           border-bottom-right-radius: 2em; 
-          border-bottom-left-radius: 2em; 
-          margin: 10px
+          border-bottom-left-radius: 2em;
+          margin-top: 10px;
+          margin-bottom: 10px
 }
 }
 /* END: Mobile Styles */

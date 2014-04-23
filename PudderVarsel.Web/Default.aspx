@@ -58,11 +58,11 @@
         <ItemTemplate>
             
             <div class="rounded-corners" 
-                style="background-color: #7ac0da; color: white; border-top-left-radius: 2em; border-top-right-radius: 2em; border-bottom-right-radius: 2em; border-bottom-left-radius: 2em; margin: 10px">
+                style="background-color: #1181A4; color: white; border-top-left-radius: 2em; border-top-right-radius: 2em; border-bottom-right-radius: 2em; border-bottom-left-radius: 2em; margin-bottom: 10px; margin-top: 10px;">
                 <table>
             <tr>
               <td rowspan="2" >
-                  <asp:LinkButton CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPrecipitation") +"cm" %>' CssClass="big" />
+                  <asp:LinkButton ForeColor="White"  CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPrecipitation") +"cm" %>' CssClass="big" />
               </td>
               <td colspan="2">
                   <asp:Label ID="LocationLabel" runat="Server" Text='<%#Eval("Name") %>'/>
