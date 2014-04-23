@@ -2,15 +2,15 @@
 <PowderAlert version="0.1.0">
   <Locations>
     <Location name="Hemsedal" latitude="60.86104" longitude="8.54714" area="0"/>
-    <Location name="Raulandsfjell Alpinsenter" latitude="59.720646" longitude="8.001388" area="0"/>
+    <Location name="Raulandsfjell" latitude="59.720646" longitude="8.001388" area="0"/>
     <Location name="Rauland Skisenter" latitude="59.722441" longitude="8.131243" area="0"/>
     <Location name="Stryn sommarski" latitude="61.9552" longitude="7.36038" area="1"/>
     <Location name="Hodlekve skisenter" latitude="61.29022" longitude="6.98417" area="1"/>
     <Location name="Røldal" latitude="59.8233575" longitude="6.7400457" area="1"/>
-    <Location name="Stranda" latitude="62.289722114" longitude="6.8364143371" area="1"/>
+    <Location name="Strandafjellet" latitude="62.289722114" longitude="6.8364143371" area="1"/>
     <Location name="Tryvann" latitude="59.988611" longitude="10.668056" area="0"/>
     <Location name="Stryn vinter" latitude="61.9328" longitude="6.75619" area="1"/>
-    <Location name="Varingskollen alpinsenter" latitude="60.100278" longitude="10.831111" area="0"/>
+    <Location name="Varingskollen" latitude="60.100278" longitude="10.831111" area="0"/>
     <Location name="Norefjell skisenter" latitude="60.2206" longitude="9.59855" area="0"/>
     <Location name="Hallingskarvet" latitude="60.6464" longitude="8.02813" area="0"/>
     <Location name="Skeikampen" latitude="61.3423" longitude="10.0898" area="0"/>
@@ -30,7 +30,7 @@
     <Location name="Ørsta Skisenter" latitude="62.150910726" longitude="6.2941360473" area="1"/>
     <Location name="Harpefossen Skisenter" latitude="61.957840453" longitude="5.9327888488" area="1"/>
     <Location name="Ørskogfjellet Skisenter" latitude="62.550957924" longitude="6.9797515869" area="1"/>
-    <Location name="Sunnmørsalpane Skiarena Fjellseter" latitude="62.337418239" longitude="6.7638015747" area="1"/>
+    <Location name="Fjellseter" latitude="62.337418239" longitude="6.7638015747" area="1"/>
     <Location name="Volda Skisenter" latitude="62.152354123" longitude="6.1533737182" area="1"/>
   </Locations>
 </PowderAlert>

@@ -500,6 +500,32 @@ input[type="checkbox"].input-validation-error {
     display: none;
 }
 
+   .big {
+            font-weight:bold;
+            font-size: 1.7em;
+        }
+
+   
+     .bold {
+            font-weight:bold;
+        }
+
+  
+
+     .small {
+            font-size: 10px;
+        }
+     .rounded-corners {
+          background-color: #1181A4; 
+          color: white; 
+          border-top-left-radius: 2em; 
+          border-top-right-radius: 2em; 
+          border-bottom-right-radius: 2em; 
+          border-bottom-left-radius: 2em;
+          margin-top: 10px;
+          margin-bottom: 10px
+}
+
 /* tables
 ----------------------------------------------------------*/
 /*table {
@@ -735,27 +761,5 @@ tr.pager td {
             display: none;
         }
 
-     .bold {
-            font-weight:bold;
-        }
-
-     .big {
-            font-weight:bold;
-            font-size: 1.7em;
-        }
-
-     .small {
-            font-size: 10px;
-        }
-     .rounded-corners {
-          background-color: #1181A4; 
-          color: white; 
-          border-top-left-radius: 2em; 
-          border-top-right-radius: 2em; 
-          border-bottom-right-radius: 2em; 
-          border-bottom-left-radius: 2em;
-          margin-top: 10px;
-          margin-bottom: 10px
-}
 }
 /* END: Mobile Styles */

@@ -57,8 +57,7 @@
         </LayoutTemplate>
         <ItemTemplate>
             
-            <div class="rounded-corners" 
-                style="background-color: #1181A4; color: white; border-top-left-radius: 2em; border-top-right-radius: 2em; border-bottom-right-radius: 2em; border-bottom-left-radius: 2em; margin-bottom: 10px; margin-top: 10px;">
+            <div class="rounded-corners">
                 <table>
             <tr>
               <td rowspan="2" >
