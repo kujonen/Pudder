@@ -748,5 +748,12 @@ tr.pager td {
      .small {
             font-size: 10px;
         }
+     .rounded-corners {
+          border: 1px solid black;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          border-radius: 8px;
+          overflow: hidden;
+}
 }
 /* END: Mobile Styles */

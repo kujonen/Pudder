@@ -58,9 +58,11 @@
           </table>
         </LayoutTemplate>
         <ItemTemplate>
+            <div class="rounded-corners">
+
             <tr runat="server" style="background-color: #7ac0da;"  >
               <td rowspan="2" >
-                  <asp:LinkButton CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" Enabled="False" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPrecipitation") +"cm" %>' CssClass="big" />
+                  <asp:LinkButton CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPrecipitation") +"cm" %>' CssClass="big" />
               </td>
               <td colspan="2">
                   <asp:Label ID="LocationLabel" runat="Server" Text='<%#Eval("Name") %>' CssClass="small"/>
@@ -71,7 +73,7 @@
                 <td><asp:Label Enabled="False" ID="TextBox1" runat="Server" Text='<%#Eval("Distance", "{0:0.#}") %>' /></td>
         </tr>
             <tr><td> </td><td> </td><td> </td></tr>
-
+                </div>
         </ItemTemplate>
     </asp:ListView>
     
