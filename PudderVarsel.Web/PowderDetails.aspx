@@ -13,21 +13,22 @@
             <p runat="server" id="itemPlaceholder"></p>
         </LayoutTemplate>
         <ItemTemplate>
+            <%----%>
             <div class="table-powder-details">
             <table>
                   <tr>
-                    <td>
+                    <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; border-color: black; border-style: solid">
                         <asp:LinkButton ForeColor="White" ID="Button" Width="175" OnCommand="Date_Click" runat="Server" Text='<%# Convert.ToDateTime(Eval("Day")).ToString("ddd") + " " + 
                         Convert.ToDateTime(Eval("Day")).ToString("dd/MM") %>' CommandArgument='<%#Eval("Day") %>' />
                     </td>
-                    <td>
+                    <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; border-color: black; border-style: solid">
                       <asp:Label ID="LastNameLabel" runat="Server" Text='<%#Eval("Precipitation") + "cm" %>' />
                     </td>
-                    <td>
+                    <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; border-color: black; border-style: solid">
                       <asp:Label ID="TextBox1" runat="Server" Text='<%#Eval("AverageTemperature") + "°" %>' />
                     </td>
-                    <td>
-                        <asp:Image runat="server" ImageUrl='<%#"~/images/" + Eval("ImageUrl") %>' />
+                    <td style="padding-top: 8px">
+                        <asp:Image ImageAlign="Top" runat="server" ImageUrl='<%#"~/images/" + Eval("ImageUrl") %>' />
                     </td>
                   </tr>
                 </table>
