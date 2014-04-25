@@ -8,7 +8,7 @@
     
       <asp:ListView runat="server" ID="dateDetailResult">
         <LayoutTemplate>
-          <table cellpadding="2" border="1" runat="server" id="tblProducts">
+<%--          <table cellpadding="2" border="1" runat="server" id="tblProducts">
             <tr id="Tr1" runat="server">
               <th id="Th2" runat="server">Fra</th>
                 <th id="Th1" runat="server">Til</th>
@@ -16,26 +16,31 @@
                 <th id="Th4" runat="server">Temperature</th>
             </tr>
             <tr runat="server" id="itemPlaceholder" />
-          </table>
+          </table>--%>
+            <p runat="server" id="itemPlaceholder"></p>
         </LayoutTemplate>
         <ItemTemplate>
-          <tr id="Tr2" runat="server">
-            <td>
-              <asp:TextBox Enabled="False" Width="50px"  ID="LabelTo" runat="Server" Text='<%#Convert.ToDateTime(Eval("From")).ToString("HH:mm") %>' />
-            </td>
-            <td>
-              <asp:TextBox Enabled="False" Width="50px"  ID="TextBox1" runat="Server" Text='<%#Convert.ToDateTime(Eval("To")).ToString("HH:mm") %>' />
-            </td>
-            <td>
-              <asp:TextBox Enabled="False" Width="50px" ID="LabelFrom" runat="Server" Text='<%#Eval("Precipitation") %>' />
-            </td>
-              <td>
-                  <asp:TextBox Enabled="False" Width="50px" ID="TextBox2" runat="Server" Text='<%#Eval("Temperature") %>' />
-              </td>
-              <td>
-                  <asp:Image runat="server" ImageUrl='<%#"~/images/" + Eval("ImageUrl") %>' />
-              </td>
-          </tr>
+            <div class="table-powder-details">
+            <table>
+                  <tr id="Tr2" runat="server">
+                    <td>
+                      <asp:TextBox Enabled="False" Width="110px" ID="LabelTo" runat="Server" Text='<%#Convert.ToDateTime(Eval("From")).ToString("HH:mm") %>' />
+                    </td>
+                    <td>
+                      <asp:TextBox Enabled="False" Width="110px" ID="TextBox1" runat="Server" Text='<%#Convert.ToDateTime(Eval("To")).ToString("HH:mm") %>' />
+                    </td>
+                    <td>
+                      <asp:TextBox Enabled="False" Width="150px" ID="LabelFrom" runat="Server" Text='<%#Eval("Precipitation") + "cm" %>' />
+                    </td>
+                      <td>
+                          <asp:TextBox Enabled="False" Width="110px" ID="TextBox2" runat="Server" Text='<%#Eval("Temperature") + "°" %>' />
+                      </td>
+                      <td style="padding-top: 8px">
+                          <asp:Image runat="server" ImageUrl='<%#"~/images/" + Eval("ImageUrl") %>' />
+                      </td>
+                  </tr>
+               </table>
+            </div>
         </ItemTemplate>
 
     </asp:ListView>
