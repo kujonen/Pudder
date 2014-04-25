@@ -14,17 +14,17 @@
         </LayoutTemplate>
         <ItemTemplate>
             <div class="table-powder-details">
-            <table style="border: 1px">
+            <table>
                   <tr>
                     <td>
-                        <asp:LinkButton ID="Button" Width="70" OnCommand="Date_Click" runat="Server" Text='<%# Convert.ToDateTime(Eval("Day")).ToString("ddd") + " " + 
+                        <asp:LinkButton ForeColor="White" ID="Button" Width="175" OnCommand="Date_Click" runat="Server" Text='<%# Convert.ToDateTime(Eval("Day")).ToString("ddd") + " " + 
                         Convert.ToDateTime(Eval("Day")).ToString("dd/MM") %>' CommandArgument='<%#Eval("Day") %>' />
                     </td>
                     <td>
-                      <asp:Label ID="LastNameLabel" runat="Server" Text='<%#Eval("Precipitation") %>' />
+                      <asp:Label ID="LastNameLabel" runat="Server" Text='<%#Eval("Precipitation") + "cm" %>' />
                     </td>
                     <td>
-                      <asp:Label ID="TextBox1" runat="Server" Text='<%#Eval("AverageTemperature") %>' />
+                      <asp:Label ID="TextBox1" runat="Server" Text='<%#Eval("AverageTemperature") + "°" %>' />
                     </td>
                     <td>
                         <asp:Image runat="server" ImageUrl='<%#"~/images/" + Eval("ImageUrl") %>' />
