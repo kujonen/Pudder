@@ -162,5 +162,22 @@ namespace PudderVarsel.Web
                 LastPudderVarsel(string.Empty, distance);
             }
         }
+
+        protected void SortThreeDays_Click(object sender, CommandEventArgs e)
+        {
+            var sortedPowder = PudderVarsel.OrderByDescending(p => p.ThreeDaysPrecipitation);
+
+            ListViewLocations.DataSource = sortedPowder;
+            ListViewLocations.DataBind();
+
+        }
+
+        protected void SortDistance_Click(object sender, CommandEventArgs e)
+        {
+            var sortedPowder = PudderVarsel.OrderBy(p => p.Distance);
+
+            ListViewLocations.DataSource = sortedPowder;
+            ListViewLocations.DataBind();
+        }
     }
 }

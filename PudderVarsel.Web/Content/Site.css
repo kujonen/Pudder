@@ -502,7 +502,12 @@ input[type="checkbox"].input-validation-error {
 
    .big {
             font-weight:bold;
-            font-size: 1.7em;
+            font-size: 2em;
+        }
+
+   .medium {
+            font-weight:bold;
+            font-size: 1.5em;
         }
 
    

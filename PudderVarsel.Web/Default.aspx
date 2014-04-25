@@ -60,16 +60,21 @@
             <div class="rounded-corners">
                 <table>
             <tr>
-              <td rowspan="2" >
-                  <asp:LinkButton ForeColor="White" CssClass="big"  CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPrecipitation") +"cm" %>' />
+              <td rowspan="3" >
+                  <asp:LinkButton ForeColor="White" CssClass="big" Width="100" CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPrecipitation") +"cm" %>' />
               </td>
               <td colspan="2">
-                  <asp:Label ID="LocationLabel" runat="Server" Text='<%#Eval("Name") %>'/>
+                  <asp:Label ID="LocationLabel" runat="Server" CssClass="medium" Text='<%#Eval("Name") %>'/>
               </td>
             </tr>
             <tr>
-                <td><asp:Label Enabled="False" ID="TextBox2" runat="Server" Text='<%#Eval("ThreeDaysPrecipitation") %>' /></td>
-                <td><asp:Label Enabled="False" ID="TextBox1" runat="Server" Text='<%#Eval("Distance", "{0:0.#}") %>' /></td>
+                <td><asp:LinkButton ForeColor="White" CssClass="bold"  CommandArgument=''  OnCommand="SortThreeDays_Click" ID="LinkButton1" runat="Server" Text="3 dager" /></td>
+                <td><asp:LinkButton ForeColor="White" CssClass="bold"  CommandArgument=''  OnCommand="SortDistance_Click" ID="LinkButton2" runat="Server" Text="Avstand" /></td>
+                
+            </tr>
+            <tr>
+                <td><asp:Label ID="TextBox2" runat="Server" Text='<%#Eval("ThreeDaysPrecipitation") + "cm" %>' /></td>
+                <td><asp:Label ID="TextBox1" runat="Server" Text='<%#Eval("Distance", "{0:0.#}") + "km" %>' /></td>
         </tr>
             <tr>
                 <td> </td><td> </td><td> </td>
