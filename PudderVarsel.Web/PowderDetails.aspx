@@ -5,41 +5,33 @@
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <hgroup class="title">
-        <h3>Detaljert puddervarsel for <%= Location %></h3>
+        <h2><%= Location %></h2>
     </hgroup>
     
       <asp:ListView runat="server" ID="powderDetailResult">
         <LayoutTemplate>
-          <table cellpadding="2" border="0" runat="server" id="tblProducts">
-            <tr id="Tr1" runat="server">
-              <%--<th id="Th4" runat="server">Dag</th>--%>
-              <th id="Th2" runat="server">Dato</th>
-              <th id="Th3" runat="server">Nedbør (cm)</th>
-                <th id="Th5" runat="server">Temperatur</th>
-               <th id="Th1" runat="server">Symbol</th>
-            </tr>
-            <tr runat="server" id="itemPlaceholder" />
-          </table>
+            <p runat="server" id="itemPlaceholder"></p>
         </LayoutTemplate>
         <ItemTemplate>
-          <tr id="Tr2" runat="server">
-<%--            <td>
-                <asp:TextBox ID="LinkButton1" Width="50px" runat="Server" Enabled="False" Text='<%#Convert.ToDateTime(Eval("From")).ToString("ddd") %>' />
-            </td>--%>
-            <td>
-                <asp:LinkButton ID="Button" OnCommand="Date_Click" runat="Server" Text='<%# Convert.ToDateTime(Eval("Day")).ToString("ddd") + " " + 
-                Convert.ToDateTime(Eval("Day")).ToString("dd/MM") %>' CommandArgument='<%#Eval("Day") %>' CssClass="bold" />
-            </td>
-            <td>
-              <asp:TextBox Enabled="False" Width="50px" ID="LastNameLabel" runat="Server" Text='<%#Eval("Precipitation") %>' />
-            </td>
-            <td>
-              <asp:TextBox Enabled="False" Width="50px" ID="TextBox1" runat="Server" Text='<%#Eval("AverageTemperature") %>' />
-            </td>
-            <td>
-                <asp:Image runat="server" ImageUrl='<%#"~/images/" + Eval("ImageUrl") %>' />
-            </td>
-          </tr>
+            <div class="table-powder-details">
+            <table style="border: 1px">
+                  <tr>
+                    <td>
+                        <asp:LinkButton ID="Button" Width="70" OnCommand="Date_Click" runat="Server" Text='<%# Convert.ToDateTime(Eval("Day")).ToString("ddd") + " " + 
+                        Convert.ToDateTime(Eval("Day")).ToString("dd/MM") %>' CommandArgument='<%#Eval("Day") %>' />
+                    </td>
+                    <td>
+                      <asp:Label ID="LastNameLabel" runat="Server" Text='<%#Eval("Precipitation") %>' />
+                    </td>
+                    <td>
+                      <asp:Label ID="TextBox1" runat="Server" Text='<%#Eval("AverageTemperature") %>' />
+                    </td>
+                    <td>
+                        <asp:Image runat="server" ImageUrl='<%#"~/images/" + Eval("ImageUrl") %>' />
+                    </td>
+                  </tr>
+                </table>
+            </div>
         </ItemTemplate>
 
     </asp:ListView>
