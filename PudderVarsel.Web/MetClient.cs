@@ -19,7 +19,7 @@ namespace PudderVarsel
                     client.Headers.Add("user-agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.0.3705;)");
 
 
-                    var searchRequestUrl = "http://api.met.no/weatherapi/locationforecast/1.8/?lat=" + lat.ToString(ciNo).Replace(',', '.') + ";" + "lon=" + lon.ToString(ciNo).Replace(',', '.');
+                    var searchRequestUrl = "http://api.met.no/weatherapi/locationforecast/1.9/?lat=" + lat.ToString(ciNo).Replace(',', '.') + ";" + "lon=" + lon.ToString(ciNo).Replace(',', '.');
                     //"lat=60.10;lon=9.58";
 
                     var request = WebRequest.Create(searchRequestUrl) as HttpWebRequest;
