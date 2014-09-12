@@ -1,49 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<weatherdata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://api.met.no/weatherapi/locationforecast/1.9/schema" created="2014-09-12T12:25:48Z">
+<weatherdata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://api.met.no/weatherapi/locationforecast/1.9/schema" created="2014-09-12T13:06:53Z">
   <meta>
-    <model name="LOCAL" termin="2014-09-12T06:00:00Z" runended="2014-09-12T08:30:48Z" nextrun="2014-09-12T16:00:00Z" from="2014-09-12T13:00:00Z" to="2014-09-15T00:00:00Z" />
+    <model name="LOCAL" termin="2014-09-12T06:00:00Z" runended="2014-09-12T08:30:48Z" nextrun="2014-09-12T16:00:00Z" from="2014-09-12T14:00:00Z" to="2014-09-15T00:00:00Z" />
     <model name="EPS" termin="2014-09-12T00:00:00Z" runended="2014-09-12T09:44:11Z" nextrun="2014-09-12T22:00:00Z" from="2014-09-15T06:00:00Z" to="2014-09-21T18:00:00Z" />
   </meta>
   <product class="pointData">
-    <time datatype="forecast" from="2014-09-12T13:00:00Z" to="2014-09-12T13:00:00Z">
-      <location altitude="20" latitude="68.1350" longitude="13.8478">
-        <temperature id="TTT" unit="celsius" value="11.2" />
-        <windDirection id="dd" deg="244.3" name="SW" />
-        <windSpeed id="ff" mps="1.7" beaufort="1" name="Flau vind" />
-        <humidity value="80.7" unit="percent" />
-        <pressure id="pr" unit="hPa" value="1027.8" />
-        <cloudiness id="NN" percent="62.4" />
-        <fog id="FOG" percent="-0.0" />
-        <lowClouds id="LOW" percent="50.9" />
-        <mediumClouds id="MEDIUM" percent="0.0" />
-        <highClouds id="HIGH" percent="22.3" />
-        <dewpointTemperature id="TD" unit="celsius" value="8.0" />
-      </location>
-    </time>
-    <time datatype="forecast" from="2014-09-12T12:00:00Z" to="2014-09-12T13:00:00Z">
-      <location altitude="20" latitude="68.1350" longitude="13.8478">
-        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
-        <symbol id="PartlyCloud" number="3" />
-      </location>
-    </time>
-    <time datatype="forecast" from="2014-09-12T11:00:00Z" to="2014-09-12T13:00:00Z">
-      <location altitude="20" latitude="68.1350" longitude="13.8478">
-        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
-        <symbol id="PartlyCloud" number="3" />
-      </location>
-    </time>
-    <time datatype="forecast" from="2014-09-12T10:00:00Z" to="2014-09-12T13:00:00Z">
-      <location altitude="20" latitude="68.1350" longitude="13.8478">
-        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
-        <symbol id="PartlyCloud" number="3" />
-      </location>
-    </time>
-    <time datatype="forecast" from="2014-09-12T07:00:00Z" to="2014-09-12T13:00:00Z">
-      <location altitude="20" latitude="68.1350" longitude="13.8478">
-        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
-        <symbol id="PartlyCloud" number="3" />
-      </location>
-    </time>
     <time datatype="forecast" from="2014-09-12T14:00:00Z" to="2014-09-12T14:00:00Z">
       <location altitude="20" latitude="68.1350" longitude="13.8478">
         <temperature id="TTT" unit="celsius" value="11.2" />

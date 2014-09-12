@@ -73,10 +73,20 @@ namespace PudderVarsel.Data
             return locations;
         }
 
-        public bool SaveForecastToFile(XElement forecastResponse, string path)
+        public bool SaveForecastToFile(XElement forecastResponse, string path, string dir)
         {
             var xdoc = new XDocument();
             xdoc.Add(forecastResponse);
+
+            if (!Directory.Exists(dir))
+            {
+                Directory.CreateDirectory(dir);
+            }
+            if (!File.Exists(path))
+            {
+                File.Create(path);
+            }
+
             xdoc.Save(path);
             return true;
         }

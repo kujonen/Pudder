@@ -34,11 +34,12 @@ namespace PudderVarsel.Web
             var data = new WeatherData();
             var lokasjonerXml = FetchLocations();
             var locations = data.GetAllLocations(lokasjonerXml);
+            var dir = Server.MapPath(@"~/bin/Data/");
 
             foreach (var lokasjon in locations)
             {
                 var grunndata = MetClient.GetForecast(lokasjon.Latitude, lokasjon.Longitude);
-                data.SaveForecastToFile(grunndata, Server.MapPath(@"~/bin/Data/" + lokasjon.Name + ".xml"));
+                data.SaveForecastToFile(grunndata, Server.MapPath(@"~/bin/Data/" + lokasjon.Name + ".xml"), dir);
             }
 
             LoadDataButton.Enabled = true;

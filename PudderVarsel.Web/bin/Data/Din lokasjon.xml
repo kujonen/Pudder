@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<weatherdata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://api.met.no/weatherapi/locationforecast/1.9/schema" created="2014-09-12T12:25:53Z">
+<weatherdata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://api.met.no/weatherapi/locationforecast/1.9/schema" created="2014-09-12T13:01:56Z">
   <meta>
-    <model name="EC.GEO.0.25" termin="2014-09-12T00:00:00Z" runended="2014-09-12T07:03:31Z" nextrun="2014-09-12T20:00:00Z" from="2014-09-12T15:00:00Z" to="2014-09-22T00:00:00Z" />
+    <model name="EC.GEO.0.25" termin="2014-09-12T00:00:00Z" runended="2014-09-12T07:03:30Z" nextrun="2014-09-12T20:00:00Z" from="2014-09-12T15:00:00Z" to="2014-09-22T00:00:00Z" />
   </meta>
   <product class="pointData">
     <time datatype="forecast" from="2014-09-12T15:00:00Z" to="2014-09-12T15:00:00Z">
