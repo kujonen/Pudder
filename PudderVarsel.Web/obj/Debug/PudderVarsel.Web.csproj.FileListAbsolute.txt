@@ -110,3 +110,4 @@ C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web\bin\Microsoft.
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web\obj\Debug\PudderVarsel.Web.csprojResolveAssemblyReference.cache
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web\obj\Debug\PudderVarsel.Web.dll
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web\obj\Debug\PudderVarsel.Web.pdb
+C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Web\bin\Data\Tryvann.xml

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Xml;
 using System.Xml.Linq;
 
@@ -12,6 +13,11 @@ namespace PudderVarsel.Data
     {
         public string locationsString { get; set; }
         const string Format = "yyyy-MM-ddTHH:mm:ssZ";
+
+        public IEnumerable<Lokasjon> GetAllLocations(string locations)
+        {
+            return GetLocationsFromXml(0, 0, locations);
+        }
 
         public IEnumerable<Lokasjon> GetLocationForecast(double currentLat, double currentLon, string locations, int maxDistance, string searchText)
         {
@@ -65,6 +71,24 @@ namespace PudderVarsel.Data
             currentLocation.Distance = 0;
             locations[locations.Length-1] = currentLocation;
             return locations;
+        }
+
+        public bool SaveForecastToFile(XElement forecastResponse, string path)
+        {
+            var xdoc = new XDocument();
+            xdoc.Add(forecastResponse);
+            xdoc.Save(path);
+            return true;
+        }
+
+
+        public XElement GetForecastFromFile(string path)
+        {
+            var xmlDoc = new XmlDocument();
+            xmlDoc.Load(path);
+            var forecast = XElement.Parse(xmlDoc.InnerXml);
+            return forecast;
+
         }
 
 
@@ -182,6 +206,7 @@ namespace PudderVarsel.Data
         {
             return degrees * (Math.PI / 180);
         }
+
     }
 
 }

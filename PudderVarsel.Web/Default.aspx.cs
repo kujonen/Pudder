@@ -97,10 +97,12 @@ namespace PudderVarsel.Web
             var data = new WeatherData();
             PudderVarsel = data.GetLocationForecast(Latitude, Longitude, FetchLocations(), distance, searchText);
 
-
             foreach (var lokasjon in PudderVarsel)
             {
-                var grunndata = MetClient.GetForecast(lokasjon.Latitude, lokasjon.Longitude);
+                //var grunndata = MetClient.GetForecast(lokasjon.Latitude, lokasjon.Longitude);
+                var grunndata = data.GetForecastFromFile(Server.MapPath(@"~/bin/Data/" + lokasjon.Name + ".xml"));
+
+                //data.SaveForecastToFile(grunndata, Server.MapPath(@"~/bin/Data/" + lokasjon.Name + ".xml"));
 
                 var dagligVarsel = data.ProcessResponse(grunndata).Where(p => p != null);
                 var dagligPuddervarselListe = dagligVarsel as IList<DagligPuddervarsel> ?? dagligVarsel.ToList();

@@ -8,3 +8,4 @@ C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Data\obj\Debug\Pud
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Data\obj\Debug\PudderVarsel.Dat.pdb
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Data\bin\Debug\PudderVarsel.Dat.dll
 C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Data\bin\Debug\PudderVarsel.Dat.pdb
+C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\PudderVarsel.Data\bin\Debug\Data\Tryvann.xml

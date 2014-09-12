@@ -187,6 +187,7 @@
     <Content Include="Images\Rain.png" />
     <Content Include="Images\Sleet.png" />
     <Content Include="Images\Snow.png" />
+    <Content Include="LoadData.aspx" />
     <Content Include="Locations.xml">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -250,6 +251,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LoadData.aspx.cs">
+      <DependentUpon>LoadData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoadData.aspx.designer.cs">
+      <DependentUpon>LoadData.aspx</DependentUpon>
     </Compile>
     <Compile Include="MetClient.cs" />
     <Compile Include="PowderDetails.aspx.cs">
