@@ -82,10 +82,10 @@ namespace PudderVarsel.Data
             {
                 Directory.CreateDirectory(dir);
             }
-            if (!File.Exists(path))
-            {
-                File.Create(path);
-            }
+            //if (!File.Exists(path))
+            //{
+            //    File.Create(path);
+            //}
 
             xdoc.Save(path);
             return true;
