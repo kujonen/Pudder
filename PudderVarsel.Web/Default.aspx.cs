@@ -99,8 +99,8 @@ namespace PudderVarsel.Web
 
             foreach (var lokasjon in PudderVarsel)
             {
-                var grunndata = MetClient.GetForecast(lokasjon.Latitude, lokasjon.Longitude);
-                //var grunndata = data.GetForecastFromFile(Server.MapPath(@"~/bin/Data/" + lokasjon.Name + ".xml"));
+                //var grunndata = MetClient.GetForecast(lokasjon.Latitude, lokasjon.Longitude);
+                var grunndata = data.GetForecastFromFile(Server.MapPath(@"~/bin/Data/" + lokasjon.Name + ".xml"));
 
                 //data.SaveForecastToFile(grunndata, Server.MapPath(@"~/bin/Data/" + lokasjon.Name + ".xml"));
 
