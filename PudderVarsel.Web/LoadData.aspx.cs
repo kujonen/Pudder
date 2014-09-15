@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Web;
@@ -24,6 +25,27 @@ namespace PudderVarsel.Web
                 LoadFreshData();
                 Thread.Sleep(500000);
             }
+            
+        }
+
+        protected void SeeDataButton_Click(object sender, EventArgs e)
+        {
+
+            var data = new WeatherData();
+            var lokasjonerXml = FetchLocations();
+            var locations = data.GetAllLocations(lokasjonerXml);
+
+            foreach (var location in locations)
+            {
+
+                FileInfo oFileInfo = new FileInfo(Server.MapPath(@"~/bin/Data/" + location.Name + ".xml"));
+
+
+
+
+                Output.Text += oFileInfo.FullName + ": " + oFileInfo.CreationTime + " - " + oFileInfo.LastWriteTime + "<br/>";
+            }
+
             
         }
 
