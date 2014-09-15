@@ -49,6 +49,22 @@ namespace PudderVarsel.Web
             
         }
 
+        protected void DeleteDataButton_Click(object sender, EventArgs e)
+        {
+
+            var data = new WeatherData();
+            var lokasjonerXml = FetchLocations();
+            var locations = data.GetAllLocations(lokasjonerXml);
+
+            foreach (var location in locations)
+            {
+                File.Delete(Server.MapPath(@"~/bin/Data/" + location.Name + ".xml"));
+               
+            }
+
+
+        }
+
         private void LoadFreshData()
         {
             LoadDataButton.Enabled = false;

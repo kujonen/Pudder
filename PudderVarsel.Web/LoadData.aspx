@@ -11,6 +11,7 @@
     <div>
         <asp:Button runat="server" Text="Load data" ID="LoadDataButton" OnClick="LoadDataButton_Click"/>
         <asp:Button runat="server" Text="Se data" ID="SeeDataButton" OnClick="SeeDataButton_Click"/>
+        <asp:Button runat="server" Text="Slett data" ID="Button1" OnClick="DeleteDataButton_Click"/>
     </div>
         <div>
             <asp:Label runat="server" ID="Output"></asp:Label>
