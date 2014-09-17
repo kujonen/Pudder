@@ -1,0 +1,2799 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<weatherdata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://api.met.no/weatherapi/locationforecast/1.9/schema" created="2014-09-15T13:05:26Z">
+  <meta>
+    <model name="LOCAL" termin="2014-09-15T06:00:00Z" runended="2014-09-15T08:28:02Z" nextrun="2014-09-15T16:00:00Z" from="2014-09-15T14:00:00Z" to="2014-09-18T00:00:00Z" />
+    <model name="EPS" termin="2014-09-15T00:00:00Z" runended="2014-09-15T09:50:04Z" nextrun="2014-09-15T22:00:00Z" from="2014-09-18T06:00:00Z" to="2014-09-24T18:00:00Z" />
+  </meta>
+  <product class="pointData">
+    <time datatype="forecast" from="2014-09-15T14:00:00Z" to="2014-09-15T14:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="15.6" />
+        <windDirection id="dd" deg="87.7" name="E" />
+        <windSpeed id="ff" mps="1.5" beaufort="1" name="Flau vind" />
+        <humidity value="45.3" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1028.2" />
+        <cloudiness id="NN" percent="7.1" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="7.1" />
+        <dewpointTemperature id="TD" unit="celsius" value="3.7" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T13:00:00Z" to="2014-09-15T14:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T12:00:00Z" to="2014-09-15T14:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T11:00:00Z" to="2014-09-15T14:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T08:00:00Z" to="2014-09-15T14:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T15:00:00Z" to="2014-09-15T15:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="15.1" />
+        <windDirection id="dd" deg="107.0" name="E" />
+        <windSpeed id="ff" mps="1.5" beaufort="1" name="Flau vind" />
+        <humidity value="46.9" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1027.9" />
+        <cloudiness id="NN" percent="16.5" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="16.5" />
+        <dewpointTemperature id="TD" unit="celsius" value="3.7" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T14:00:00Z" to="2014-09-15T15:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T13:00:00Z" to="2014-09-15T15:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T12:00:00Z" to="2014-09-15T15:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T09:00:00Z" to="2014-09-15T15:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T16:00:00Z" to="2014-09-15T16:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="14.1" />
+        <windDirection id="dd" deg="100.3" name="E" />
+        <windSpeed id="ff" mps="1.5" beaufort="1" name="Flau vind" />
+        <humidity value="47.6" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1027.7" />
+        <cloudiness id="NN" percent="32.4" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="32.4" />
+        <dewpointTemperature id="TD" unit="celsius" value="3.0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T15:00:00Z" to="2014-09-15T16:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T14:00:00Z" to="2014-09-15T16:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T13:00:00Z" to="2014-09-15T16:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T10:00:00Z" to="2014-09-15T16:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T17:00:00Z" to="2014-09-15T17:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="12.6" />
+        <windDirection id="dd" deg="125.3" name="SE" />
+        <windSpeed id="ff" mps="0.4" beaufort="0" name="Stille" />
+        <humidity value="55.5" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1027.9" />
+        <cloudiness id="NN" percent="21.7" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="21.7" />
+        <dewpointTemperature id="TD" unit="celsius" value="3.8" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T16:00:00Z" to="2014-09-15T17:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T15:00:00Z" to="2014-09-15T17:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T14:00:00Z" to="2014-09-15T17:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T11:00:00Z" to="2014-09-15T17:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T18:00:00Z" to="2014-09-15T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="10.0" />
+        <windDirection id="dd" deg="147.5" name="SE" />
+        <windSpeed id="ff" mps="0.6" beaufort="1" name="Flau vind" />
+        <humidity value="63.5" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1028.4" />
+        <cloudiness id="NN" percent="29.3" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="29.3" />
+        <temperatureProbability unit="probabilitycode" value="0" />
+        <windProbability unit="probabilitycode" value="0" />
+        <dewpointTemperature id="TD" unit="celsius" value="3.3" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T17:00:00Z" to="2014-09-15T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T16:00:00Z" to="2014-09-15T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T15:00:00Z" to="2014-09-15T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T12:00:00Z" to="2014-09-15T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+        <symbolProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T19:00:00Z" to="2014-09-15T19:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="6.5" />
+        <windDirection id="dd" deg="25.7" name="NE" />
+        <windSpeed id="ff" mps="2.6" beaufort="2" name="Svak vind" />
+        <humidity value="85.3" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1029.0" />
+        <cloudiness id="NN" percent="28.8" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="28.8" />
+        <dewpointTemperature id="TD" unit="celsius" value="4.1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T18:00:00Z" to="2014-09-15T19:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T17:00:00Z" to="2014-09-15T19:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T16:00:00Z" to="2014-09-15T19:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T13:00:00Z" to="2014-09-15T19:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T20:00:00Z" to="2014-09-15T20:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="5.3" />
+        <windDirection id="dd" deg="45.7" name="NE" />
+        <windSpeed id="ff" mps="3.4" beaufort="2" name="Svak vind" />
+        <humidity value="77.2" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1029.3" />
+        <cloudiness id="NN" percent="21.9" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="21.9" />
+        <dewpointTemperature id="TD" unit="celsius" value="1.5" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T19:00:00Z" to="2014-09-15T20:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T18:00:00Z" to="2014-09-15T20:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T17:00:00Z" to="2014-09-15T20:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T14:00:00Z" to="2014-09-15T20:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T21:00:00Z" to="2014-09-15T21:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="4.4" />
+        <windDirection id="dd" deg="45.3" name="NE" />
+        <windSpeed id="ff" mps="3.3" beaufort="2" name="Svak vind" />
+        <humidity value="79.6" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1029.8" />
+        <cloudiness id="NN" percent="9.3" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="9.3" />
+        <dewpointTemperature id="TD" unit="celsius" value="1.0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T20:00:00Z" to="2014-09-15T21:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T19:00:00Z" to="2014-09-15T21:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T18:00:00Z" to="2014-09-15T21:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T15:00:00Z" to="2014-09-15T21:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T22:00:00Z" to="2014-09-15T22:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="3.5" />
+        <windDirection id="dd" deg="32.9" name="NE" />
+        <windSpeed id="ff" mps="2.9" beaufort="2" name="Svak vind" />
+        <humidity value="86.2" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1030.1" />
+        <cloudiness id="NN" percent="5.9" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="5.9" />
+        <dewpointTemperature id="TD" unit="celsius" value="1.3" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T21:00:00Z" to="2014-09-15T22:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T20:00:00Z" to="2014-09-15T22:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T19:00:00Z" to="2014-09-15T22:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T16:00:00Z" to="2014-09-15T22:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T23:00:00Z" to="2014-09-15T23:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="2.8" />
+        <windDirection id="dd" deg="33.0" name="NE" />
+        <windSpeed id="ff" mps="2.8" beaufort="2" name="Svak vind" />
+        <humidity value="89.2" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1030.2" />
+        <cloudiness id="NN" percent="10.3" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="10.3" />
+        <dewpointTemperature id="TD" unit="celsius" value="1.0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T22:00:00Z" to="2014-09-15T23:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T21:00:00Z" to="2014-09-15T23:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T20:00:00Z" to="2014-09-15T23:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T17:00:00Z" to="2014-09-15T23:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T00:00:00Z" to="2014-09-16T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="2.3" />
+        <windDirection id="dd" deg="34.5" name="NE" />
+        <windSpeed id="ff" mps="2.5" beaufort="2" name="Svak vind" />
+        <humidity value="90.3" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1030.2" />
+        <cloudiness id="NN" percent="13.1" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="13.1" />
+        <temperatureProbability unit="probabilitycode" value="0" />
+        <windProbability unit="probabilitycode" value="0" />
+        <dewpointTemperature id="TD" unit="celsius" value="0.8" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T23:00:00Z" to="2014-09-16T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T22:00:00Z" to="2014-09-16T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T21:00:00Z" to="2014-09-16T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T18:00:00Z" to="2014-09-16T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+        <symbolProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T01:00:00Z" to="2014-09-16T01:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="1.9" />
+        <windDirection id="dd" deg="33.9" name="NE" />
+        <windSpeed id="ff" mps="2.6" beaufort="2" name="Svak vind" />
+        <humidity value="91.7" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1030.0" />
+        <cloudiness id="NN" percent="12.3" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="12.3" />
+        <dewpointTemperature id="TD" unit="celsius" value="0.5" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T00:00:00Z" to="2014-09-16T01:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T23:00:00Z" to="2014-09-16T01:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T22:00:00Z" to="2014-09-16T01:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T19:00:00Z" to="2014-09-16T01:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T02:00:00Z" to="2014-09-16T02:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="1.5" />
+        <windDirection id="dd" deg="32.3" name="NE" />
+        <windSpeed id="ff" mps="2.5" beaufort="2" name="Svak vind" />
+        <humidity value="92.1" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1029.9" />
+        <cloudiness id="NN" percent="14.8" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="14.8" />
+        <dewpointTemperature id="TD" unit="celsius" value="0.2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T01:00:00Z" to="2014-09-16T02:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T00:00:00Z" to="2014-09-16T02:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T23:00:00Z" to="2014-09-16T02:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T20:00:00Z" to="2014-09-16T02:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T03:00:00Z" to="2014-09-16T03:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="1.2" />
+        <windDirection id="dd" deg="40.1" name="NE" />
+        <windSpeed id="ff" mps="2.5" beaufort="2" name="Svak vind" />
+        <humidity value="91.5" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1029.7" />
+        <cloudiness id="NN" percent="11.8" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="11.8" />
+        <dewpointTemperature id="TD" unit="celsius" value="-0.2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T02:00:00Z" to="2014-09-16T03:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T01:00:00Z" to="2014-09-16T03:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T00:00:00Z" to="2014-09-16T03:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T21:00:00Z" to="2014-09-16T03:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T04:00:00Z" to="2014-09-16T04:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="1.4" />
+        <windDirection id="dd" deg="38.7" name="NE" />
+        <windSpeed id="ff" mps="2.8" beaufort="2" name="Svak vind" />
+        <humidity value="92.4" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1029.6" />
+        <cloudiness id="NN" percent="9.6" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="9.6" />
+        <dewpointTemperature id="TD" unit="celsius" value="0.2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T03:00:00Z" to="2014-09-16T04:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T02:00:00Z" to="2014-09-16T04:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T01:00:00Z" to="2014-09-16T04:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T22:00:00Z" to="2014-09-16T04:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T05:00:00Z" to="2014-09-16T05:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="1.5" />
+        <windDirection id="dd" deg="29.2" name="NE" />
+        <windSpeed id="ff" mps="2.6" beaufort="2" name="Svak vind" />
+        <humidity value="93.3" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1029.8" />
+        <cloudiness id="NN" percent="9.8" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="9.8" />
+        <dewpointTemperature id="TD" unit="celsius" value="0.4" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T04:00:00Z" to="2014-09-16T05:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T03:00:00Z" to="2014-09-16T05:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T02:00:00Z" to="2014-09-16T05:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-15T23:00:00Z" to="2014-09-16T05:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T06:00:00Z" to="2014-09-16T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="2.3" />
+        <windDirection id="dd" deg="37.2" name="NE" />
+        <windSpeed id="ff" mps="2.5" beaufort="2" name="Svak vind" />
+        <humidity value="93.3" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1029.9" />
+        <cloudiness id="NN" percent="13.6" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="13.6" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="0" />
+        <dewpointTemperature id="TD" unit="celsius" value="1.2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T05:00:00Z" to="2014-09-16T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T04:00:00Z" to="2014-09-16T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T03:00:00Z" to="2014-09-16T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T00:00:00Z" to="2014-09-16T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+        <symbolProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T07:00:00Z" to="2014-09-16T07:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="5.0" />
+        <windDirection id="dd" deg="32.6" name="NE" />
+        <windSpeed id="ff" mps="2.3" beaufort="2" name="Svak vind" />
+        <humidity value="88.6" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1029.8" />
+        <cloudiness id="NN" percent="16.7" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="16.7" />
+        <dewpointTemperature id="TD" unit="celsius" value="3.2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T06:00:00Z" to="2014-09-16T07:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T05:00:00Z" to="2014-09-16T07:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T04:00:00Z" to="2014-09-16T07:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T01:00:00Z" to="2014-09-16T07:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T08:00:00Z" to="2014-09-16T08:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="8.5" />
+        <windDirection id="dd" deg="20.2" name="N" />
+        <windSpeed id="ff" mps="1.5" beaufort="1" name="Flau vind" />
+        <humidity value="78.3" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1029.2" />
+        <cloudiness id="NN" percent="19.9" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="19.9" />
+        <dewpointTemperature id="TD" unit="celsius" value="4.9" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T07:00:00Z" to="2014-09-16T08:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T06:00:00Z" to="2014-09-16T08:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T05:00:00Z" to="2014-09-16T08:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T02:00:00Z" to="2014-09-16T08:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T09:00:00Z" to="2014-09-16T09:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="11.2" />
+        <windDirection id="dd" deg="212.4" name="SW" />
+        <windSpeed id="ff" mps="0.9" beaufort="1" name="Flau vind" />
+        <humidity value="66.1" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1028.7" />
+        <cloudiness id="NN" percent="6.4" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.7" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="5.5" />
+        <dewpointTemperature id="TD" unit="celsius" value="5.0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T08:00:00Z" to="2014-09-16T09:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T07:00:00Z" to="2014-09-16T09:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T06:00:00Z" to="2014-09-16T09:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T03:00:00Z" to="2014-09-16T09:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T10:00:00Z" to="2014-09-16T10:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="12.5" />
+        <windDirection id="dd" deg="232.2" name="SW" />
+        <windSpeed id="ff" mps="0.8" beaufort="1" name="Flau vind" />
+        <humidity value="61.3" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1028.1" />
+        <cloudiness id="NN" percent="1.1" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.4" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="0.7" />
+        <dewpointTemperature id="TD" unit="celsius" value="5.2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T09:00:00Z" to="2014-09-16T10:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T08:00:00Z" to="2014-09-16T10:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T07:00:00Z" to="2014-09-16T10:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T04:00:00Z" to="2014-09-16T10:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T11:00:00Z" to="2014-09-16T11:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="14.5" />
+        <windDirection id="dd" deg="136.4" name="SE" />
+        <windSpeed id="ff" mps="1.4" beaufort="1" name="Flau vind" />
+        <humidity value="54.2" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1027.3" />
+        <cloudiness id="NN" percent="0.3" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="0.3" />
+        <dewpointTemperature id="TD" unit="celsius" value="5.3" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T10:00:00Z" to="2014-09-16T11:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T09:00:00Z" to="2014-09-16T11:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T08:00:00Z" to="2014-09-16T11:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T05:00:00Z" to="2014-09-16T11:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T12:00:00Z" to="2014-09-16T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="15.0" />
+        <windDirection id="dd" deg="139.3" name="SE" />
+        <windSpeed id="ff" mps="1.9" beaufort="1" name="Flau vind" />
+        <humidity value="48.9" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1026.9" />
+        <cloudiness id="NN" percent="1.9" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="1.8" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="0" />
+        <dewpointTemperature id="TD" unit="celsius" value="4.2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T11:00:00Z" to="2014-09-16T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T10:00:00Z" to="2014-09-16T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T09:00:00Z" to="2014-09-16T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T06:00:00Z" to="2014-09-16T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+        <symbolProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T13:00:00Z" to="2014-09-16T13:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="15.2" />
+        <windDirection id="dd" deg="142.0" name="SE" />
+        <windSpeed id="ff" mps="2.6" beaufort="2" name="Svak vind" />
+        <humidity value="45.8" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1026.5" />
+        <cloudiness id="NN" percent="3.7" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="3.7" />
+        <dewpointTemperature id="TD" unit="celsius" value="3.5" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T12:00:00Z" to="2014-09-16T13:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T11:00:00Z" to="2014-09-16T13:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T10:00:00Z" to="2014-09-16T13:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T07:00:00Z" to="2014-09-16T13:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T14:00:00Z" to="2014-09-16T14:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="15.1" />
+        <windDirection id="dd" deg="134.8" name="SE" />
+        <windSpeed id="ff" mps="3.0" beaufort="2" name="Svak vind" />
+        <humidity value="45.5" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1026.1" />
+        <cloudiness id="NN" percent="3.0" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="3.0" />
+        <dewpointTemperature id="TD" unit="celsius" value="3.3" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T13:00:00Z" to="2014-09-16T14:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T12:00:00Z" to="2014-09-16T14:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T11:00:00Z" to="2014-09-16T14:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T08:00:00Z" to="2014-09-16T14:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T15:00:00Z" to="2014-09-16T15:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="14.8" />
+        <windDirection id="dd" deg="130.8" name="SE" />
+        <windSpeed id="ff" mps="2.9" beaufort="2" name="Svak vind" />
+        <humidity value="46.0" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1025.8" />
+        <cloudiness id="NN" percent="0.3" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="0.3" />
+        <dewpointTemperature id="TD" unit="celsius" value="3.2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T14:00:00Z" to="2014-09-16T15:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T13:00:00Z" to="2014-09-16T15:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T12:00:00Z" to="2014-09-16T15:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T09:00:00Z" to="2014-09-16T15:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T16:00:00Z" to="2014-09-16T16:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="13.8" />
+        <windDirection id="dd" deg="134.9" name="SE" />
+        <windSpeed id="ff" mps="2.5" beaufort="2" name="Svak vind" />
+        <humidity value="48.9" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1025.8" />
+        <cloudiness id="NN" percent="0.3" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.1" />
+        <highClouds id="HIGH" percent="0.2" />
+        <dewpointTemperature id="TD" unit="celsius" value="3.2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T15:00:00Z" to="2014-09-16T16:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T14:00:00Z" to="2014-09-16T16:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T13:00:00Z" to="2014-09-16T16:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T10:00:00Z" to="2014-09-16T16:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T17:00:00Z" to="2014-09-16T17:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="12.1" />
+        <windDirection id="dd" deg="152.0" name="SE" />
+        <windSpeed id="ff" mps="1.6" beaufort="1" name="Flau vind" />
+        <humidity value="55.0" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1026.0" />
+        <cloudiness id="NN" percent="0.2" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="0.2" />
+        <dewpointTemperature id="TD" unit="celsius" value="3.3" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T16:00:00Z" to="2014-09-16T17:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T15:00:00Z" to="2014-09-16T17:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T14:00:00Z" to="2014-09-16T17:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T11:00:00Z" to="2014-09-16T17:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T18:00:00Z" to="2014-09-16T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="9.2" />
+        <windDirection id="dd" deg="118.2" name="SE" />
+        <windSpeed id="ff" mps="0.8" beaufort="1" name="Flau vind" />
+        <humidity value="67.6" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1026.5" />
+        <cloudiness id="NN" percent="1.4" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.1" />
+        <highClouds id="HIGH" percent="1.3" />
+        <temperatureProbability unit="probabilitycode" value="0" />
+        <windProbability unit="probabilitycode" value="0" />
+        <dewpointTemperature id="TD" unit="celsius" value="3.5" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T17:00:00Z" to="2014-09-16T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T16:00:00Z" to="2014-09-16T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T15:00:00Z" to="2014-09-16T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T12:00:00Z" to="2014-09-16T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+        <symbolProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T19:00:00Z" to="2014-09-16T19:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="6.6" />
+        <windDirection id="dd" deg="119.4" name="SE" />
+        <windSpeed id="ff" mps="1.0" beaufort="1" name="Flau vind" />
+        <humidity value="78.9" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1027.0" />
+        <cloudiness id="NN" percent="2.3" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.4" />
+        <highClouds id="HIGH" percent="1.9" />
+        <dewpointTemperature id="TD" unit="celsius" value="3.1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T18:00:00Z" to="2014-09-16T19:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T17:00:00Z" to="2014-09-16T19:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T16:00:00Z" to="2014-09-16T19:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T13:00:00Z" to="2014-09-16T19:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T20:00:00Z" to="2014-09-16T20:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="4.1" />
+        <windDirection id="dd" deg="12.0" name="N" />
+        <windSpeed id="ff" mps="2.3" beaufort="2" name="Svak vind" />
+        <humidity value="92.1" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1027.6" />
+        <cloudiness id="NN" percent="1.1" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.3" />
+        <highClouds id="HIGH" percent="0.8" />
+        <dewpointTemperature id="TD" unit="celsius" value="2.9" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T19:00:00Z" to="2014-09-16T20:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T18:00:00Z" to="2014-09-16T20:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T17:00:00Z" to="2014-09-16T20:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T14:00:00Z" to="2014-09-16T20:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T21:00:00Z" to="2014-09-16T21:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="3.2" />
+        <windDirection id="dd" deg="28.7" name="NE" />
+        <windSpeed id="ff" mps="2.7" beaufort="2" name="Svak vind" />
+        <humidity value="91.4" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1027.9" />
+        <cloudiness id="NN" percent="0.5" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="0.3" />
+        <dewpointTemperature id="TD" unit="celsius" value="1.8" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T20:00:00Z" to="2014-09-16T21:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T19:00:00Z" to="2014-09-16T21:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T18:00:00Z" to="2014-09-16T21:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T15:00:00Z" to="2014-09-16T21:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T22:00:00Z" to="2014-09-16T22:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="2.8" />
+        <windDirection id="dd" deg="28.1" name="NE" />
+        <windSpeed id="ff" mps="2.3" beaufort="2" name="Svak vind" />
+        <humidity value="92.6" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1028.3" />
+        <cloudiness id="NN" percent="1.1" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="1.0" />
+        <dewpointTemperature id="TD" unit="celsius" value="1.6" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T21:00:00Z" to="2014-09-16T22:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T20:00:00Z" to="2014-09-16T22:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T19:00:00Z" to="2014-09-16T22:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T16:00:00Z" to="2014-09-16T22:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T23:00:00Z" to="2014-09-16T23:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="2.0" />
+        <windDirection id="dd" deg="22.9" name="NE" />
+        <windSpeed id="ff" mps="1.5" beaufort="1" name="Flau vind" />
+        <humidity value="93.8" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1028.4" />
+        <cloudiness id="NN" percent="1.0" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="0.9" />
+        <dewpointTemperature id="TD" unit="celsius" value="1.0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T22:00:00Z" to="2014-09-16T23:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T21:00:00Z" to="2014-09-16T23:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T20:00:00Z" to="2014-09-16T23:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T17:00:00Z" to="2014-09-16T23:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T00:00:00Z" to="2014-09-17T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="1.7" />
+        <windDirection id="dd" deg="17.8" name="N" />
+        <windSpeed id="ff" mps="2.0" beaufort="1" name="Flau vind" />
+        <humidity value="92.3" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1028.4" />
+        <cloudiness id="NN" percent="1.1" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="0.8" />
+        <temperatureProbability unit="probabilitycode" value="0" />
+        <windProbability unit="probabilitycode" value="0" />
+        <dewpointTemperature id="TD" unit="celsius" value="0.5" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T23:00:00Z" to="2014-09-17T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T22:00:00Z" to="2014-09-17T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T21:00:00Z" to="2014-09-17T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T18:00:00Z" to="2014-09-17T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T01:00:00Z" to="2014-09-17T01:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="1.4" />
+        <windDirection id="dd" deg="10.5" name="N" />
+        <windSpeed id="ff" mps="2.1" beaufort="2" name="Svak vind" />
+        <humidity value="92.6" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1028.2" />
+        <cloudiness id="NN" percent="1.3" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.1" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="0.8" />
+        <dewpointTemperature id="TD" unit="celsius" value="0.2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T00:00:00Z" to="2014-09-17T01:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T23:00:00Z" to="2014-09-17T01:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T22:00:00Z" to="2014-09-17T01:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T19:00:00Z" to="2014-09-17T01:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T02:00:00Z" to="2014-09-17T02:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="1.1" />
+        <windDirection id="dd" deg="26.1" name="NE" />
+        <windSpeed id="ff" mps="1.9" beaufort="1" name="Flau vind" />
+        <humidity value="91.8" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1028.1" />
+        <cloudiness id="NN" percent="2.8" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="2.4" />
+        <dewpointTemperature id="TD" unit="celsius" value="-0.3" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T01:00:00Z" to="2014-09-17T02:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T00:00:00Z" to="2014-09-17T02:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T23:00:00Z" to="2014-09-17T02:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T20:00:00Z" to="2014-09-17T02:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T03:00:00Z" to="2014-09-17T03:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="0.7" />
+        <windDirection id="dd" deg="20.1" name="N" />
+        <windSpeed id="ff" mps="2.2" beaufort="2" name="Svak vind" />
+        <humidity value="92.9" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1027.8" />
+        <cloudiness id="NN" percent="3.2" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="2.8" />
+        <dewpointTemperature id="TD" unit="celsius" value="-0.5" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T02:00:00Z" to="2014-09-17T03:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T01:00:00Z" to="2014-09-17T03:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T00:00:00Z" to="2014-09-17T03:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T21:00:00Z" to="2014-09-17T03:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T04:00:00Z" to="2014-09-17T04:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="0.7" />
+        <windDirection id="dd" deg="20.1" name="N" />
+        <windSpeed id="ff" mps="2.1" beaufort="2" name="Svak vind" />
+        <humidity value="93.9" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1027.6" />
+        <cloudiness id="NN" percent="5.5" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="5.1" />
+        <dewpointTemperature id="TD" unit="celsius" value="-0.3" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T03:00:00Z" to="2014-09-17T04:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T02:00:00Z" to="2014-09-17T04:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T01:00:00Z" to="2014-09-17T04:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T22:00:00Z" to="2014-09-17T04:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T05:00:00Z" to="2014-09-17T05:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="0.8" />
+        <windDirection id="dd" deg="20.0" name="N" />
+        <windSpeed id="ff" mps="1.9" beaufort="1" name="Flau vind" />
+        <humidity value="94.1" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1027.7" />
+        <cloudiness id="NN" percent="12.3" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="11.9" />
+        <dewpointTemperature id="TD" unit="celsius" value="-0.2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T04:00:00Z" to="2014-09-17T05:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T03:00:00Z" to="2014-09-17T05:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T02:00:00Z" to="2014-09-17T05:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-16T23:00:00Z" to="2014-09-17T05:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T06:00:00Z" to="2014-09-17T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="1.3" />
+        <windDirection id="dd" deg="22.9" name="NE" />
+        <windSpeed id="ff" mps="1.6" beaufort="1" name="Flau vind" />
+        <humidity value="94.5" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1027.7" />
+        <cloudiness id="NN" percent="5.9" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="5.5" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="0" />
+        <dewpointTemperature id="TD" unit="celsius" value="0.4" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T05:00:00Z" to="2014-09-17T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T04:00:00Z" to="2014-09-17T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T03:00:00Z" to="2014-09-17T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T00:00:00Z" to="2014-09-17T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+        <symbolProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T07:00:00Z" to="2014-09-17T07:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="3.8" />
+        <windDirection id="dd" deg="28.0" name="NE" />
+        <windSpeed id="ff" mps="1.6" beaufort="1" name="Flau vind" />
+        <humidity value="92.2" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1027.6" />
+        <cloudiness id="NN" percent="1.4" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="1.3" />
+        <dewpointTemperature id="TD" unit="celsius" value="2.5" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T06:00:00Z" to="2014-09-17T07:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T05:00:00Z" to="2014-09-17T07:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T04:00:00Z" to="2014-09-17T07:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T01:00:00Z" to="2014-09-17T07:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T08:00:00Z" to="2014-09-17T08:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="7.4" />
+        <windDirection id="dd" deg="16.1" name="N" />
+        <windSpeed id="ff" mps="1.7" beaufort="1" name="Flau vind" />
+        <humidity value="83.5" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1027.4" />
+        <cloudiness id="NN" percent="1.1" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="1.1" />
+        <dewpointTemperature id="TD" unit="celsius" value="4.7" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T07:00:00Z" to="2014-09-17T08:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T06:00:00Z" to="2014-09-17T08:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T05:00:00Z" to="2014-09-17T08:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T02:00:00Z" to="2014-09-17T08:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T09:00:00Z" to="2014-09-17T09:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="10.6" />
+        <windDirection id="dd" deg="35.7" name="NE" />
+        <windSpeed id="ff" mps="0.8" beaufort="1" name="Flau vind" />
+        <humidity value="66.4" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1026.6" />
+        <cloudiness id="NN" percent="0.9" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="0.9" />
+        <dewpointTemperature id="TD" unit="celsius" value="4.5" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T08:00:00Z" to="2014-09-17T09:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T07:00:00Z" to="2014-09-17T09:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T06:00:00Z" to="2014-09-17T09:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T03:00:00Z" to="2014-09-17T09:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T10:00:00Z" to="2014-09-17T10:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="12.4" />
+        <windDirection id="dd" deg="150.5" name="SE" />
+        <windSpeed id="ff" mps="1.1" beaufort="1" name="Flau vind" />
+        <humidity value="53.5" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1025.9" />
+        <cloudiness id="NN" percent="0.6" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="0.6" />
+        <dewpointTemperature id="TD" unit="celsius" value="3.1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T09:00:00Z" to="2014-09-17T10:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T08:00:00Z" to="2014-09-17T10:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T07:00:00Z" to="2014-09-17T10:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T04:00:00Z" to="2014-09-17T10:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T11:00:00Z" to="2014-09-17T11:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="13.6" />
+        <windDirection id="dd" deg="107.3" name="E" />
+        <windSpeed id="ff" mps="1.6" beaufort="1" name="Flau vind" />
+        <humidity value="45.6" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1025.2" />
+        <cloudiness id="NN" percent="0.6" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="0.6" />
+        <dewpointTemperature id="TD" unit="celsius" value="1.9" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T10:00:00Z" to="2014-09-17T11:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T09:00:00Z" to="2014-09-17T11:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T08:00:00Z" to="2014-09-17T11:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T05:00:00Z" to="2014-09-17T11:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T12:00:00Z" to="2014-09-17T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="14.1" />
+        <windDirection id="dd" deg="112.6" name="SE" />
+        <windSpeed id="ff" mps="2.1" beaufort="2" name="Svak vind" />
+        <humidity value="43.5" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1024.8" />
+        <cloudiness id="NN" percent="0.7" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="0.7" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="0" />
+        <dewpointTemperature id="TD" unit="celsius" value="1.7" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T11:00:00Z" to="2014-09-17T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T10:00:00Z" to="2014-09-17T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T09:00:00Z" to="2014-09-17T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T06:00:00Z" to="2014-09-17T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+        <symbolProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T13:00:00Z" to="2014-09-17T13:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="14.4" />
+        <windDirection id="dd" deg="122.3" name="SE" />
+        <windSpeed id="ff" mps="2.5" beaufort="2" name="Svak vind" />
+        <humidity value="42.0" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1024.3" />
+        <cloudiness id="NN" percent="2.8" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="2.8" />
+        <dewpointTemperature id="TD" unit="celsius" value="1.6" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T12:00:00Z" to="2014-09-17T13:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T11:00:00Z" to="2014-09-17T13:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T10:00:00Z" to="2014-09-17T13:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T07:00:00Z" to="2014-09-17T13:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T14:00:00Z" to="2014-09-17T14:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="14.3" />
+        <windDirection id="dd" deg="129.1" name="SE" />
+        <windSpeed id="ff" mps="2.5" beaufort="2" name="Svak vind" />
+        <humidity value="42.8" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1024.0" />
+        <cloudiness id="NN" percent="3.3" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="3.3" />
+        <dewpointTemperature id="TD" unit="celsius" value="1.7" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T13:00:00Z" to="2014-09-17T14:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T12:00:00Z" to="2014-09-17T14:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T11:00:00Z" to="2014-09-17T14:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T08:00:00Z" to="2014-09-17T14:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T15:00:00Z" to="2014-09-17T15:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="14.0" />
+        <windDirection id="dd" deg="127.8" name="SE" />
+        <windSpeed id="ff" mps="2.4" beaufort="2" name="Svak vind" />
+        <humidity value="46.9" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1023.7" />
+        <cloudiness id="NN" percent="4.2" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="4.2" />
+        <dewpointTemperature id="TD" unit="celsius" value="2.7" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T14:00:00Z" to="2014-09-17T15:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T13:00:00Z" to="2014-09-17T15:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T12:00:00Z" to="2014-09-17T15:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T09:00:00Z" to="2014-09-17T15:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T16:00:00Z" to="2014-09-17T16:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="13.1" />
+        <windDirection id="dd" deg="128.9" name="SE" />
+        <windSpeed id="ff" mps="2.1" beaufort="2" name="Svak vind" />
+        <humidity value="52.5" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1023.6" />
+        <cloudiness id="NN" percent="3.0" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="3.0" />
+        <dewpointTemperature id="TD" unit="celsius" value="3.5" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T15:00:00Z" to="2014-09-17T16:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T14:00:00Z" to="2014-09-17T16:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T13:00:00Z" to="2014-09-17T16:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T10:00:00Z" to="2014-09-17T16:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T17:00:00Z" to="2014-09-17T17:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="11.7" />
+        <windDirection id="dd" deg="130.0" name="SE" />
+        <windSpeed id="ff" mps="1.2" beaufort="1" name="Flau vind" />
+        <humidity value="59.8" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1023.9" />
+        <cloudiness id="NN" percent="5.2" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="5.2" />
+        <dewpointTemperature id="TD" unit="celsius" value="4.0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T16:00:00Z" to="2014-09-17T17:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T15:00:00Z" to="2014-09-17T17:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T14:00:00Z" to="2014-09-17T17:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T11:00:00Z" to="2014-09-17T17:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T18:00:00Z" to="2014-09-17T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="8.9" />
+        <windDirection id="dd" deg="92.6" name="E" />
+        <windSpeed id="ff" mps="0.9" beaufort="1" name="Flau vind" />
+        <humidity value="73.5" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1024.5" />
+        <cloudiness id="NN" percent="4.0" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.0" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="4.0" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="0" />
+        <dewpointTemperature id="TD" unit="celsius" value="4.3" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T17:00:00Z" to="2014-09-17T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T16:00:00Z" to="2014-09-17T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T15:00:00Z" to="2014-09-17T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T12:00:00Z" to="2014-09-17T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T19:00:00Z" to="2014-09-17T19:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="6.0" />
+        <windDirection id="dd" deg="37.5" name="NE" />
+        <windSpeed id="ff" mps="0.8" beaufort="1" name="Flau vind" />
+        <humidity value="88.4" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1025.3" />
+        <cloudiness id="NN" percent="10.3" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.1" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="10.0" />
+        <dewpointTemperature id="TD" unit="celsius" value="4.2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T18:00:00Z" to="2014-09-17T19:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T17:00:00Z" to="2014-09-17T19:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T16:00:00Z" to="2014-09-17T19:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T13:00:00Z" to="2014-09-17T19:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T20:00:00Z" to="2014-09-17T20:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="4.0" />
+        <windDirection id="dd" deg="52.0" name="NE" />
+        <windSpeed id="ff" mps="1.4" beaufort="1" name="Flau vind" />
+        <humidity value="92.7" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1025.6" />
+        <cloudiness id="NN" percent="11.5" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="2.2" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="8.0" />
+        <dewpointTemperature id="TD" unit="celsius" value="2.8" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T19:00:00Z" to="2014-09-17T20:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T18:00:00Z" to="2014-09-17T20:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T17:00:00Z" to="2014-09-17T20:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T14:00:00Z" to="2014-09-17T20:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T21:00:00Z" to="2014-09-17T21:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="2.3" />
+        <windDirection id="dd" deg="33.2" name="NE" />
+        <windSpeed id="ff" mps="1.9" beaufort="1" name="Flau vind" />
+        <humidity value="97.0" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1025.8" />
+        <cloudiness id="NN" percent="13.9" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="5.5" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="4.9" />
+        <dewpointTemperature id="TD" unit="celsius" value="1.8" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T20:00:00Z" to="2014-09-17T21:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T19:00:00Z" to="2014-09-17T21:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T18:00:00Z" to="2014-09-17T21:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T15:00:00Z" to="2014-09-17T21:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T22:00:00Z" to="2014-09-17T22:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="2.2" />
+        <windDirection id="dd" deg="28.1" name="NE" />
+        <windSpeed id="ff" mps="2.4" beaufort="2" name="Svak vind" />
+        <humidity value="93.1" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1025.9" />
+        <cloudiness id="NN" percent="15.1" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="4.6" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="2.2" />
+        <dewpointTemperature id="TD" unit="celsius" value="1.0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T21:00:00Z" to="2014-09-17T22:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T20:00:00Z" to="2014-09-17T22:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T19:00:00Z" to="2014-09-17T22:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T16:00:00Z" to="2014-09-17T22:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T23:00:00Z" to="2014-09-17T23:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="2.0" />
+        <windDirection id="dd" deg="32.8" name="NE" />
+        <windSpeed id="ff" mps="2.0" beaufort="1" name="Flau vind" />
+        <humidity value="93.5" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1026.0" />
+        <cloudiness id="NN" percent="11.8" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.7" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="1.3" />
+        <dewpointTemperature id="TD" unit="celsius" value="0.9" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T22:00:00Z" to="2014-09-17T23:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T21:00:00Z" to="2014-09-17T23:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T20:00:00Z" to="2014-09-17T23:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="LightCloud" number="2" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T17:00:00Z" to="2014-09-17T23:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-18T00:00:00Z" to="2014-09-18T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="1.5" />
+        <windDirection id="dd" deg="16.1" name="N" />
+        <windSpeed id="ff" mps="2.1" beaufort="2" name="Svak vind" />
+        <humidity value="94.1" unit="percent" />
+        <pressure id="pr" unit="hPa" value="1026.0" />
+        <cloudiness id="NN" percent="5.3" />
+        <fog id="FOG" percent="-0.0" />
+        <lowClouds id="LOW" percent="0.2" />
+        <mediumClouds id="MEDIUM" percent="0.0" />
+        <highClouds id="HIGH" percent="1.3" />
+        <temperatureProbability unit="probabilitycode" value="0" />
+        <windProbability unit="probabilitycode" value="0" />
+        <dewpointTemperature id="TD" unit="celsius" value="0.5" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T23:00:00Z" to="2014-09-18T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T22:00:00Z" to="2014-09-18T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T21:00:00Z" to="2014-09-18T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-17T18:00:00Z" to="2014-09-18T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0" />
+        <symbol id="Sun" number="1" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-18T06:00:00Z" to="2014-09-18T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="3.2" />
+        <windDirection id="dd" deg="36.3" name="NE" />
+        <windSpeed id="ff" mps="1.3" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1023.8" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-18T00:00:00Z" to="2014-09-18T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-18T12:00:00Z" to="2014-09-18T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="12.0" />
+        <windDirection id="dd" deg="124.9" name="SE" />
+        <windSpeed id="ff" mps="1.4" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1022.2" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-18T06:00:00Z" to="2014-09-18T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-18T18:00:00Z" to="2014-09-18T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="10.7" />
+        <windDirection id="dd" deg="121.0" name="SE" />
+        <windSpeed id="ff" mps="1.4" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1020.6" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-18T12:00:00Z" to="2014-09-18T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-19T00:00:00Z" to="2014-09-19T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="5.7" />
+        <windDirection id="dd" deg="65.0" name="NE" />
+        <windSpeed id="ff" mps="0.7" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1021.0" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-18T18:00:00Z" to="2014-09-19T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-19T06:00:00Z" to="2014-09-19T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="3.1" />
+        <windDirection id="dd" deg="346.1" name="N" />
+        <windSpeed id="ff" mps="1.1" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1019.6" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-19T00:00:00Z" to="2014-09-19T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-19T12:00:00Z" to="2014-09-19T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="13.1" />
+        <windDirection id="dd" deg="292.6" name="NW" />
+        <windSpeed id="ff" mps="1.2" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1018.7" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-19T06:00:00Z" to="2014-09-19T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-19T18:00:00Z" to="2014-09-19T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="10.7" />
+        <windDirection id="dd" deg="295.1" name="NW" />
+        <windSpeed id="ff" mps="1.8" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1017.2" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-19T12:00:00Z" to="2014-09-19T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-20T00:00:00Z" to="2014-09-20T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="5.4" />
+        <windDirection id="dd" deg="312.9" name="NW" />
+        <windSpeed id="ff" mps="1.3" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1017.0" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-19T18:00:00Z" to="2014-09-20T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-20T06:00:00Z" to="2014-09-20T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="4.6" />
+        <windDirection id="dd" deg="329.5" name="NW" />
+        <windSpeed id="ff" mps="1.4" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1016.7" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-20T00:00:00Z" to="2014-09-20T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="Cloud" number="4" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-20T12:00:00Z" to="2014-09-20T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="13.6" />
+        <windDirection id="dd" deg="254.9" name="W" />
+        <windSpeed id="ff" mps="1.9" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1015.6" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-20T06:00:00Z" to="2014-09-20T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-20T18:00:00Z" to="2014-09-20T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="10.2" />
+        <windDirection id="dd" deg="286.7" name="W" />
+        <windSpeed id="ff" mps="1.8" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1016.0" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-20T12:00:00Z" to="2014-09-20T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-21T00:00:00Z" to="2014-09-21T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="5.3" />
+        <windDirection id="dd" deg="335.4" name="NW" />
+        <windSpeed id="ff" mps="1.7" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1017.1" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-20T18:00:00Z" to="2014-09-21T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-21T06:00:00Z" to="2014-09-21T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="5.4" />
+        <windDirection id="dd" deg="313.6" name="NW" />
+        <windSpeed id="ff" mps="1.7" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1019.3" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-21T00:00:00Z" to="2014-09-21T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-21T12:00:00Z" to="2014-09-21T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="10.8" />
+        <windDirection id="dd" deg="95.5" name="E" />
+        <windSpeed id="ff" mps="3.0" beaufort="2" name="Svak vind" />
+        <pressure id="pr" unit="hPa" value="1019.0" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-21T06:00:00Z" to="2014-09-21T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.1" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-21T18:00:00Z" to="2014-09-21T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="8.3" />
+        <windDirection id="dd" deg="283.4" name="W" />
+        <windSpeed id="ff" mps="1.9" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1017.9" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-21T12:00:00Z" to="2014-09-21T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-22T00:00:00Z" to="2014-09-22T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="4.7" />
+        <windDirection id="dd" deg="44.9" name="NE" />
+        <windSpeed id="ff" mps="1.4" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1020.9" />
+        <temperatureProbability unit="probabilitycode" value="2" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-21T18:00:00Z" to="2014-09-22T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-22T06:00:00Z" to="2014-09-22T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="4.9" />
+        <windDirection id="dd" deg="286.7" name="W" />
+        <windSpeed id="ff" mps="1.5" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1022.3" />
+        <temperatureProbability unit="probabilitycode" value="2" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-22T00:00:00Z" to="2014-09-22T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="Cloud" number="4" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-22T12:00:00Z" to="2014-09-22T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="10.1" />
+        <windDirection id="dd" deg="130.4" name="SE" />
+        <windSpeed id="ff" mps="2.5" beaufort="2" name="Svak vind" />
+        <pressure id="pr" unit="hPa" value="1022.7" />
+        <temperatureProbability unit="probabilitycode" value="2" />
+        <windProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-22T06:00:00Z" to="2014-09-22T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-22T18:00:00Z" to="2014-09-22T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="7.2" />
+        <windDirection id="dd" deg="264.2" name="W" />
+        <windSpeed id="ff" mps="1.9" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1022.9" />
+        <temperatureProbability unit="probabilitycode" value="2" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-22T12:00:00Z" to="2014-09-22T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-23T00:00:00Z" to="2014-09-23T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="3.6" />
+        <windDirection id="dd" deg="65.2" name="NE" />
+        <windSpeed id="ff" mps="1.5" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1023.3" />
+        <temperatureProbability unit="probabilitycode" value="2" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-22T18:00:00Z" to="2014-09-23T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-23T06:00:00Z" to="2014-09-23T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="3.4" />
+        <windDirection id="dd" deg="17.9" name="N" />
+        <windSpeed id="ff" mps="1.5" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1023.1" />
+        <temperatureProbability unit="probabilitycode" value="2" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-23T00:00:00Z" to="2014-09-23T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-23T12:00:00Z" to="2014-09-23T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="9.8" />
+        <windDirection id="dd" deg="113.6" name="SE" />
+        <windSpeed id="ff" mps="2.6" beaufort="2" name="Svak vind" />
+        <pressure id="pr" unit="hPa" value="1022.9" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-23T06:00:00Z" to="2014-09-23T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="Cloud" number="4" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-23T18:00:00Z" to="2014-09-23T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="7.1" />
+        <windDirection id="dd" deg="274.3" name="W" />
+        <windSpeed id="ff" mps="2.0" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1022.0" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-23T12:00:00Z" to="2014-09-23T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-24T00:00:00Z" to="2014-09-24T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="3.3" />
+        <windDirection id="dd" deg="301.3" name="NW" />
+        <windSpeed id="ff" mps="1.7" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1025.2" />
+        <temperatureProbability unit="probabilitycode" value="2" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-23T18:00:00Z" to="2014-09-24T00:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="Cloud" number="4" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-24T06:00:00Z" to="2014-09-24T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="2.9" />
+        <windDirection id="dd" deg="326.5" name="NW" />
+        <windSpeed id="ff" mps="1.5" beaufort="1" name="Flau vind" />
+        <pressure id="pr" unit="hPa" value="1023.9" />
+        <temperatureProbability unit="probabilitycode" value="2" />
+        <windProbability unit="probabilitycode" value="0" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-24T00:00:00Z" to="2014-09-24T06:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="Cloud" number="4" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-24T12:00:00Z" to="2014-09-24T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="9.0" />
+        <windDirection id="dd" deg="176.3" name="S" />
+        <windSpeed id="ff" mps="2.7" beaufort="2" name="Svak vind" />
+        <pressure id="pr" unit="hPa" value="1020.4" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-24T06:00:00Z" to="2014-09-24T12:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="Cloud" number="4" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-24T18:00:00Z" to="2014-09-24T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <temperature id="TTT" unit="celsius" value="5.8" />
+        <windDirection id="dd" deg="287.1" name="W" />
+        <windSpeed id="ff" mps="2.3" beaufort="2" name="Svak vind" />
+        <pressure id="pr" unit="hPa" value="1021.2" />
+        <temperatureProbability unit="probabilitycode" value="1" />
+        <windProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+    <time datatype="forecast" from="2014-09-24T12:00:00Z" to="2014-09-24T18:00:00Z">
+      <location altitude="813" latitude="59.5690" longitude="7.3487">
+        <precipitation unit="mm" value="0.0" />
+        <symbol id="PartlyCloud" number="3" />
+        <symbolProbability unit="probabilitycode" value="1" />
+      </location>
+    </time>
+  </product>
+</weatherdata>

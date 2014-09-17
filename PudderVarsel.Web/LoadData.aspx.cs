@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Threading;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 using System.Xml;
 using PudderVarsel.Data;
 
@@ -20,12 +15,7 @@ namespace PudderVarsel.Web
 
         protected void LoadDataButton_Click(object sender, EventArgs e)
         {
-            while (true)
-            {
-                LoadFreshData();
-                Thread.Sleep(500000);
-            }
-            
+            LoadFreshData();
         }
 
         protected void SeeDataButton_Click(object sender, EventArgs e)
@@ -38,11 +28,7 @@ namespace PudderVarsel.Web
             foreach (var location in locations)
             {
 
-                FileInfo oFileInfo = new FileInfo(Server.MapPath(@"~/bin/Data/" + location.Name + ".xml"));
-
-
-
-
+                var oFileInfo = new FileInfo(Server.MapPath(@"~/bin/Data/" + location.Name + ".xml"));
                 Output.Text += oFileInfo.FullName + ": " + oFileInfo.CreationTime + " - " + oFileInfo.LastWriteTime + "<br/>";
             }
 
@@ -59,10 +45,7 @@ namespace PudderVarsel.Web
             foreach (var location in locations)
             {
                 File.Delete(Server.MapPath(@"~/bin/Data/" + location.Name + ".xml"));
-               
             }
-
-
         }
 
         private void LoadFreshData()

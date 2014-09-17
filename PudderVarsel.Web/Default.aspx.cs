@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
+using System.Xml.Linq;
 using PudderVarsel.Data;
 
 
@@ -99,10 +100,12 @@ namespace PudderVarsel.Web
 
             foreach (var lokasjon in PudderVarsel)
             {
-                //var grunndata = MetClient.GetForecast(lokasjon.Latitude, lokasjon.Longitude);
-                var grunndata = data.GetForecastFromFile(Server.MapPath(@"~/bin/Data/" + lokasjon.Name + ".xml"));
+                XElement grunndata;
 
-                //data.SaveForecastToFile(grunndata, Server.MapPath(@"~/bin/Data/" + lokasjon.Name + ".xml"));
+                if (NyeDataCheckBox.Checked)
+                    grunndata = MetClient.GetForecast(lokasjon.Latitude, lokasjon.Longitude);
+                else
+                    grunndata = data.GetForecastFromFile(Server.MapPath(@"~/bin/Data/" + lokasjon.Name + ".xml"));
 
                 var dagligVarsel = data.ProcessResponse(grunndata).Where(p => p != null);
                 var dagligPuddervarselListe = dagligVarsel as IList<DagligPuddervarsel> ?? dagligVarsel.ToList();

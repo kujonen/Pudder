@@ -107,7 +107,7 @@ namespace PudderVarsel.Data
             var timeInfo = TimeZoneInfo.FindSystemTimeZoneById("W. Europe Standard Time");
             var ciNo = new CultureInfo("nb-NO");
             var items = forecastResponse.DescendantsAndSelf("time");
-
+            var t = 0;
             var xElements = items as XElement[] ?? items.ToArray();
             var powderForecastDays = new DagligPuddervarsel[12];
             var detailedPowderList = new DetailedPowder[4];
@@ -148,7 +148,14 @@ namespace PudderVarsel.Data
                     }
                     detailedPowder.Temperature = GetAverageTemp(temperatureList, ciNo);
                     temperatureList = new Dictionary<string, string>();
-                    detailedPowderList[detailedTeller] = detailedPowder;
+                    if (detailedTeller < detailedPowderList.Count())
+                        detailedPowderList[detailedTeller] = detailedPowder;
+                    else
+                    {
+                        //Todo: Check data
+                        t = 1;
+                    }
+
                     detailedTeller++;
                 }
 
