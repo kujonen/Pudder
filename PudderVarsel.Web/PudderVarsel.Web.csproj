@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,6 +45,8 @@
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Drawing" />
@@ -188,6 +191,7 @@
     <Content Include="Images\Sleet.png" />
     <Content Include="Images\Snow.png" />
     <Content Include="LoadData.aspx" />
+    <Content Include="LoadDataService.svc" />
     <Content Include="Locations.xml">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -252,12 +256,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ILoadDataService.cs" />
     <Compile Include="LoadData.aspx.cs">
       <DependentUpon>LoadData.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="LoadData.aspx.designer.cs">
       <DependentUpon>LoadData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoadDataService.svc.cs">
+      <DependentUpon>LoadDataService.svc</DependentUpon>
     </Compile>
     <Compile Include="MetClient.cs" />
     <Compile Include="PowderDetails.aspx.cs">
