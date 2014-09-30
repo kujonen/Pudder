@@ -41,7 +41,7 @@
     <asp:TextBox ID="TextBoxSearch" Text="Navn på alpinsenter" runat="server" CssClass="Textbox" AutoPostBack="True" OnTextChanged="TextBoxSearch_TextChanged" Width="110" OnClick="this.value=''"></asp:TextBox>
     <br/>
     <asp:Button ID="ButtonSearch" Text="Finn pudder" Enabled="False" runat="server" OnClick="ButtonSearch_Click" /> 
-    <input type="checkbox" runat="server" ID="NyeDataCheckBox" name="Hent" value="Hent nye data"/><asp:Label runat="server" Text="Hent nye data"></asp:Label>
+    <%--<input type="checkbox" runat="server" ID="NyeDataCheckBox" name="Hent" value="Hent nye data"/><asp:Label runat="server" Text="Hent nye data"></asp:Label>--%>
     
     
     <asp:ListView ID="ListViewLocations" runat="server">

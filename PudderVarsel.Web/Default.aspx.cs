@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -16,6 +17,7 @@ namespace PudderVarsel.Web
         public static IEnumerable<Lokasjon> PudderVarsel { get; set; }
         public double Longitude { get; set; }
         public double Latitude { get; set; }
+        public List<string> Lokasjonsnavn { get; set; }
 
         public int TimeSpent { get; set; }
 
@@ -34,6 +36,23 @@ namespace PudderVarsel.Web
 
             if (Equals(Longitude, 0.0))
                 Page.ClientScript.RegisterStartupScript(GetType(), "Call my function", "requestPosition()", true);
+            LoadLokasjonsnavn();
+        }
+
+        private void LoadLokasjonsnavn()
+        {
+            Lokasjonsnavn = new List<string>();
+            var lokasjoner = FetchLocations();
+            var reader = XmlReader.Create(new StringReader(lokasjoner));
+
+            var element = XElement.Load(reader, LoadOptions.SetBaseUri);
+            var items = element.DescendantsAndSelf("Location");
+            var xElements = items as XElement[] ?? items.ToArray();
+
+            foreach (var name in xElements.Select(xElement => XmlHelper.GetAttributeValue("name", xElement)))
+            {
+                Lokasjonsnavn.Add(name);
+            }
         }
 
         public void RaisePostBackEvent(string eventArgument)
@@ -102,7 +121,7 @@ namespace PudderVarsel.Web
             {
                 XElement grunndata;
 
-                if (NyeDataCheckBox.Checked)
+                if (lokasjon.Name == "Din lokasjon")
                     grunndata = MetClient.GetForecast(lokasjon.Latitude, lokasjon.Longitude);
                 else
                     grunndata = data.GetForecastFromFile(Server.MapPath(@"~/bin/Data/" + lokasjon.Name + ".xml"));
@@ -140,7 +159,11 @@ namespace PudderVarsel.Web
 
         protected void TextBoxSearch_TextChanged(object sender, EventArgs e)
         {
-
+            var searchString = TextBoxSearch.Text;
+            if (Lokasjonsnavn.Any(p => p.StartsWith(searchString)))
+            {
+                TextBoxSearch.Text = Lokasjonsnavn.FirstOrDefault(n => n.StartsWith(searchString));
+            }
         }
 
 
