@@ -1,0 +1,9 @@
+C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\LoadDataService\bin\Data\Tryvann.xml
+C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\LoadDataService\bin\LoadDataService.dll.config
+C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\LoadDataService\bin\LoadDataService.dll
+C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\LoadDataService\bin\LoadDataService.pdb
+C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\LoadDataService\bin\PudderVarsel.Dat.dll
+C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\LoadDataService\bin\PudderVarsel.Dat.pdb
+C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\LoadDataService\obj\Debug\PudderVarselService.csprojResolveAssemblyReference.cache
+C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\LoadDataService\obj\Debug\LoadDataService.dll
+C:\Users\jonsandv.CRAYON\Documents\GitHub\Pudder\LoadDataService\obj\Debug\LoadDataService.pdb

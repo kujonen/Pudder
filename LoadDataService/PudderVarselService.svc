@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="LoadDataService.PudderVarselService" CodeBehind="PudderVarselService.svc.cs" %>
