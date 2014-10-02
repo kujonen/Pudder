@@ -10,5 +10,9 @@ namespace PudderVarsel.Web
         [OperationContract]
         void LoadData(System.Xml.Linq.XElement location, string name);
 
+
+        [OperationContract]
+        string FetchLocations();
+
     }
 }
