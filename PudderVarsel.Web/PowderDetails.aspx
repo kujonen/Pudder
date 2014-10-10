@@ -24,9 +24,9 @@
                     <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; border-color: black; border-style: solid">
                       <asp:Label ID="LastNameLabel" runat="Server" Width="150" Text='<%#Eval("Powder") + "cm" %>' />
                     </td>
-                    <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; border-color: black; border-style: solid">
+                   <%-- <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; border-color: black; border-style: solid">
                       <asp:Label ID="Label1" runat="Server" Width="170" Text='<%#Eval("Precipitation") + "mm" %>' />
-                    </td>
+                    </td>--%>
                     <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; border-color: black; border-style: solid">
                       <asp:Label ID="TextBox1" runat="Server" Width="100" Text='<%#Eval("AverageTemperature") + "°" %>' />
                     </td>
