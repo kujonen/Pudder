@@ -30,7 +30,7 @@
                       <asp:TextBox Enabled="False" Width="150px" ID="TextBox1" runat="Server" Text='<%#Convert.ToDateTime(Eval("To")).ToString("HH:mm") %>' />
                     </td>
                     <td>
-                      <asp:TextBox Enabled="False" Width="200px" ID="LabelFrom" runat="Server" Text='<%#Eval("Precipitation") + "cm" %>' />
+                      <asp:TextBox Enabled="False" Width="200px" ID="LabelFrom" runat="Server" Text='<%#Eval("Powder") + "cm" %>' />
                     </td>
                       <td>
                           <asp:TextBox Enabled="False" Width="150px" ID="TextBox2" runat="Server" Text='<%#Eval("Temperature") + "°" %>' />

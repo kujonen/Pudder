@@ -55,7 +55,7 @@
                 <table>
             <tr>
               <td rowspan="3" >
-                  <asp:LinkButton ForeColor="White" CssClass="big" Width="100" CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPrecipitation") +"cm" %>' />
+                  <asp:LinkButton ForeColor="White" CssClass="big" Width="100" CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPowder") +"cm" %>' />
               </td>
               <td colspan="2">
                   <asp:Label ID="LocationLabel" runat="Server" CssClass="medium" Text='<%#Eval("Name") %>'/>
@@ -67,7 +67,7 @@
                 
             </tr>
             <tr>
-                <td><asp:Label ID="TextBox2" runat="Server" Text='<%#Eval("ThreeDaysPrecipitation") + "cm" %>' /></td>
+                <td><asp:Label ID="TextBox2" runat="Server" Text='<%#Eval("ThreeDaysPowder") + "cm" %>' /></td>
                 <td><asp:Label ID="TextBox1" runat="Server" Text='<%#Eval("Distance", "{0:0.#}") + "km" %>' /></td>
         </tr>
             <tr>

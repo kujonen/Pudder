@@ -32,8 +32,8 @@ namespace PudderVarsel.Web
 
             var ciNo = new CultureInfo("nb-NO");
 
-            Totalt = powderData.TotalPrecipitation.ToString();
-            TreDager = powderData.ThreeDaysPrecipitation.ToString();
+            Totalt = powderData.TotalPowder.ToString();
+            TreDager = powderData.ThreeDaysPowder.ToString();
             OppdatertDato = powderData.OppdatertDato.ToString(ciNo);
             NesteOppdatering = powderData.NesteOppdateringDato.ToString(ciNo);
             Distance = Math.Round(powderData.Distance,1).ToString(ciNo);

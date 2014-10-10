@@ -29,7 +29,9 @@ namespace PudderVarsel.Data
         public double Longitude { get; set; }
         public double Latitude { get; set; }
         public decimal TotalPrecipitation { get; set; }
+        public decimal TotalPowder { get; set; }
         public decimal ThreeDaysPrecipitation { get; set; }
+        public decimal ThreeDaysPowder { get; set; }
         public int Altitude { get; set; }
         public decimal Temperature { get; set; }
         public AreaEnum Area { get; set; }

@@ -5,6 +5,7 @@ namespace PudderVarsel.Data
     public class DetailedPowder
     {
         public decimal Precipitation { get; set; }
+        public decimal Powder { get; set; }
         public DateTime From { get; set; }
         public DateTime To { get; set; }
         public int Altitude { get; set; }

@@ -18,14 +18,17 @@
             <table>
                   <tr>
                     <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; border-color: black; border-style: solid">
-                        <asp:LinkButton ForeColor="White" ID="Button" Width="300" OnCommand="Date_Click" runat="Server" Text='<%# Convert.ToDateTime(Eval("Day")).ToString("ddd") + " " + 
+                        <asp:LinkButton ForeColor="White" ID="Button" Width="250" OnCommand="Date_Click" runat="Server" Text='<%# Convert.ToDateTime(Eval("Day")).ToString("ddd") + " " + 
                         Convert.ToDateTime(Eval("Day")).ToString("dd/MM") %>' CommandArgument='<%#Eval("Day") %>' />
                     </td>
                     <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; border-color: black; border-style: solid">
-                      <asp:Label ID="LastNameLabel" runat="Server" Text='<%#Eval("Precipitation") + "cm" %>' />
+                      <asp:Label ID="LastNameLabel" runat="Server" Width="150" Text='<%#Eval("Powder") + "cm" %>' />
                     </td>
                     <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; border-color: black; border-style: solid">
-                      <asp:Label ID="TextBox1" runat="Server" Text='<%#Eval("AverageTemperature") + "°" %>' />
+                      <asp:Label ID="Label1" runat="Server" Width="170" Text='<%#Eval("Precipitation") + "mm" %>' />
+                    </td>
+                    <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; border-color: black; border-style: solid">
+                      <asp:Label ID="TextBox1" runat="Server" Width="100" Text='<%#Eval("AverageTemperature") + "°" %>' />
                     </td>
                     <td style="padding-top: 8px">
                         <asp:Image ImageAlign="Top" runat="server" ImageUrl='<%#"~/images/" + Eval("ImageUrl") %>' />

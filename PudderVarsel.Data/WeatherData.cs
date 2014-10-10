@@ -147,6 +147,9 @@ namespace PudderVarsel.Data
                         detailedPowder.To = toDateTime;
                     }
                     detailedPowder.Temperature = GetAverageTemp(temperatureList, ciNo);
+
+                    detailedPowder.Powder = detailedPowder.Temperature < 2 ? detailedPowder.Precipitation : 0;
+
                     temperatureList = new Dictionary<string, string>();
                     if (detailedTeller < detailedPowderList.Count())
                         detailedPowderList[detailedTeller] = detailedPowder;

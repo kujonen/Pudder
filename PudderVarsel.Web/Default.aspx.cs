@@ -121,10 +121,11 @@ namespace PudderVarsel.Web
             {
                 XElement grunndata;
 
-                if (lokasjon.Name == "Din lokasjon")
-                    grunndata = MetClient.GetForecast(lokasjon.Latitude, lokasjon.Longitude);
-                else
-                    grunndata = data.GetForecastFromFile(Server.MapPath(@"~/bin/Data/" + lokasjon.Name + ".xml"));
+                grunndata = MetClient.GetForecast(lokasjon.Latitude, lokasjon.Longitude);
+                //if (lokasjon.Name == "Din lokasjon")
+                //    grunndata = MetClient.GetForecast(lokasjon.Latitude, lokasjon.Longitude);
+                //else
+                //    grunndata = data.GetForecastFromFile(Server.MapPath(@"~/bin/Data/" + lokasjon.Name + ".xml"));
 
                 var dagligVarsel = data.ProcessResponse(grunndata).Where(p => p != null);
                 var dagligPuddervarselListe = dagligVarsel as IList<DagligPuddervarsel> ?? dagligVarsel.ToList();
@@ -133,10 +134,9 @@ namespace PudderVarsel.Web
                 lokasjon.OppdatertDato = XmlHelper.GetDate(grunndata.DescendantsAndSelf("model").FirstOrDefault(), "runended");
                 lokasjon.NesteOppdateringDato = XmlHelper.GetDate(grunndata.DescendantsAndSelf("model").FirstOrDefault(), "nextrun");
 
-                var totalPrecipitation = dagligPuddervarselListe.Sum(p => p.Precipitation);
-                var threeDays = dagligPuddervarselListe.Where(p => p.Day < DateTime.Now.AddDays(2)).Sum(t => t.Precipitation);
-                lokasjon.ThreeDaysPrecipitation = threeDays;
-                lokasjon.TotalPrecipitation = totalPrecipitation;
+                //var totalPrecipitation = dagligPuddervarselListe.Sum(p => p.Precipitation);
+                lokasjon.TotalPowder = dagligPuddervarselListe.Sum(p => p.Powder);
+                lokasjon.ThreeDaysPowder = dagligPuddervarselListe.Where(p => p.Day < DateTime.Now.AddDays(2)).Sum(q => q.Powder);
 
                 //lokasjon.PrecipitationType = Utils.CalculatePrecipitationType(weatherData);
 
@@ -144,7 +144,7 @@ namespace PudderVarsel.Web
                 //                                     location.Latitude.ToString(ciUs), location.Longitude.ToString(ciUs));
             }
 
-            var sortedPowder = PudderVarsel.Where(p => p != null).OrderByDescending(p => p.TotalPrecipitation);
+            var sortedPowder = PudderVarsel.Where(p => p != null).OrderByDescending(p => p.TotalPowder);
 
             ListViewLocations.DataSource = sortedPowder;
             ListViewLocations.DataBind();
@@ -193,7 +193,7 @@ namespace PudderVarsel.Web
 
         protected void SortThreeDays_Click(object sender, CommandEventArgs e)
         {
-            var sortedPowder = PudderVarsel.OrderByDescending(p => p.ThreeDaysPrecipitation);
+            var sortedPowder = PudderVarsel.OrderByDescending(p => p.ThreeDaysPowder);
 
             ListViewLocations.DataSource = sortedPowder;
             ListViewLocations.DataBind();

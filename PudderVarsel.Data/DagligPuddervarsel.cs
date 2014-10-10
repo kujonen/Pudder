@@ -8,6 +8,7 @@ namespace PudderVarsel.Data
     public class DagligPuddervarsel
     {
         public decimal Precipitation { get; set; }
+        public decimal Powder { get; set; }
         public DateTime Day { get; set; }
         public int Altitude { get; set; }
         public decimal AverageTemperature { get; set; }
@@ -44,6 +45,8 @@ namespace PudderVarsel.Data
             dagligPudder.DetailedPowderList = detailedPowderList;
             dagligPudder.Day = detailedPowderList.FirstOrDefault().From;
             dagligPudder.Precipitation = detailedPowderList.Sum(t => t.Precipitation);
+
+            dagligPudder.Powder = detailedPowderList.Sum(periode => periode.Powder);
             var temp = detailedPowderList.Average(t => t.Temperature);
             dagligPudder.AverageTemperature = Math.Round(temp, 1);
             dagligPudder.MaxTemperature = detailedPowderList.Max(t => t.Temperature);
