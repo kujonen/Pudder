@@ -48,6 +48,7 @@
     <p>Sist oppdatert: <%= OppdatertDato %> <br/>
         Ny oppdatering: <%= NesteOppdatering %> <br/>
         Siste forsøk: <%= SisteDataHenting %> 
+        Hentet fra met: <%= HentetFraMet %> 
     </p>
     <p></p>
     

@@ -122,10 +122,12 @@ namespace PudderVarsel.Web
                 XElement grunndata;
 
                 var oFileInfo = new FileInfo(Server.MapPath(@"~/bin/Data/" + lokasjon.Name + ".xml"));
-                
                 //grunndata = MetClient.GetForecast(lokasjon.Latitude, lokasjon.Longitude);
                 if (lokasjon.Name == "Din lokasjon" || oFileInfo.LastWriteTime < DateTime.Now.AddHours(-4))
+                {
                     grunndata = MetClient.GetForecast(lokasjon.Latitude, lokasjon.Longitude);
+                    lokasjon.HentetFraMet = true;
+                }
                 else
                     grunndata = data.GetForecastFromFile(Server.MapPath(@"~/bin/Data/" + lokasjon.Name + ".xml"));
 

@@ -24,6 +24,7 @@ namespace PudderVarsel.Web
         public string NesteOppdatering { get; set; }
         public string SisteDataHenting { get; set; }
         public string Distance { get; set; }
+        public bool HentetFraMet { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -37,8 +38,10 @@ namespace PudderVarsel.Web
             TreDager = powderData.ThreeDaysPowder.ToString();
             OppdatertDato = powderData.OppdatertDato.ToString(ciNo);
             NesteOppdatering = powderData.NesteOppdateringDato.ToString(ciNo);
-            SisteDataHenting = powderData.SisteDataHenting.ToString(ciNo);
+            SisteDataHenting = powderData.SisteDataHenting.AddHours(2).ToString(ciNo);
             Distance = Math.Round(powderData.Distance,1).ToString(ciNo);
+            HentetFraMet = powderData.HentetFraMet;
+
 
             powderDetailResult.DataSource = powderData.DagligVarsel;
             powderDetailResult.DataBind();
