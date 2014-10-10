@@ -46,7 +46,8 @@
     <h3>Totalt denne perioden: <%= Totalt %> cm</h3>
     --%>
     <p>Sist oppdatert: <%= OppdatertDato %> <br/>
-        Ny oppdatering: <%= NesteOppdatering %> 
+        Ny oppdatering: <%= NesteOppdatering %> <br/>
+        Siste forsøk: <%= SisteDataHenting %> 
     </p>
     <p></p>
     

@@ -121,11 +121,13 @@ namespace PudderVarsel.Web
             {
                 XElement grunndata;
 
-                grunndata = MetClient.GetForecast(lokasjon.Latitude, lokasjon.Longitude);
-                //if (lokasjon.Name == "Din lokasjon")
-                //    grunndata = MetClient.GetForecast(lokasjon.Latitude, lokasjon.Longitude);
-                //else
-                //    grunndata = data.GetForecastFromFile(Server.MapPath(@"~/bin/Data/" + lokasjon.Name + ".xml"));
+                var oFileInfo = new FileInfo(Server.MapPath(@"~/bin/Data/" + lokasjon.Name + ".xml"));
+                
+                //grunndata = MetClient.GetForecast(lokasjon.Latitude, lokasjon.Longitude);
+                if (lokasjon.Name == "Din lokasjon" || oFileInfo.LastWriteTime < DateTime.Now.AddHours(-4))
+                    grunndata = MetClient.GetForecast(lokasjon.Latitude, lokasjon.Longitude);
+                else
+                    grunndata = data.GetForecastFromFile(Server.MapPath(@"~/bin/Data/" + lokasjon.Name + ".xml"));
 
                 var dagligVarsel = data.ProcessResponse(grunndata).Where(p => p != null);
                 var dagligPuddervarselListe = dagligVarsel as IList<DagligPuddervarsel> ?? dagligVarsel.ToList();
@@ -133,6 +135,7 @@ namespace PudderVarsel.Web
 
                 lokasjon.OppdatertDato = XmlHelper.GetDate(grunndata.DescendantsAndSelf("model").FirstOrDefault(), "runended");
                 lokasjon.NesteOppdateringDato = XmlHelper.GetDate(grunndata.DescendantsAndSelf("model").FirstOrDefault(), "nextrun");
+                lokasjon.SisteDataHenting = oFileInfo.LastWriteTime;
 
                 //var totalPrecipitation = dagligPuddervarselListe.Sum(p => p.Precipitation);
                 lokasjon.TotalPowder = dagligPuddervarselListe.Sum(p => p.Powder);
