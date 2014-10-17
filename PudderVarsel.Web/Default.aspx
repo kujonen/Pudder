@@ -54,10 +54,10 @@
             <div class="rounded-corners">
                 <table style="width: 100%">
             <tr>
-              <td rowspan="3" style="width: 30%">
+              <td rowspan="3" style="width: 35%">
                   <asp:LinkButton ForeColor="White" CssClass="big" Width="100" CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPowder") +"cm" %>' />
               </td>
-              <td colspan="2" style="width: 70%">
+              <td colspan="2" style="width: 65%">
                   <asp:Label ID="LocationLabel" runat="Server" CssClass="medium" Text='<%#Eval("Name") %>'/>
               </td>
             </tr>
