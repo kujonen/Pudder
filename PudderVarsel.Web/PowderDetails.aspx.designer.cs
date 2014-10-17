@@ -13,6 +13,15 @@ namespace PudderVarsel.Web {
     public partial class PowderDetails {
         
         /// <summary>
+        /// LastNameLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LastNameLabel;
+        
+        /// <summary>
         /// powderDetailResult control.
         /// </summary>
         /// <remarks>

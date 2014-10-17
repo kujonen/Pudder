@@ -64,5 +64,11 @@ namespace PudderVarsel.Web
             var date = Convert.ToDateTime(e.CommandArgument.ToString());
             Response.Redirect("DateDetails.aspx?Day=" + date.Day + "&Location=" + Location + "&Date=" + date.ToString("dd/MM/yyyy"));
         }
+
+        protected void Home_Click(object sender, CommandEventArgs e)
+        {
+            //var date = Convert.ToDateTime(e.CommandArgument.ToString());
+            Response.Redirect("Default.aspx");
+        }
     }
 }

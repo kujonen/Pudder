@@ -3,6 +3,17 @@
 
 <%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
 
+<asp:Content runat="server" ID="FeaturedContent" ContentPlaceHolderID="FeaturedContent">
+
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h2><asp:LinkButton ForeColor="White" CssClass="big" CommandArgument=''  OnCommand="Home_Click" ID="LastNameLabel" runat="Server" Text="Puddervarsel" /></h2>
+            </hgroup>
+        </div>
+    </section>
+</asp:Content>
+
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <hgroup class="title">
         <h2><%= Location %></h2>

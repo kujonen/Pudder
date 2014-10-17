@@ -52,7 +52,7 @@
         <ItemTemplate>
             
             <div class="rounded-corners">
-                <table style="width: 100%">
+                <table style="width: 100%; padding: 0px">
             <tr>
               <td rowspan="3" style="width: 35%">
                   <asp:LinkButton ForeColor="White" CssClass="big" Width="100" CommandArgument='<%#Eval("Name") %>'  OnCommand="Details_Click" ID="LastNameLabel" runat="Server" Text='<%#Eval("TotalPowder") +"cm" %>' />
