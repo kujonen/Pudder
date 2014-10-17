@@ -15,22 +15,22 @@
         <ItemTemplate>
             <%----%>
             <div class="table-powder-details">
-            <table>
+            <table width="100%">
                   <tr>
-                    <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; width: 250px; border-color: black; border-style: solid">
+                    <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; width: 35%; border-color: black; border-style: solid">
                         <asp:LinkButton ForeColor="White" ID="Button" OnCommand="Date_Click" runat="Server" Text='<%# Convert.ToDateTime(Eval("Day")).ToString("ddd") + " " + 
                         Convert.ToDateTime(Eval("Day")).ToString("dd/MM") %>' CommandArgument='<%#Eval("Day") %>' />
                     </td>
-                    <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; width: 170px; border-color: black; border-style: solid">
+                    <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; width: 25%; border-color: black; border-style: solid">
                       <asp:Label ID="LastNameLabel" runat="Server"  Text='<%#Eval("Powder") + "cm" %>' />
                     </td>
                    <%-- <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; border-color: black; border-style: solid">
                       <asp:Label ID="Label1" runat="Server" Width="170" Text='<%#Eval("Precipitation") + "mm" %>' />
                     </td>--%>
-                    <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; width: 140px; border-color: black; border-style: solid">
+                    <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; width: 20%; border-color: black; border-style: solid">
                       <asp:Label ID="TextBox1" runat="Server" Text='<%#Eval("AverageTemperature") + "°" %>' />
                     </td>
-                    <td style="padding-top: 8px">
+                    <td style="padding-top: 8px; width: 20%;">
                         <asp:Image ImageAlign="Top" runat="server" ImageUrl='<%#"~/images/" + Eval("ImageUrl") %>' />
                     </td>
                   </tr>
