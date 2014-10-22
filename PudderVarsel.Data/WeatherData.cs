@@ -174,6 +174,8 @@ namespace PudderVarsel.Data
 
         private static decimal GetAverageTemp(Dictionary<string,string> temperatureList, CultureInfo ciNo)
         {
+            if (temperatureList.Count == 0)
+                return 0;
             var temp = temperatureList.Sum(temperature => Convert.ToDecimal(temperature.Value.Replace('.', ','), ciNo));
 
             var average = temp/temperatureList.Count;
@@ -182,8 +184,10 @@ namespace PudderVarsel.Data
 
         private static bool IsRelevant(DateTime from, DateTime to)
         {
-            //if (System.Diagnostics.Debugger.IsAttached)
-            //{
+            if (from.Hour != to.Hour)
+                return true;
+            if (System.Diagnostics.Debugger.IsAttached)
+            {
                 if (from.Hour == 18 && to.Hour == 0)
                     return true;
                 if (from.Hour == 0 && to.Hour == 6)
@@ -192,9 +196,9 @@ namespace PudderVarsel.Data
                     return true;
                 if (from.Hour == 12 && to.Hour == 18)
                     return true;
-            //}
-            //else
-            //{
+            }
+            else
+            {
                 if (from.Hour == 14 && to.Hour == 20)
                     return true;
                 if (from.Hour == 2 && to.Hour == 8)
@@ -203,7 +207,7 @@ namespace PudderVarsel.Data
                     return true;
                 if (from.Hour == 20 && to.Hour == 2)
                     return true;
-            //}
+            }
             return false;
         }
 
