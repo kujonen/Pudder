@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Web.UI.WebControls;
 using PudderVarsel.Data;
 
 namespace PudderVarsel.Web
@@ -38,6 +39,12 @@ namespace PudderVarsel.Web
 
             dateDetailResult.DataSource = detailedForecast;
             dateDetailResult.DataBind();
+        }
+
+        protected void Home_Click(object sender, CommandEventArgs e)
+        {
+            //var date = Convert.ToDateTime(e.CommandArgument.ToString());
+            Response.Redirect("Default.aspx");
         }
     }
 }

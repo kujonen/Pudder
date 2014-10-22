@@ -1,5 +1,16 @@
 ﻿<%@ Page Language="C#" Title="Date details" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="DateDetails.aspx.cs" Inherits="PudderVarsel.Web.DateDetails" %>
 
+<asp:Content runat="server" ID="FeaturedContent" ContentPlaceHolderID="FeaturedContent">
+
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h2><asp:LinkButton ForeColor="White" CssClass="big" CommandArgument=''  OnCommand="Home_Click" ID="LastNameLabel" runat="Server" Text="Puddervarsel" /></h2>
+            </hgroup>
+        </div>
+    </section>
+</asp:Content>
+
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <hgroup class="title">
         <%--<h1><%: Title %>.</h1>--%>

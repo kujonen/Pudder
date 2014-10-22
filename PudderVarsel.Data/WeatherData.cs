@@ -182,8 +182,8 @@ namespace PudderVarsel.Data
 
         private static bool IsRelevant(DateTime from, DateTime to)
         {
-            if (System.Diagnostics.Debugger.IsAttached)
-            {
+            //if (System.Diagnostics.Debugger.IsAttached)
+            //{
                 if (from.Hour == 18 && to.Hour == 0)
                     return true;
                 if (from.Hour == 0 && to.Hour == 6)
@@ -192,9 +192,9 @@ namespace PudderVarsel.Data
                     return true;
                 if (from.Hour == 12 && to.Hour == 18)
                     return true;
-            }
-            else
-            {
+            //}
+            //else
+            //{
                 if (from.Hour == 14 && to.Hour == 20)
                     return true;
                 if (from.Hour == 2 && to.Hour == 8)
@@ -203,7 +203,7 @@ namespace PudderVarsel.Data
                     return true;
                 if (from.Hour == 20 && to.Hour == 2)
                     return true;
-            }
+            //}
             return false;
         }
 
