@@ -214,14 +214,25 @@ namespace PudderVarsel.Data
                         return true;
                     if (from.Hour == 19 && to.Hour == 1)
                         return true;
-                    if (from.Hour == 2 && to.Hour == 8)
-                        return true;
-                    if (from.Hour == 8 && to.Hour == 14)
-                        return true;
-                    if (from.Hour == 14 && to.Hour == 20)
-                        return true;
-                    if (from.Hour == 20 && to.Hour == 2)
-                        return true;
+                
+                
+                
+                
+                
+                //if (from.Hour == 2 && to.Hour == 8)
+                    //    return true;
+                    //if (from.Hour == 8 && to.Hour == 14)
+                    //    return true;
+                    //if (from.Hour == 14 && to.Hour == 20)
+                    //    return true;
+                    //if (from.Hour == 20 && to.Hour == 2)
+                    //    return true;
+
+
+
+
+
+
                     //if (from.Hour == 22 && to.Hour == 4)
                     //    return true;
                     //if (from.Hour == 4 && to.Hour == 10)
