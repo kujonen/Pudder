@@ -186,8 +186,36 @@ namespace PudderVarsel.Data
         {
 
             var diff = to - from;
-            if (diff.Hours == 6)
-                return true;
+            if (diff.Hours != 6)
+                return false;
+
+            //var shortDate = DateTime.Now.AddDays(2).Date;
+
+            //if (from.Date <= shortDate)
+            //{
+                if (from.Hour == 0 && to.Hour == 6)
+                    return true;
+                if (from.Hour == 6 && to.Hour == 12)
+                    return true;
+                if (from.Hour == 12 && to.Hour == 18)
+                    return true;
+                if (from.Hour == 18 && to.Hour == 0)
+                    return true;
+            //}
+            //else
+            //{
+
+
+            //    if (from.Hour == 1 && to.Hour == 7)
+            //        return true;
+            //    if (from.Hour == 7 && to.Hour == 13)
+            //        return true;
+            //    if (from.Hour == 13 && to.Hour == 19)
+            //        return true;
+            //    if (from.Hour == 19 && to.Hour == 1)
+            //        return true;
+            //}
+
             ////if (from.Hour != to.Hour)
             ////    return true;
             //if (System.Diagnostics.Debugger.IsAttached)
