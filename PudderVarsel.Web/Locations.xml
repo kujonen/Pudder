@@ -32,6 +32,7 @@
     <Location name="Ørskogfjellet Skisenter" latitude="62.550957924" longitude="6.9797515869" area="1"/>
     <Location name="Fjellseter" latitude="62.337418239" longitude="6.7638015747" area="1"/>
     <Location name="Volda Skisenter" latitude="62.152354123" longitude="6.1533737182" area="1"/>
+	<Location name="Engelberg" latitude="46.8211" longitude="8.41410" area="1"/>
   </Locations>
 </PowderAlert>
 
