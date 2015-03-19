@@ -33,6 +33,7 @@ namespace PudderVarsel
                             var test = response.GetResponseStream();
                             xmlDoc.Load(test);
                             var t = XElement.Parse(xmlDoc.InnerXml);
+                            
                             return t;
                         }
                     }

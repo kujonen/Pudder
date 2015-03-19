@@ -131,6 +131,7 @@ namespace PudderVarsel.Web
                 else
                     grunndata = data.GetForecastFromFile(Server.MapPath(@"~/bin/Data/" + lokasjon.Name + ".xml"));
 
+                txtOutput.Text = grunndata.ToString();
                 var dagligVarsel = data.ProcessResponse(grunndata).Where(p => p != null);
                 var dagligPuddervarselListe = dagligVarsel as IList<DagligPuddervarsel> ?? dagligVarsel.ToList();
                 lokasjon.DagligVarsel = dagligPuddervarselListe;

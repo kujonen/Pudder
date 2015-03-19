@@ -80,6 +80,9 @@
     
     <asp:TextBox id="latitude" runat="server" CssClass="hide" />
     <asp:TextBox runat="server" id="longitude" CssClass="hide" />
+    
+    <asp:TextBox runat="server" ID="txtOutput" TextMode="multiline"></asp:TextBox>
+    <asp:Label runat="server" ></asp:Label>
 
 
     <script type="text/javascript">
