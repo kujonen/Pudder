@@ -130,8 +130,8 @@ namespace PudderVarsel.Data
             var detailedTeller = 0;
             var i = 0;
 
-            DateTimeOffset newTime = TimeZoneInfo.ConvertTime(DateTimeOffset.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("Central European Standard Time"));
-            var lastDay = new DateTime(2015, 3, 20, 10, 43,01).Date;
+            var lastDay = TimeZoneInfo.ConvertTime(DateTimeOffset.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("Central European Standard Time"));
+            
             var temperatureList = new Dictionary<string, string>();
             foreach (var xElement in xElements)
             {
@@ -177,11 +177,6 @@ namespace PudderVarsel.Data
                     temperatureList = new Dictionary<string, string>();
                     if (detailedTeller < detailedPowderList.Count())
                         detailedPowderList[detailedTeller] = detailedPowder;
-                    //else
-                    //{
-                    //    //Todo: Check data
-                    //    t = 1;
-                    //}
 
                     detailedTeller++;
                 }
