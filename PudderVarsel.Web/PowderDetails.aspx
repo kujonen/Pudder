@@ -42,7 +42,7 @@
                     <td style="width: 35%;">
                       <asp:Label ID="TextBox1" runat="Server" Text='<%#Eval("AverageTemperature") + "°" %>' />
                     </td>
-                    <td style="padding-top: 8px; width: 20%;">
+                    <td>
                         <asp:Image ImageAlign="Top" runat="server" ImageUrl='<%#"~/images/" + Eval("ImageUrl") %>' />
                     </td>
                   </tr>

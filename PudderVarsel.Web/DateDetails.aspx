@@ -35,16 +35,16 @@
             <table>
                   <tr id="Tr2" runat="server">
                     <td>
-                      <asp:TextBox Enabled="False" Width="150px" ID="LabelTo" runat="Server" Text='<%#Convert.ToDateTime(Eval("From")).ToString("HH:mm") %>' />
+                      <asp:Label Enabled="False" Width="150px" ID="LabelTo" runat="Server" Text='<%#Convert.ToDateTime(Eval("From")).ToString("HH:mm") %>' />
                     </td>
                     <td>
-                      <asp:TextBox Enabled="False" Width="150px" ID="TextBox1" runat="Server" Text='<%#Convert.ToDateTime(Eval("To")).ToString("HH:mm") %>' />
+                      <asp:Label Enabled="False" Width="150px" ID="TextBox1" runat="Server" Text='<%#Convert.ToDateTime(Eval("To")).ToString("HH:mm") %>' />
                     </td>
                     <td>
-                      <asp:TextBox Enabled="False" Width="200px" ID="LabelFrom" runat="Server" Text='<%#Eval("Powder") + "cm" %>' />
+                      <asp:Label Enabled="False" Width="200px" ID="LabelFrom" runat="Server" Text='<%#Eval("Powder") + "cm" %>' />
                     </td>
                       <td>
-                          <asp:TextBox Enabled="False" Width="150px" ID="TextBox2" runat="Server" Text='<%#Eval("Temperature") + "°" %>' />
+                          <asp:Label Enabled="False" Width="150px" ID="TextBox2" runat="Server" Text='<%#Eval("Temperature") + "°" %>' />
                       </td>
                       <td style="padding-top: 8px">
                           <asp:Image runat="server" ImageUrl='<%#"~/images/" + Eval("ImageUrl") %>' />
