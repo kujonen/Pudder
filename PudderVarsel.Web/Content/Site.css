@@ -542,8 +542,8 @@ input[type="checkbox"].input-validation-error {
           color: #1181A4; 
           margin: 20px;
          padding: 20px;
-         font-size: 3.5em;
-         font-weight: bold;
+         font-size: 3em;
+         /*font-weight: bold;*/
 }
 
 /* tables
