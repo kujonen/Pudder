@@ -129,7 +129,9 @@ namespace PudderVarsel.Data
             var detailedPowderList = new DetailedPowder[4];
             var detailedTeller = 0;
             var i = 0;
-            var lastDay = DateTime.Now.Date;
+
+            DateTimeOffset newTime = TimeZoneInfo.ConvertTime(DateTimeOffset.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("AppTimeZone"));
+            var lastDay = new DateTime(2015, 3, 20, 10, 43,01).Date;
             var temperatureList = new Dictionary<string, string>();
             foreach (var xElement in xElements)
             {
@@ -155,16 +157,19 @@ namespace PudderVarsel.Data
                     var precipitation = XmlHelper.GetElementValue("location", "precipitation", "value", xElement);
                     detailedPowder.Precipitation = Convert.ToDecimal(precipitation.Replace('.', ','), ciNo);
 
-                    if (!System.Diagnostics.Debugger.IsAttached)
-                    {
-                        detailedPowder.From = fromDateTime.AddHours(-2);
-                        detailedPowder.To = toDateTime.AddHours(-2);
-                    }
-                    else
-                    {
-                        detailedPowder.From = fromDateTime;
-                        detailedPowder.To = toDateTime;
-                    }
+                    //if (!System.Diagnostics.Debugger.IsAttached)
+                    //{
+                    //    detailedPowder.From = fromDateTime.AddHours(-2);
+                    //    detailedPowder.To = toDateTime.AddHours(-2);
+                    //}
+                    //else
+                    //{
+                    //    detailedPowder.From = fromDateTime;
+                    //    detailedPowder.To = toDateTime;
+                    //}
+                    detailedPowder.From = fromDateTime;
+                    detailedPowder.To = toDateTime;
+
                     detailedPowder.Temperature = GetAverageTemp(temperatureList, ciNo);
 
                     detailedPowder.Powder = detailedPowder.Temperature < 2 ? detailedPowder.Precipitation : 0;
@@ -172,11 +177,11 @@ namespace PudderVarsel.Data
                     temperatureList = new Dictionary<string, string>();
                     if (detailedTeller < detailedPowderList.Count())
                         detailedPowderList[detailedTeller] = detailedPowder;
-                    else
-                    {
-                        //Todo: Check data
-                        t = 1;
-                    }
+                    //else
+                    //{
+                    //    //Todo: Check data
+                    //    t = 1;
+                    //}
 
                     detailedTeller++;
                 }
