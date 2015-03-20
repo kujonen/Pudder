@@ -26,19 +26,20 @@
         <ItemTemplate>
             <%----%>
             <div class="table-powder-details">
-            <table width="100%">
+            <%--<table width="100%" style="border: 20px; border-style: solid;">--%>
+                <table width="100%">
                   <tr>
-                    <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; width: 35%; border-color: black; border-style: solid">
-                        <asp:LinkButton ForeColor="White" ID="Button" OnCommand="Date_Click" runat="Server" Text='<%# Convert.ToDateTime(Eval("Day")).ToString("ddd") + " " + 
+                    <td style="width: 35%;">
+                        <asp:LinkButton ForeColor="#1181A4" ID="Button" OnCommand="Date_Click" runat="Server" Text='<%# Convert.ToDateTime(Eval("Day")).ToString("ddd") + " " + 
                         Convert.ToDateTime(Eval("Day")).ToString("dd/MM") %>' CommandArgument='<%#Eval("Day") %>' />
                     </td>
-                    <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; width: 25%; border-color: black; border-style: solid">
+                    <td style="width: 35%;">
                       <asp:Label ID="LastNameLabel" runat="Server"  Text='<%#Eval("Powder") + "cm" %>' />
                     </td>
-                   <%-- <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; border-color: black; border-style: solid">
+                   <%-- <td style="border-left: 0px; border-right: 0px; border-bottom: 2px; border-top: 0px; width: 35%; height: 40px; border-color: #1181A4; border-style: solid">
                       <asp:Label ID="Label1" runat="Server" Width="170" Text='<%#Eval("Precipitation") + "mm" %>' />
                     </td>--%>
-                    <td style="border-left: 0px; border-right: 2px; border-bottom: 0px; border-top: 0px; width: 20%; border-color: black; border-style: solid">
+                    <td style="width: 35%;">
                       <asp:Label ID="TextBox1" runat="Server" Text='<%#Eval("AverageTemperature") + "°" %>' />
                     </td>
                     <td style="padding-top: 8px; width: 20%;">
@@ -48,7 +49,7 @@
                 </table>
             </div>
         </ItemTemplate>
-
+          
     </asp:ListView>
     
     <p style="font-weight: bold">Avstand fra din posisjon: <%= Distance %> km</p>
