@@ -14,6 +14,7 @@ namespace PudderVarsel.Data
         public string locationsString { get; set; }
         const string Format = "yyyy-MM-ddTHH:mm:ssZ";
 
+
         public IEnumerable<Lokasjon> GetAllLocations(string locations)
         {
             return GetLocationsFromXml(0, 0, locations);
@@ -101,6 +102,21 @@ namespace PudderVarsel.Data
 
         }
 
+        private DateTime GetExactDateTime(string xmlDate)
+        {
+            //"yyyy-MM-ddTHH:mm:ssZ";
+            var year = Convert.ToInt16(xmlDate.Substring(0, 4));
+
+            var month = Convert.ToInt16(xmlDate.Substring(5, 2));
+            var day = Convert.ToInt16(xmlDate.Substring(8, 2));
+            var hour = Convert.ToInt16(xmlDate.Substring(11, 2));
+
+            var minutes = Convert.ToInt16(xmlDate.Substring(14, 2));
+            var seconds = Convert.ToInt16(xmlDate.Substring(17, 2));
+
+            var dateTime = new DateTime(year, month, day, hour, minutes, seconds);
+            return dateTime;
+        }
 
         public DagligPuddervarsel[] ProcessResponse(XElement forecastResponse)
         {
@@ -117,9 +133,12 @@ namespace PudderVarsel.Data
             var temperatureList = new Dictionary<string, string>();
             foreach (var xElement in xElements)
             {
-                var fromDateTime = TimeZoneInfo.ConvertTime(DateTime.ParseExact(XmlHelper.GetAttributeValue("from", xElement), Format, ciNo), TimeZoneInfo.Local, timeInfo).ToUniversalTime();
-                var toDateTime = TimeZoneInfo.ConvertTime(DateTime.ParseExact(XmlHelper.GetAttributeValue("to", xElement), Format, ciNo), TimeZoneInfo.Local, timeInfo).ToUniversalTime();
+                //var fromDateTime = TimeZoneInfo.ConvertTime(DateTime.ParseExact(XmlHelper.GetAttributeValue("from", xElement), Format, ciNo), TimeZoneInfo.Local, timeInfo).ToUniversalTime();
+                //var toDateTime = TimeZoneInfo.ConvertTime(DateTime.ParseExact(XmlHelper.GetAttributeValue("to", xElement), Format, ciNo), TimeZoneInfo.Local, timeInfo).ToUniversalTime();
 
+                var fromDateTime = GetExactDateTime(XmlHelper.GetAttributeValue("from", xElement));
+                var toDateTime = GetExactDateTime(XmlHelper.GetAttributeValue("to", xElement));
+                
                 if (IsRelevant(fromDateTime, toDateTime))
                 {
                     //Ny DagligPuddervarsel
@@ -189,12 +208,9 @@ namespace PudderVarsel.Data
             if (diff.Hours != 6)
                 return false;
 
-            //var shortDate = DateTime.Now.AddDays(2).Date;
-
-            //if (from.Date <= shortDate)
+ 
+            //if (System.Diagnostics.Debugger.IsAttached)
             //{
-            if (System.Diagnostics.Debugger.IsAttached)
-            {
                 if (from.Hour == 0 && to.Hour == 6)
                     return true;
                 if (from.Hour == 6 && to.Hour == 12)
@@ -203,17 +219,17 @@ namespace PudderVarsel.Data
                     return true;
                 if (from.Hour == 18 && to.Hour == 0)
                     return true;
-            }
-             else
-                {
-                    if (from.Hour == 1 && to.Hour == 7)
-                        return true;
-                    if (from.Hour == 7 && to.Hour == 13)
-                        return true;
-                    if (from.Hour == 13 && to.Hour == 19)
-                        return true;
-                    if (from.Hour == 19 && to.Hour == 1)
-                        return true;
+            //}
+            // else
+            //    {
+            //        if (from.Hour == 1 && to.Hour == 7)
+            //            return true;
+            //        if (from.Hour == 7 && to.Hour == 13)
+            //            return true;
+            //        if (from.Hour == 13 && to.Hour == 19)
+            //            return true;
+            //        if (from.Hour == 19 && to.Hour == 1)
+            //            return true;
                 
                 
                 
@@ -241,7 +257,7 @@ namespace PudderVarsel.Data
                     //    return true;
                     //if (from.Hour == 16 && to.Hour == 22)
                     //    return true;
-                }
+                //}
         
 
 
