@@ -130,7 +130,7 @@ namespace PudderVarsel.Data
             var detailedTeller = 0;
             var i = 0;
 
-            DateTimeOffset newTime = TimeZoneInfo.ConvertTime(DateTimeOffset.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("AppTimeZone"));
+            DateTimeOffset newTime = TimeZoneInfo.ConvertTime(DateTimeOffset.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("Central European Standard Time"));
             var lastDay = new DateTime(2015, 3, 20, 10, 43,01).Date;
             var temperatureList = new Dictionary<string, string>();
             foreach (var xElement in xElements)
