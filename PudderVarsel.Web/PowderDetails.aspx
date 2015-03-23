@@ -29,20 +29,20 @@
             <%--<table width="100%" style="border: 20px; border-style: solid;">--%>
                 <table width="100%">
                   <tr>
-                    <td>
+                    <td style="width: 35%;">
                         <asp:LinkButton ForeColor="#1181A4" ID="Button" OnCommand="Date_Click" runat="Server" Text='<%# Convert.ToDateTime(Eval("Day")).ToString("ddd") + " " + 
                         Convert.ToDateTime(Eval("Day")).ToString("dd/MM") %>' CommandArgument='<%#Eval("Day") %>' />
                     </td>
-                    <td>
+                    <td style="width: 20%;">
                       <asp:Label ID="LastNameLabel" runat="Server"  Text='<%#Eval("Powder") + "cm" %>' />
                     </td>
                    <%-- <td style="border-left: 0px; border-right: 0px; border-bottom: 2px; border-top: 0px; width: 35%; height: 40px; border-color: #1181A4; border-style: solid">
                       <asp:Label ID="Label1" runat="Server" Width="170" Text='<%#Eval("Precipitation") + "mm" %>' />
                     </td>--%>
-                    <td>
+                    <td style="width: 20%;">
                       <asp:Label ID="TextBox1" runat="Server" Text='<%#Eval("AverageTemperature") + "°" %>' />
                     </td>
-                    <td>
+                    <td style="width: 25%;">
                         <asp:Image Width="50px" Height="50px" ImageAlign="Top" runat="server" ImageUrl='<%#"~/images/" + Eval("ImageUrl") %>' />
                     </td>
                   </tr>
